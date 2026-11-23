@@ -1,0 +1,17 @@
+scope,author_origin,gate_regime,prs_total,merged_prs,merge_rate_pct,pct_with_human_comm,mean_human_comms,median_duration_mins,mean_jev_risk_score
+getsentry/sentry_paired_control,Coding_Agent,1_Jev_Flagged,40,23,57.5,22.5,0.53,1385.5,0.884
+getsentry/sentry_paired_control,Coding_Agent,2_Jev_Clean,18,10,55.56,27.78,0.5,2638.0,
+getsentry/sentry_paired_control,Coding_Agent,3_Prose_Bot_Control,19,15,78.95,42.11,1.0,1186.0,
+getsentry/sentry_paired_control,Coding_Agent,4_No_Bot_Control,528,236,44.7,6.82,0.12,1453.0,
+getsentry/sentry_paired_control,Human_Engineer,1_Jev_Flagged,74,46,62.16,32.43,0.51,1384.0,0.851
+getsentry/sentry_paired_control,Human_Engineer,2_Jev_Clean,31,26,83.87,29.03,1.29,2754.0,
+getsentry/sentry_paired_control,Human_Engineer,3_Prose_Bot_Control,32,20,62.5,75.0,1.97,1269.0,
+getsentry/sentry_paired_control,Human_Engineer,4_No_Bot_Control,606,379,62.54,14.52,0.3,872.0,
+all_jev_active_repos_pooled,Coding_Agent,1_Jev_Flagged,175,156,89.14,15.43,0.87,15.0,0.657
+all_jev_active_repos_pooled,Coding_Agent,2_Jev_Clean,173,148,85.55,21.39,1.02,24.0,0.311
+all_jev_active_repos_pooled,Coding_Agent,3_Prose_Bot_Control,44,39,88.64,72.73,4.07,500.5,
+all_jev_active_repos_pooled,Coding_Agent,4_No_Bot_Control,1376,1028,74.71,8.36,0.17,81.0,
+all_jev_active_repos_pooled,Human_Engineer,1_Jev_Flagged,153,107,69.93,52.29,4.36,1131.0,0.77
+all_jev_active_repos_pooled,Human_Engineer,2_Jev_Clean,50,44,88.0,56.0,5.0,2667.0,0.115
+all_jev_active_repos_pooled,Human_Engineer,3_Prose_Bot_Control,67,52,77.61,88.06,3.25,335.5,
+all_jev_active_repos_pooled,Human_Engineer,4_No_Bot_Control,1906,1573,82.53,18.42,0.56,160.0,

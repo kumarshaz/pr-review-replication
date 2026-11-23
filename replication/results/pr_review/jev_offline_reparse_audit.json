@@ -1,0 +1,207 @@
+{
+  "execution_timestamp_utc": "2026-11-22T19:29:20.608110+00:00",
+  "source_parquet": "<home>/learnCoding/localrepo/meigs-theory-replication/scratch/jev_pr_reviews/jev_bot_signals_and_comments.parquet",
+  "output_parquet": "<pr_analysis_hub>/results/jev_bot_signals_reparsed.parquet",
+  "total_comment_rows": 13891,
+  "pre_reparse_jev_signal_rows": 482,
+  "post_reparse_jev_signal_rows": 688,
+  "rescued_jev_signal_rows": 206,
+  "pre_reparse_jev_distinct_prs": 464,
+  "post_reparse_jev_distinct_prs": 553,
+  "rescued_by_repo": {
+    "jaubut/claude-companion": 150,
+    "optomachina/Overdrafter": 47,
+    "fabiankaegy/pr-risk": 4,
+    "marcusbandit/Anibeam": 2,
+    "Shahrukh-cyber/jev-pr-reviewer": 1,
+    "misty-step/chrondle": 1,
+    "qnimbus/home-lab": 1
+  },
+  "rescued_by_pattern": {
+    "claude_companion_review_router": 150,
+    "overdrafter_architect_jev_review": 44,
+    "pr_risk_assessed_by_jev": 4,
+    "overdrafter_md_jev_review": 3,
+    "anibeam_loop_review_v1": 2,
+    "jev_pr_review_html_marker": 1,
+    "chrondle_jev_way_of_working": 1,
+    "pr_risk_jev_answers": 1
+  },
+  "non_jev_merge_gate_reclassified": {
+    "optomachina/Overdrafter::ovd_merge_gate_status_non_jev": 78
+  },
+  "reclassified_human_comment_to_other_bot_count": 991,
+  "reclassified_human_comment_to_other_bot_by_author": {
+    "loopway-bot": 722,
+    "all-hands-bot": 269
+  },
+  "post_reparse_bot_family_counts": {
+    "human_comment": 6814,
+    "other_bot": 3381,
+    "prose_review_bot_control": 2653,
+    "jev_pr_risk_histogram": 285,
+    "static_sast_bot_control": 273,
+    "jev_decision_model_linter": 165,
+    "jev_review_router": 150,
+    "deterministic_merge_gate": 78,
+    "jev_council_architect_review": 47,
+    "jev_taste_policy_gate": 38,
+    "revert_signal_bot": 4,
+    "jev_loop_review_gate": 2,
+    "jev_way_of_working_advisor": 1
+  },
+  "sample_rescued_records": {
+    "pr_risk_assessed_by_jev": [
+      {
+        "repo_full_name": "fabiankaegy/pr-risk",
+        "pr_number": 4,
+        "author_login": "github-actions[bot]",
+        "bot_family": "jev_pr_risk_histogram",
+        "overall_verdict": "RISK_HIGH",
+        "alerts_count": 1
+      },
+      {
+        "repo_full_name": "fabiankaegy/pr-risk",
+        "pr_number": 3,
+        "author_login": "github-actions[bot]",
+        "bot_family": "jev_pr_risk_histogram",
+        "overall_verdict": "RISK_HIGH",
+        "alerts_count": 1
+      },
+      {
+        "repo_full_name": "fabiankaegy/pr-risk",
+        "pr_number": 2,
+        "author_login": "github-actions[bot]",
+        "bot_family": "jev_pr_risk_histogram",
+        "overall_verdict": "RISK_HIGH",
+        "alerts_count": 1
+      }
+    ],
+    "claude_companion_review_router": [
+      {
+        "repo_full_name": "jaubut/claude-companion",
+        "pr_number": 344,
+        "author_login": "jaubut",
+        "bot_family": "jev_review_router",
+        "overall_verdict": "ROUTE_FULL:TIER_HIGH",
+        "alerts_count": 1
+      },
+      {
+        "repo_full_name": "jaubut/claude-companion",
+        "pr_number": 344,
+        "author_login": "jaubut",
+        "bot_family": "jev_review_router",
+        "overall_verdict": "ROUTE_FULL:TIER_HIGH",
+        "alerts_count": 1
+      },
+      {
+        "repo_full_name": "jaubut/claude-companion",
+        "pr_number": 342,
+        "author_login": "jaubut",
+        "bot_family": "jev_review_router",
+        "overall_verdict": "ROUTE_REVIEW:TIER_NORMAL",
+        "alerts_count": 0
+      }
+    ],
+    "overdrafter_md_jev_review": [
+      {
+        "repo_full_name": "optomachina/Overdrafter",
+        "pr_number": 1006,
+        "author_login": "optomachina",
+        "bot_family": "jev_council_architect_review",
+        "overall_verdict": "FAIL",
+        "alerts_count": 1
+      },
+      {
+        "repo_full_name": "optomachina/Overdrafter",
+        "pr_number": 1004,
+        "author_login": "optomachina",
+        "bot_family": "jev_council_architect_review",
+        "overall_verdict": "PASS",
+        "alerts_count": 0
+      },
+      {
+        "repo_full_name": "optomachina/Overdrafter",
+        "pr_number": 1010,
+        "author_login": "optomachina",
+        "bot_family": "jev_council_architect_review",
+        "overall_verdict": "PASS",
+        "alerts_count": 0
+      }
+    ],
+    "overdrafter_architect_jev_review": [
+      {
+        "repo_full_name": "optomachina/Overdrafter",
+        "pr_number": 961,
+        "author_login": "optomachina",
+        "bot_family": "jev_council_architect_review",
+        "overall_verdict": "PASS_NOTES:RISKY",
+        "alerts_count": 1
+      },
+      {
+        "repo_full_name": "optomachina/Overdrafter",
+        "pr_number": 993,
+        "author_login": "optomachina",
+        "bot_family": "jev_council_architect_review",
+        "overall_verdict": "PASS:RISKY",
+        "alerts_count": 1
+      },
+      {
+        "repo_full_name": "optomachina/Overdrafter",
+        "pr_number": 964,
+        "author_login": "optomachina",
+        "bot_family": "jev_council_architect_review",
+        "overall_verdict": "PASS_NOTES:NORMAL",
+        "alerts_count": 0
+      }
+    ],
+    "jev_pr_review_html_marker": [
+      {
+        "repo_full_name": "Shahrukh-cyber/jev-pr-reviewer",
+        "pr_number": 1,
+        "author_login": "github-actions[bot]",
+        "bot_family": "jev_pr_risk_histogram",
+        "overall_verdict": "RISK_1.93_OF_3:HR_91PCT",
+        "alerts_count": 1
+      }
+    ],
+    "anibeam_loop_review_v1": [
+      {
+        "repo_full_name": "marcusbandit/Anibeam",
+        "pr_number": 1163,
+        "author_login": "marcusbandit",
+        "bot_family": "jev_loop_review_gate",
+        "overall_verdict": "LOOP_CHANGES:RISK_HIGH",
+        "alerts_count": 1
+      },
+      {
+        "repo_full_name": "marcusbandit/Anibeam",
+        "pr_number": 1163,
+        "author_login": "marcusbandit",
+        "bot_family": "jev_loop_review_gate",
+        "overall_verdict": "LOOP_CHANGES:RISK_HIGH",
+        "alerts_count": 1
+      }
+    ],
+    "chrondle_jev_way_of_working": [
+      {
+        "repo_full_name": "misty-step/chrondle",
+        "pr_number": 268,
+        "author_login": "moomooskycow",
+        "bot_family": "jev_way_of_working_advisor",
+        "overall_verdict": "WAY_OF_WORKING:INSPECT",
+        "alerts_count": 1
+      }
+    ],
+    "pr_risk_jev_answers": [
+      {
+        "repo_full_name": "qnimbus/home-lab",
+        "pr_number": 180,
+        "author_login": "github-actions[bot]",
+        "bot_family": "jev_pr_risk_histogram",
+        "overall_verdict": "LANE_REVIEW:UNCERTAIN",
+        "alerts_count": 1
+      }
+    ]
+  }
+}

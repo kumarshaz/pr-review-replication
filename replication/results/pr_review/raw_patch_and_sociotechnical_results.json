@@ -1,0 +1,713 @@
+{
+  "execution_timestamp_utc": "2026-11-22T19:32:19.176118+00:00",
+  "dataset_attribution": "H. Li, H. Zhang, and A. E. Hassan, 'AIDev: Studying AI coding agents on GitHub,' Proc. MSR 2026, doi: 10.1145/3793302.3797249 (Zenodo: 10.5281/zenodo.16899501)",
+  "generated_audit_logs": {
+    "unaddressed_patch_warnings_csv": "raw_patch_unaddressed_warnings_log.csv",
+    "unaddressed_patch_warnings_count": 1686,
+    "human_veto_overrides_and_dismissals_csv": "human_veto_overrides_and_dismissals_log.csv",
+    "human_veto_overrides_and_dismissals_count": 250,
+    "post_merge_failures_and_reverts_csv": "post_merge_failures_and_reverts_log.csv",
+    "post_merge_failures_and_reverts_count": 76,
+    "post_merge_incidents_breakdown_by_type": {
+      "Post_Merge_Failure_Comment": 31,
+      "Backport_CherryPick_Failure_Comment": 7,
+      "Explicit_Revert_PR": 16,
+      "Linked_Issue_Still_Open_After_Merge": 22
+    },
+    "post_merge_incidents_distinct_prs_by_type": {
+      "Post_Merge_Failure_Comment": 22,
+      "Backport_CherryPick_Failure_Comment": 2,
+      "Explicit_Revert_PR": 16,
+      "Linked_Issue_Still_Open_After_Merge": 22
+    },
+    "explicit_revert_prs_count": 16,
+    "genuine_post_merge_failure_comments_distinct_prs": 22,
+    "review_bot_reputation_and_brain_csv": "review_bot_reputation_and_brain_log.csv",
+    "review_bot_reputation_and_brain_count": 17,
+    "organization_governance_archetypes_csv": "organization_governance_archetypes_log.csv",
+    "organization_governance_archetypes_count": 5,
+    "normalized_post_merge_hazard_csv": "normalized_post_merge_hazard_log.csv",
+    "normalized_post_merge_hazard_rows_count": 7
+  },
+  "raw_code_patch_analysis": {
+    "total_inline_patch_reviews": 20586,
+    "distinct_prs_with_patches": 4451,
+    "distinct_files_patched": 8707,
+    "bot_inline_patch_comments": 6476,
+    "human_inline_patch_comments": 14110,
+    "avg_diff_hunk_chars": 1715.5,
+    "linter_type_suppressions_in_patch": 327,
+    "broad_exception_handlers_in_patch": 852,
+    "skipped_tests_in_patch": 31,
+    "security_and_bug_warnings_on_patch": 1097,
+    "security_and_bug_warnings_on_merged_prs": 616,
+    "machine_to_machine_agent_prompts_in_comments": 1594,
+    "unaddressed_warnings_merged_as_is_by_actor": [
+      {
+        "actor_type": "Bot",
+        "total_merged_patch_comments": 4165,
+        "unaddressed_merged_as_is": 903,
+        "unaddressed_rate_pct": 21.68,
+        "unaddressed_security_or_bug_merged_as_is": 159
+      },
+      {
+        "actor_type": "User",
+        "total_merged_patch_comments": 9239,
+        "unaddressed_merged_as_is": 783,
+        "unaddressed_rate_pct": 8.47,
+        "unaddressed_security_or_bug_merged_as_is": 21
+      }
+    ]
+  },
+  "human_veto_overrides_and_dismissals": {
+    "by_cohort": [
+      {
+        "cohort": "Cohort_B_Human_Only",
+        "prs_with_human_changes_requested": 746,
+        "merged_total": 403,
+        "merged_overriding_final_human_cr": 84,
+        "merged_with_zero_human_approval": 80,
+        "veto_override_rate_pct": 11.26
+      },
+      {
+        "cohort": "Cohort_C_Tier1_Bot_Plus_Human",
+        "prs_with_human_changes_requested": 172,
+        "merged_total": 97,
+        "merged_overriding_final_human_cr": 24,
+        "merged_with_zero_human_approval": 23,
+        "veto_override_rate_pct": 13.95
+      }
+    ],
+    "timeline_review_dismissed_total_events": 193,
+    "timeline_review_dismissed_distinct_prs": 144,
+    "timeline_review_dismissed_merged_events": 155,
+    "timeline_head_ref_force_pushed_events": 1751
+  },
+  "conway_centralization_and_reviewer_burnout": {
+    "repos_with_5plus_human_reviews": 520,
+    "single_human_gatekeeper_repos_bus_factor_1": 122,
+    "single_human_gatekeeper_repo_pct": 23.46,
+    "mean_top1_reviewer_workload_share_pct": 66.4,
+    "median_top1_reviewer_workload_share_pct": 62.5,
+    "mean_multi_reviewer_gini_index": 0.352
+  },
+  "post_merge_multi_horizon_regression_velocity_7d_14d_30d_90d": [
+    {
+      "review_regime": "1_Silent_Gate_No_Human_Review",
+      "merged_prs": 19445,
+      "uncensored_90d_n": 293,
+      "fix_7d_pct": 84.18,
+      "fix_14d_pct": 85.84,
+      "fix_30d_pct": 87.45,
+      "fix_90d_pct": 88.43,
+      "reg_7d_pct": 47.04,
+      "reg_14d_pct": 50.37,
+      "reg_30d_pct": 54.89,
+      "reg_90d_pct": 57.32,
+      "reg_90d_strictly_uncensored_pct": 38.23
+    },
+    {
+      "review_regime": "2_Human_Veto_Overridden_Merge",
+      "merged_prs": 108,
+      "uncensored_90d_n": 2,
+      "fix_7d_pct": 34.26,
+      "fix_14d_pct": 38.89,
+      "fix_30d_pct": 44.44,
+      "fix_90d_pct": 50.0,
+      "reg_7d_pct": 16.67,
+      "reg_14d_pct": 23.15,
+      "reg_30d_pct": 23.15,
+      "reg_90d_pct": 26.85,
+      "reg_90d_strictly_uncensored_pct": 100.0
+    },
+    {
+      "review_regime": "3_Human_First_Pass_Approval_No_CR",
+      "merged_prs": 3548,
+      "uncensored_90d_n": 407,
+      "fix_7d_pct": 54.96,
+      "fix_14d_pct": 63.42,
+      "fix_30d_pct": 69.42,
+      "fix_90d_pct": 72.52,
+      "reg_7d_pct": 16.4,
+      "reg_14d_pct": 23.99,
+      "reg_30d_pct": 30.81,
+      "reg_90d_pct": 39.88,
+      "reg_90d_strictly_uncensored_pct": 55.77
+    },
+    {
+      "review_regime": "4_Human_CR_Resolved_Then_Approved",
+      "merged_prs": 392,
+      "uncensored_90d_n": 34,
+      "fix_7d_pct": 41.58,
+      "fix_14d_pct": 50.26,
+      "fix_30d_pct": 56.89,
+      "fix_90d_pct": 61.22,
+      "reg_7d_pct": 15.56,
+      "reg_14d_pct": 19.9,
+      "reg_30d_pct": 25.0,
+      "reg_90d_pct": 27.55,
+      "reg_90d_strictly_uncensored_pct": 32.35
+    },
+    {
+      "review_regime": "5_Human_Comment_Only_Merge",
+      "merged_prs": 521,
+      "uncensored_90d_n": 32,
+      "fix_7d_pct": 63.15,
+      "fix_14d_pct": 70.06,
+      "fix_30d_pct": 74.09,
+      "fix_90d_pct": 76.39,
+      "reg_7d_pct": 21.11,
+      "reg_14d_pct": 25.34,
+      "reg_30d_pct": 29.94,
+      "reg_90d_pct": 37.81,
+      "reg_90d_strictly_uncensored_pct": 50.0
+    }
+  ],
+  "normalized_post_merge_hazard_analysis": {
+    "repo_volume_confound_note": "Silent_Gate repos host higher median PR velocity than reviewed repos; normalized per-100-repo-PRs, direct post-merge bug comments, and within-shared-repo controls resolve this confound.",
+    "by_regime_normalized": [
+      {
+        "review_regime": "1_Silent_Gate_No_Human_Review",
+        "merged_prs": 19445,
+        "median_repo_agent_prs": 3569.0,
+        "mean_repo_agent_prs": 4182.6,
+        "mean_repo_prs_per_day": 73.41,
+        "raw_reg_14d_pct": 50.37,
+        "reg_14d_per_100_repo_prs": 0.4124,
+        "direct_post_merge_bug_comm_pct": 0.33,
+        "reopened_pct": 0.19
+      },
+      {
+        "review_regime": "2_Human_Veto_Overridden_Merge",
+        "merged_prs": 108,
+        "median_repo_agent_prs": 19.0,
+        "mean_repo_agent_prs": 34.1,
+        "mean_repo_prs_per_day": 0.91,
+        "raw_reg_14d_pct": 23.15,
+        "reg_14d_per_100_repo_prs": 1.6957,
+        "direct_post_merge_bug_comm_pct": 0.93,
+        "reopened_pct": 0.93
+      },
+      {
+        "review_regime": "3_Human_First_Pass_Approval_No_CR",
+        "merged_prs": 3548,
+        "median_repo_agent_prs": 45.0,
+        "mean_repo_agent_prs": 82.8,
+        "mean_repo_prs_per_day": 1.17,
+        "raw_reg_14d_pct": 23.99,
+        "reg_14d_per_100_repo_prs": 1.0185,
+        "direct_post_merge_bug_comm_pct": 0.79,
+        "reopened_pct": 1.78
+      },
+      {
+        "review_regime": "4_Human_CR_Resolved_Then_Approved",
+        "merged_prs": 392,
+        "median_repo_agent_prs": 20.0,
+        "mean_repo_agent_prs": 44.3,
+        "mean_repo_prs_per_day": 1.18,
+        "raw_reg_14d_pct": 19.9,
+        "reg_14d_per_100_repo_prs": 1.2988,
+        "direct_post_merge_bug_comm_pct": 0.77,
+        "reopened_pct": 3.83
+      },
+      {
+        "review_regime": "5_Human_Comment_Only_Merge",
+        "merged_prs": 521,
+        "median_repo_agent_prs": 63.0,
+        "mean_repo_agent_prs": 85.9,
+        "mean_repo_prs_per_day": 4.13,
+        "raw_reg_14d_pct": 25.34,
+        "reg_14d_per_100_repo_prs": 0.7785,
+        "direct_post_merge_bug_comm_pct": 0.58,
+        "reopened_pct": 0.38
+      }
+    ],
+    "within_shared_repo_matched_control": [
+      {
+        "cohort": "Reviewed_In_Shared_Repos",
+        "shared_repos": 281,
+        "merged_prs": 2159,
+        "fix_14d_pct": 73.92,
+        "reg_14d_pct": 24.73,
+        "reg_30d_pct": 31.96,
+        "mean_reg_14d_cnt": 0.509
+      },
+      {
+        "cohort": "Silent_In_Shared_Repos",
+        "shared_repos": 281,
+        "merged_prs": 3912,
+        "fix_14d_pct": 81.88,
+        "reg_14d_pct": 20.22,
+        "reg_30d_pct": 29.83,
+        "mean_reg_14d_cnt": 0.428
+      }
+    ]
+  },
+  "review_bot_reputation_matrix": [
+    {
+      "bot_name": "Copilot",
+      "brain_family": "3_OpenAI_Copilot_Native_Brain",
+      "total_inline_comments": 1844,
+      "distinct_prs_reviewed": 878,
+      "comments_on_merged_prs": 1338,
+      "addressed_before_merge": 896,
+      "ignored_merged_untouched": 442,
+      "developer_action_reputation_pct": 66.97,
+      "silent_ignore_rate_pct": 33.03,
+      "avg_comment_chars": 311.6
+    },
+    {
+      "bot_name": "coderabbitai[bot]",
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_inline_comments": 1688,
+      "distinct_prs_reviewed": 353,
+      "comments_on_merged_prs": 1234,
+      "addressed_before_merge": 1057,
+      "ignored_merged_untouched": 177,
+      "developer_action_reputation_pct": 85.66,
+      "silent_ignore_rate_pct": 14.34,
+      "avg_comment_chars": 2382.9
+    },
+    {
+      "bot_name": "greptile-apps[bot]",
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_inline_comments": 706,
+      "distinct_prs_reviewed": 145,
+      "comments_on_merged_prs": 347,
+      "addressed_before_merge": 291,
+      "ignored_merged_untouched": 56,
+      "developer_action_reputation_pct": 83.86,
+      "silent_ignore_rate_pct": 16.14,
+      "avg_comment_chars": 196.7
+    },
+    {
+      "bot_name": "gemini-code-assist[bot]",
+      "brain_family": "4_Google_Gemini_Native_Brain",
+      "total_inline_comments": 582,
+      "distinct_prs_reviewed": 167,
+      "comments_on_merged_prs": 440,
+      "addressed_before_merge": 301,
+      "ignored_merged_untouched": 139,
+      "developer_action_reputation_pct": 68.41,
+      "silent_ignore_rate_pct": 31.59,
+      "avg_comment_chars": 575.2
+    },
+    {
+      "bot_name": "github-advanced-security[bot]",
+      "brain_family": "1_Deterministic_SAST_Brain",
+      "total_inline_comments": 490,
+      "distinct_prs_reviewed": 124,
+      "comments_on_merged_prs": 225,
+      "addressed_before_merge": 213,
+      "ignored_merged_untouched": 12,
+      "developer_action_reputation_pct": 94.67,
+      "silent_ignore_rate_pct": 5.33,
+      "avg_comment_chars": 246.5
+    },
+    {
+      "bot_name": "github-actions[bot]",
+      "brain_family": "6_Other_Bot_Engine",
+      "total_inline_comments": 156,
+      "distinct_prs_reviewed": 23,
+      "comments_on_merged_prs": 27,
+      "addressed_before_merge": 24,
+      "ignored_merged_untouched": 3,
+      "developer_action_reputation_pct": 88.89,
+      "silent_ignore_rate_pct": 11.11,
+      "avg_comment_chars": 309.4
+    },
+    {
+      "bot_name": "ellipsis-dev[bot]",
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_inline_comments": 147,
+      "distinct_prs_reviewed": 77,
+      "comments_on_merged_prs": 74,
+      "addressed_before_merge": 59,
+      "ignored_merged_untouched": 15,
+      "developer_action_reputation_pct": 79.73,
+      "silent_ignore_rate_pct": 20.27,
+      "avg_comment_chars": 222.1
+    },
+    {
+      "bot_name": "cursor[bot]",
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_inline_comments": 147,
+      "distinct_prs_reviewed": 57,
+      "comments_on_merged_prs": 53,
+      "addressed_before_merge": 40,
+      "ignored_merged_untouched": 13,
+      "developer_action_reputation_pct": 75.47,
+      "silent_ignore_rate_pct": 24.53,
+      "avg_comment_chars": 2793.2
+    },
+    {
+      "bot_name": "claude[bot]",
+      "brain_family": "5_Anthropic_Claude_Native_Brain",
+      "total_inline_comments": 136,
+      "distinct_prs_reviewed": 27,
+      "comments_on_merged_prs": 125,
+      "addressed_before_merge": 110,
+      "ignored_merged_untouched": 15,
+      "developer_action_reputation_pct": 88.0,
+      "silent_ignore_rate_pct": 12.0,
+      "avg_comment_chars": 825.5
+    },
+    {
+      "bot_name": "graphite-app[bot]",
+      "brain_family": "6_Other_Bot_Engine",
+      "total_inline_comments": 126,
+      "distinct_prs_reviewed": 66,
+      "comments_on_merged_prs": 78,
+      "addressed_before_merge": 64,
+      "ignored_merged_untouched": 14,
+      "developer_action_reputation_pct": 82.05,
+      "silent_ignore_rate_pct": 17.95,
+      "avg_comment_chars": 983.0
+    },
+    {
+      "bot_name": "cubic-dev-ai[bot]",
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_inline_comments": 121,
+      "distinct_prs_reviewed": 17,
+      "comments_on_merged_prs": 101,
+      "addressed_before_merge": 93,
+      "ignored_merged_untouched": 8,
+      "developer_action_reputation_pct": 92.08,
+      "silent_ignore_rate_pct": 7.92,
+      "avg_comment_chars": 753.0
+    },
+    {
+      "bot_name": "sourcery-ai[bot]",
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_inline_comments": 94,
+      "distinct_prs_reviewed": 29,
+      "comments_on_merged_prs": 57,
+      "addressed_before_merge": 54,
+      "ignored_merged_untouched": 3,
+      "developer_action_reputation_pct": 94.74,
+      "silent_ignore_rate_pct": 5.26,
+      "avg_comment_chars": 618.9
+    },
+    {
+      "bot_name": "entelligence-ai-pr-reviews[bot]",
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_inline_comments": 79,
+      "distinct_prs_reviewed": 15,
+      "comments_on_merged_prs": 21,
+      "addressed_before_merge": 21,
+      "ignored_merged_untouched": 0,
+      "developer_action_reputation_pct": 100.0,
+      "silent_ignore_rate_pct": 0.0,
+      "avg_comment_chars": 1046.3
+    },
+    {
+      "bot_name": "seer-by-sentry[bot]",
+      "brain_family": "6_Other_Bot_Engine",
+      "total_inline_comments": 30,
+      "distinct_prs_reviewed": 7,
+      "comments_on_merged_prs": 17,
+      "addressed_before_merge": 17,
+      "ignored_merged_untouched": 0,
+      "developer_action_reputation_pct": 100.0,
+      "silent_ignore_rate_pct": 0.0,
+      "avg_comment_chars": 627.7
+    },
+    {
+      "bot_name": "aikido-pr-checks[bot]",
+      "brain_family": "1_Deterministic_SAST_Brain",
+      "total_inline_comments": 30,
+      "distinct_prs_reviewed": 1,
+      "comments_on_merged_prs": 0,
+      "addressed_before_merge": 0,
+      "ignored_merged_untouched": 0,
+      "developer_action_reputation_pct": null,
+      "silent_ignore_rate_pct": null,
+      "avg_comment_chars": 482.3
+    },
+    {
+      "bot_name": "recurseml[bot]",
+      "brain_family": "6_Other_Bot_Engine",
+      "total_inline_comments": 26,
+      "distinct_prs_reviewed": 13,
+      "comments_on_merged_prs": 3,
+      "addressed_before_merge": 3,
+      "ignored_merged_untouched": 0,
+      "developer_action_reputation_pct": 100.0,
+      "silent_ignore_rate_pct": 0.0,
+      "avg_comment_chars": 393.1
+    },
+    {
+      "bot_name": "kodus-ai[bot]",
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_inline_comments": 20,
+      "distinct_prs_reviewed": 3,
+      "comments_on_merged_prs": 7,
+      "addressed_before_merge": 7,
+      "ignored_merged_untouched": 0,
+      "developer_action_reputation_pct": 100.0,
+      "silent_ignore_rate_pct": 0.0,
+      "avg_comment_chars": 1281.5
+    }
+  ],
+  "review_bot_brain_family_impact": [
+    {
+      "brain_family": "1_Deterministic_SAST_Brain",
+      "total_prs": 495,
+      "merged_prs": 217,
+      "merge_rate_pct": 43.84,
+      "human_veto_rate_when_human_reviewed_pct": 14.45,
+      "post_merge_fix_14d_pct": 46.54,
+      "post_merge_fix_90d_pct": 61.29,
+      "post_merge_reg_14d_pct": 15.67,
+      "post_merge_reg_90d_pct": 21.2
+    },
+    {
+      "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+      "total_prs": 3289,
+      "merged_prs": 2234,
+      "merge_rate_pct": 67.92,
+      "human_veto_rate_when_human_reviewed_pct": 7.28,
+      "post_merge_fix_14d_pct": 78.74,
+      "post_merge_fix_90d_pct": 85.72,
+      "post_merge_reg_14d_pct": 26.1,
+      "post_merge_reg_90d_pct": 52.15
+    },
+    {
+      "brain_family": "3_OpenAI_Copilot_Native_Brain",
+      "total_prs": 1194,
+      "merged_prs": 936,
+      "merge_rate_pct": 78.39,
+      "human_veto_rate_when_human_reviewed_pct": 11.78,
+      "post_merge_fix_14d_pct": 63.25,
+      "post_merge_fix_90d_pct": 71.79,
+      "post_merge_reg_14d_pct": 31.84,
+      "post_merge_reg_90d_pct": 45.83
+    },
+    {
+      "brain_family": "4_Google_Gemini_Native_Brain",
+      "total_prs": 144,
+      "merged_prs": 108,
+      "merge_rate_pct": 75.0,
+      "human_veto_rate_when_human_reviewed_pct": 24.0,
+      "post_merge_fix_14d_pct": 58.33,
+      "post_merge_fix_90d_pct": 76.85,
+      "post_merge_reg_14d_pct": 25.93,
+      "post_merge_reg_90d_pct": 25.93
+    },
+    {
+      "brain_family": "5_Anthropic_Claude_Native_Brain",
+      "total_prs": 106,
+      "merged_prs": 66,
+      "merge_rate_pct": 62.26,
+      "human_veto_rate_when_human_reviewed_pct": 32.0,
+      "post_merge_fix_14d_pct": 56.06,
+      "post_merge_fix_90d_pct": 63.64,
+      "post_merge_reg_14d_pct": 6.06,
+      "post_merge_reg_90d_pct": 37.88
+    }
+  ],
+  "organization_governance_archetypes": [
+    {
+      "org_archetype": "1_Enterprise_BigTech_Cloud_Vendor",
+      "repos_count": 227,
+      "total_agent_prs": 2466,
+      "merge_rate_pct": 39.82,
+      "human_reviewed_rate_pct": 54.79,
+      "silent_gate_bypass_pct": 45.21,
+      "human_veto_rate_when_reviewed_pct": 16.95,
+      "human_veto_override_pct": 3.49
+    },
+    {
+      "org_archetype": "2_OSS_Foundation_Standards_Consortium",
+      "repos_count": 66,
+      "total_agent_prs": 710,
+      "merge_rate_pct": 53.66,
+      "human_reviewed_rate_pct": 73.38,
+      "silent_gate_bypass_pct": 26.62,
+      "human_veto_rate_when_reviewed_pct": 20.73,
+      "human_veto_override_pct": 8.33
+    },
+    {
+      "org_archetype": "3_AI_Native_Agent_Tooling_Org",
+      "repos_count": 26,
+      "total_agent_prs": 823,
+      "merge_rate_pct": 42.04,
+      "human_reviewed_rate_pct": 29.65,
+      "silent_gate_bypass_pct": 70.35,
+      "human_veto_rate_when_reviewed_pct": 6.15,
+      "human_veto_override_pct": 13.33
+    },
+    {
+      "org_archetype": "4_High_Traction_Community_Org_2500plus_Stars",
+      "repos_count": 573,
+      "total_agent_prs": 4032,
+      "merge_rate_pct": 56.15,
+      "human_reviewed_rate_pct": 33.9,
+      "silent_gate_bypass_pct": 66.1,
+      "human_veto_rate_when_reviewed_pct": 12.0,
+      "human_veto_override_pct": 9.15
+    },
+    {
+      "org_archetype": "5_Standard_Community_or_Individual_Repo",
+      "repos_count": 1915,
+      "total_agent_prs": 25565,
+      "merge_rate_pct": 78.39,
+      "human_reviewed_rate_pct": 9.83,
+      "silent_gate_bypass_pct": 90.17,
+      "human_veto_rate_when_reviewed_pct": 15.99,
+      "human_veto_override_pct": 18.41
+    }
+  ],
+  "live_github_patch_and_postmerge_probes": [
+    {
+      "repo_full_name": "J-Tech-Japan/Sekiban",
+      "pr_number": 706,
+      "merged_at": "2025-07-19T06:28:11Z",
+      "live_patch_url": "https://github.com/J-Tech-Japan/Sekiban/pull/706.patch",
+      "live_patch_reachable": true,
+      "live_patch_bytes": 142731,
+      "live_patch_sha256": "9c803783c8475148c8039d4b0ff8821415763a8ee9e7c8cbe742b00f00d577a2",
+      "live_patch_preview_lines": [
+        "From fd96754d7c715d346987b1c59f4e5897b16e7b31 Mon Sep 17 00:00:00 2001",
+        "From: Tomohisa Takaoka <ttakaoka@jtechs.com>",
+        "Date: Mon, 21 Jul 2025 10:39:15 -0700",
+        "Subject: [PATCH 1/9] [ts] cosmos package test and improve package Fixes #704",
+        "",
+        "---",
+        " README.md                                     |  16 +",
+        " ts/design/type-registry-progress.md           |  12 +-",
+        " ts/docs/migration-guide.md                    | 322 ------------------",
+        " ts/src/packages/core/README.md                |   4 -",
+        " .../src/schema-registry/MIGRATION_GUIDE.md    | 212 ------------",
+        " .../core/src/schema-registry/README.md        |   4 -",
+        " 6 files changed, 22 insertions(+), 548 deletions(-)",
+        " delete mode 100644 ts/docs/migration-guide.md",
+        " delete mode 100644 ts/src/packages/core/src/schema-registry/MIGRATION_GUIDE.md",
+        "",
+        "diff --git a/README.md b/README.md",
+        "index ae5835bd5..ac6816c46 100644"
+      ],
+      "post_merge_repo_bug_issues_sampled": []
+    },
+    {
+      "repo_full_name": "oven-sh/bun",
+      "pr_number": 19766,
+      "merged_at": "2025-05-22T01:41:44Z",
+      "live_patch_url": "https://github.com/oven-sh/bun/pull/19766.patch",
+      "live_patch_reachable": true,
+      "live_patch_bytes": 28372,
+      "live_patch_sha256": "0103ee2407f93f4a4b3ed2eafa19739ed0393c15b6d66fcfac672ff8002b239e",
+      "live_patch_preview_lines": [
+        "From 04f36ebc8f7e946ab721aeb934595143656eef07 Mon Sep 17 00:00:00 2001",
+        "From: Jarred Sumner <jarred@jarredsumner.com>",
+        "Date: Mon, 19 May 2025 09:58:52 -0700",
+        "Subject: [PATCH 1/9] refine BUN_OPTIONS handling",
+        "",
+        "---",
+        " src/bun.zig | 74 +++++++++++++++++++++++++++++++++++++++++++++++++++++",
+        " 1 file changed, 74 insertions(+)",
+        "",
+        "diff --git a/src/bun.zig b/src/bun.zig",
+        "index 761ee0bba422..cbd4999518bf 100644",
+        "--- a/src/bun.zig",
+        "+++ b/src/bun.zig",
+        "@@ -1986,6 +1986,69 @@ pub const StatFS = switch (Environment.os) {",
+        " ",
+        " pub var argv: [][:0]const u8 = &[_][:0]const u8{};",
+        " ",
+        "+fn parseOptionsEnv(env: []const u8, allocator: std.mem.Allocator) ![][:0]const u8 {"
+      ],
+      "post_merge_repo_bug_issues_sampled": []
+    },
+    {
+      "repo_full_name": "Tencent/ncnn",
+      "pr_number": 6204,
+      "merged_at": "2025-07-23T06:06:15Z",
+      "live_patch_url": "https://github.com/Tencent/ncnn/pull/6204.patch",
+      "live_patch_reachable": true,
+      "live_patch_bytes": 28054,
+      "live_patch_sha256": "7f950a2c2bf0f0845c275b4515cf93c27670b1b19421d5c3d639108898fde91b",
+      "live_patch_preview_lines": [
+        "From 849bda078e3d0b342127a0e5b1a0abf270dbef2b Mon Sep 17 00:00:00 2001",
+        "From: \"copilot-swe-agent[bot]\" <198982749+Copilot@users.noreply.github.com>",
+        "Date: Thu, 24 Jul 2025 06:32:39 +0000",
+        "Subject: [PATCH 1/2] Initial plan",
+        "",
+        "",
+        "From 71f5bda0356c6d1dffa2af2a4f3e338462e1344d Mon Sep 17 00:00:00 2001",
+        "From: \"copilot-swe-agent[bot]\" <198982749+Copilot@users.noreply.github.com>",
+        "Date: Thu, 24 Jul 2025 06:46:43 +0000",
+        "Subject: [PATCH 2/2] Add Windows XP support merging PRs #6176 and #6177",
+        "",
+        "Co-authored-by: Sugar-Baby <87747602+Sugar-Baby@users.noreply.github.com>",
+        "Co-authored-by: AtomAlpaca <66774326+AtomAlpaca@users.noreply.github.com>",
+        "",
+        "Co-authored-by: nihui <171016+nihui@users.noreply.github.com>",
+        "---",
+        " .github/workflows/windows-xp-clang.yml        |  62 ++++++++",
+        " .github/workflows/windows-xp-mingw.yml        |  57 ++++++++"
+      ],
+      "post_merge_repo_bug_issues_sampled": []
+    },
+    {
+      "repo_full_name": "Edgenesis/shifu",
+      "pr_number": 1202,
+      "merged_at": "2025-06-05T07:53:40Z",
+      "live_patch_url": "https://github.com/Edgenesis/shifu/pull/1202.patch",
+      "live_patch_reachable": true,
+      "live_patch_bytes": 751,
+      "live_patch_sha256": "eddd54c09c9365de7f5c4981a84c172c8dbf84abf665ed4b3a1f764db5e9fb1a",
+      "live_patch_preview_lines": [
+        "From 8450880e66b8497033bbbc15bb6485f0a118fdd1 Mon Sep 17 00:00:00 2001",
+        "From: Tom Qin <tomqin93@gmail.com>",
+        "Date: Thu, 5 Jun 2025 13:16:49 +0800",
+        "Subject: [PATCH] Fix content type",
+        "",
+        "---",
+        " pkg/gateway/lwm2m/gatewaylwm2m.go | 2 +-",
+        " 1 file changed, 1 insertion(+), 1 deletion(-)",
+        "",
+        "diff --git a/pkg/gateway/lwm2m/gatewaylwm2m.go b/pkg/gateway/lwm2m/gatewaylwm2m.go",
+        "index e04925827..78fb88f57 100644",
+        "--- a/pkg/gateway/lwm2m/gatewaylwm2m.go",
+        "+++ b/pkg/gateway/lwm2m/gatewaylwm2m.go",
+        "@@ -231,7 +231,7 @@ func (si *ShifuInstruction) Write(data interface{}) error {",
+        " }",
+        " ",
+        " func (si *ShifuInstruction) Execute() error {",
+        "-\tresp, err := http.Post(si.Endpoint, \"plain/text\", nil)"
+      ],
+      "post_merge_repo_bug_issues_sampled": []
+    },
+    {
+      "repo_full_name": "DaveSkender/Stock.Indicators",
+      "pr_number": 1371,
+      "merged_at": "2025-07-17T06:54:28Z",
+      "live_patch_url": "https://github.com/DaveSkender/Stock.Indicators/pull/1371.patch",
+      "live_patch_reachable": true,
+      "live_patch_bytes": 988551,
+      "live_patch_sha256": "e1baffa6eb4d5f941c95e1d39fe4bb8a10539a04f11faa1f2b59ac38f56d47ad",
+      "live_patch_preview_lines": [
+        "From 93fe5b2474345d358d43b822dc6ca24944c7420b Mon Sep 17 00:00:00 2001",
+        "From: \"copilot-swe-agent[bot]\" <198982749+Copilot@users.noreply.github.com>",
+        "Date: Sun, 13 Jul 2025 08:36:39 +0000",
+        "Subject: [PATCH 01/24] Initial plan",
+        "",
+        "",
+        "From e6075e7c696ffe1f3ca427bc990f42ea7a715064 Mon Sep 17 00:00:00 2001",
+        "From: \"copilot-swe-agent[bot]\" <198982749+Copilot@users.noreply.github.com>",
+        "Date: Sun, 13 Jul 2025 08:52:41 +0000",
+        "Subject: [PATCH 02/24] Populate main catalog with all indicator listings -",
+        " resolving validation issues",
+        "",
+        "Co-authored-by: DaveSkender <8432125+DaveSkender@users.noreply.github.com>",
+        "---",
+        " src/_common/Catalog/Catalog.cs           | 310 ++++++++++++++++++++++-",
+        " src/_common/Catalog/IndicatorRegistry.cs |   1 +",
+        " src/e-k/ElderRay/ElderRay.Catalog.cs     |   2 +-",
+        " src/e-k/Fcb/Fcb.Catalog.cs               |   2 +-"
+      ],
+      "post_merge_repo_bug_issues_sampled": []
+    }
+  ]
+}

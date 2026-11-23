@@ -1,0 +1,24 @@
+panel,stratum,n_reviews_or_prs,n_repos,cr_veto_pct,approval_pct,rubber_stamp_pct,mean_body_chars,szz_30d_pct,mean_comments_per_pr,zero_comment_pct,median_close_hours,bug_label_pct
+Reviewer_Queue_Burst_24h,1_Low (1/24h),6198,,9.04,49.35,44.05,34.2,40.1,,,,
+Reviewer_Queue_Burst_24h,2_Medium (2-4/24h),6230,,8.96,35.84,32.47,30.2,37.35,,,,
+Reviewer_Queue_Burst_24h,3_High (5+/24h),4458,,8.7,25.17,22.93,30.5,42.18,,,,
+CodeRabbit_Tenure_Overall,1_Days_0_15,2111,457,,,,,,4.918,0.14,19.7,3.13
+CodeRabbit_Tenure_Overall,2_Days_16_30,1998,246,,,,,,4.083,0.1,17.63,4.65
+CodeRabbit_Tenure_Overall,3_Days_31_60,4581,311,,,,,,4.122,0.07,18.36,5.3
+CodeRabbit_Tenure_Overall,4_Days_61_180,21168,362,,,,,,4.342,0.14,19.96,5.86
+CodeRabbit_Tenure_Overall,5_Days_181_Plus,69596,306,,,,,,4.196,0.16,22.38,5.19
+CodeRabbit_Profile::assertive,1_Days_0_15,85,26,,,,,,5.247,0.0,136.52,8.24
+CodeRabbit_Profile::assertive,2_Days_16_30,95,16,,,,,,5.884,0.0,117.83,7.37
+CodeRabbit_Profile::assertive,3_Days_31_60,357,20,,,,,,5.048,0.0,46.22,10.92
+CodeRabbit_Profile::assertive,4_Days_61_180,1906,21,,,,,,4.866,0.0,32.38,13.22
+CodeRabbit_Profile::assertive,5_Days_181_Plus,7832,20,,,,,,5.686,0.0,28.77,7.78
+CodeRabbit_Profile::chill,1_Days_0_15,821,158,,,,,,5.343,0.0,17.6,4.14
+CodeRabbit_Profile::chill,2_Days_16_30,576,92,,,,,,4.668,0.0,22.74,4.17
+CodeRabbit_Profile::chill,3_Days_31_60,1410,116,,,,,,5.035,0.0,23.18,5.67
+CodeRabbit_Profile::chill,4_Days_61_180,6678,127,,,,,,4.808,0.33,22.58,7.82
+CodeRabbit_Profile::chill,5_Days_181_Plus,21974,106,,,,,,4.716,0.1,26.4,8.14
+CodeRabbit_Profile::default,1_Days_0_15,600,139,,,,,,5.562,0.33,21.19,1.67
+CodeRabbit_Profile::default,2_Days_16_30,702,72,,,,,,4.56,0.0,13.52,2.42
+CodeRabbit_Profile::default,3_Days_31_60,1618,85,,,,,,4.042,0.0,9.29,2.04
+CodeRabbit_Profile::default,4_Days_61_180,6476,103,,,,,,4.523,0.03,18.49,2.47
+CodeRabbit_Profile::default,5_Days_181_Plus,25604,79,,,,,,3.611,0.02,18.82,1.89

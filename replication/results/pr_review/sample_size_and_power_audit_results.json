@@ -1,0 +1,818 @@
+{
+  "execution_timestamp_utc": "2026-11-22T19:32:38.391263+00:00",
+  "reclassified_inline_bot_prs_from_cohort_b_to_c": 0,
+  "concentric_scale_rings": {
+    "Ring_1_Jev_Adopter_Corpus": {
+      "current_n": 6055,
+      "jev_signal_distinct_prs": 553,
+      "sentry_human_dml_n": 105,
+      "agent_jev_prs_n": 348,
+      "formal_reviews_n": 912
+    },
+    "Ring_2_Within_Shared_Repos": {
+      "shared_repos": 191,
+      "current_n": 3121
+    },
+    "Ring_3_Curated_Human_Reviewed_38Bot": {
+      "current_n": 5997,
+      "cohort_b_clean38": 4321,
+      "cohort_c_clean38": 1676,
+      "cross_table_extra_reclassified": 0
+    },
+    "Ring_4_Within_281_and_810_Shared_Repos": {
+      "within_281_merged_n": 6071,
+      "paired_810_n": 16319,
+      "szz_linked_merged_prs": 10410,
+      "szz_uncensored_14d_prs": 8936,
+      "szz_uncensored_30d_prs": 7982,
+      "szz_cloned_repos": 300
+    },
+    "Ring_5_Full_Curated_and_CodeRabbit_Policy": {
+      "curated_aidev_n": 40214,
+      "coderabbit_policy_n": 76734,
+      "coderabbit_policy_repos": 323
+    },
+    "Ring_6_Global_AIDev_Firehose": {
+      "published_aidev_msr2026_reference_prs": 932791,
+      "local_aidev_all_repo_verified_count": 116211,
+      "note": "Published MSR 2026 census reference (local aidev_all_repo.parquet verified count computed dynamically)"
+    }
+  },
+  "power_and_persistence_comparisons": [
+    {
+      "scale_ring": "Ring_2_Within_191_Shared_Repos (N=3,121)",
+      "vector_id": "RV-02",
+      "hypothesis_label": "Within-Repo Human Veto Suppression (Human-Only vs Bot+Human)",
+      "arm1_label": "Cohort_B_Shared191",
+      "arm2_label": "Cohort_C_Shared191",
+      "total_n": 3121,
+      "n1": 2092,
+      "k1": 337,
+      "p1_pct": 16.11,
+      "ci1_95_pct": [
+        14.6,
+        17.75
+      ],
+      "n2": 1029,
+      "k2": 108,
+      "p2_pct": 10.5,
+      "ci2_95_pct": [
+        8.77,
+        12.52
+      ],
+      "diff_pp": -5.61,
+      "relative_shift_pct": -34.85,
+      "z_stat": 4.216,
+      "p_value": 2.4830351263327444e-05,
+      "cohens_h": 0.1662,
+      "achieved_power_pct": 99.19,
+      "n_per_arm_for_80pct_power": 569,
+      "n_per_arm_for_90pct_power": 762,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_3A_Curated_Human_Reviewed_38Bot (N=5,997)",
+      "vector_id": "RV-02",
+      "hypothesis_label": "Global Curated Human Veto Suppression (Clean 38-Bot Catalog: Human-Only vs Bot+Human)",
+      "arm1_label": "Cohort_B_Clean38",
+      "arm2_label": "Cohort_C_Clean38",
+      "total_n": 5997,
+      "n1": 4321,
+      "k1": 746,
+      "p1_pct": 17.26,
+      "ci1_95_pct": [
+        16.17,
+        18.42
+      ],
+      "n2": 1676,
+      "k2": 172,
+      "p2_pct": 10.26,
+      "ci2_95_pct": [
+        8.9,
+        11.81
+      ],
+      "diff_pp": -7.0,
+      "relative_shift_pct": -40.56,
+      "z_stat": 6.758,
+      "p_value": 1.400723981248575e-11,
+      "cohens_h": 0.2048,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 375,
+      "n_per_arm_for_90pct_power": 502,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_3A_Curated_Human_Reviewed (N=2,953)",
+      "vector_id": "SM-02",
+      "hypothesis_label": "Second-Reviewer Displacement: 2+ Humans (0 Bots) vs 1 Human + 1 AI Bot Veto Rate",
+      "arm1_label": "2plus_Humans_0_Bots",
+      "arm2_label": "1_Human_1_Bot",
+      "total_n": 2953,
+      "n1": 2365,
+      "k1": 591,
+      "p1_pct": 24.99,
+      "ci1_95_pct": [
+        23.29,
+        26.77
+      ],
+      "n2": 588,
+      "k2": 23,
+      "p2_pct": 3.91,
+      "ci2_95_pct": [
+        2.62,
+        5.8
+      ],
+      "diff_pp": -21.08,
+      "relative_shift_pct": -84.35,
+      "z_stat": 11.271,
+      "p_value": 0.0,
+      "cohens_h": 0.6488,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 38,
+      "n_per_arm_for_90pct_power": 50,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_3A_Curated_Human_Reviewed (N=2,138)",
+      "vector_id": "SM-04",
+      "hypothesis_label": "Stacked-Bot Bystander Collapse: 1 Human (0 Bots) vs 1 Human + 2+ Bots Veto Rate",
+      "arm1_label": "1_Human_0_Bots",
+      "arm2_label": "1_Human_2plus_Bots",
+      "total_n": 2138,
+      "n1": 1956,
+      "k1": 155,
+      "p1_pct": 7.92,
+      "ci1_95_pct": [
+        6.81,
+        9.21
+      ],
+      "n2": 182,
+      "k2": 4,
+      "p2_pct": 2.2,
+      "ci2_95_pct": [
+        0.86,
+        5.51
+      ],
+      "diff_pp": -5.73,
+      "relative_shift_pct": -72.27,
+      "z_stat": 2.816,
+      "p_value": 0.004856520214937543,
+      "cohens_h": 0.2731,
+      "achieved_power_pct": 94.11,
+      "n_per_arm_for_80pct_power": 211,
+      "n_per_arm_for_90pct_power": 282,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_3A_Curated_Human_Reviewed (N=2,138)",
+      "vector_id": "SM-04_RubberStamp",
+      "hypothesis_label": "Stacked-Bot Rubber-Stamp Surge: 1 Human (0 Bots) vs 1 Human + 2+ Bots Rubber-Stamp Rate",
+      "arm1_label": "1_Human_0_Bots",
+      "arm2_label": "1_Human_2plus_Bots",
+      "total_n": 2138,
+      "n1": 1956,
+      "k1": 1179,
+      "p1_pct": 60.28,
+      "ci1_95_pct": [
+        58.09,
+        62.42
+      ],
+      "n2": 182,
+      "k2": 123,
+      "p2_pct": 67.58,
+      "ci2_95_pct": [
+        60.48,
+        73.96
+      ],
+      "diff_pp": 7.31,
+      "relative_shift_pct": 12.12,
+      "z_stat": -1.932,
+      "p_value": 0.05335493190632068,
+      "cohens_h": 0.1523,
+      "achieved_power_pct": 50.23,
+      "n_per_arm_for_80pct_power": 677,
+      "n_per_arm_for_90pct_power": 906,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_3A_Curated_Human_Reviewed (N=5,997)",
+      "vector_id": "SM-07",
+      "hypothesis_label": "Intent-Oracle Paradox: Issue-Anchored (IBD=0) vs Unanchored Prompt PRs (IBD=1) Veto Rate",
+      "arm1_label": "Issue_Anchored_IBD0",
+      "arm2_label": "Intent_Deficit_IBD1",
+      "total_n": 5997,
+      "n1": 4526,
+      "k1": 816,
+      "p1_pct": 18.03,
+      "ci1_95_pct": [
+        16.94,
+        19.18
+      ],
+      "n2": 1471,
+      "k2": 102,
+      "p2_pct": 6.93,
+      "ci2_95_pct": [
+        5.74,
+        8.35
+      ],
+      "diff_pp": -11.1,
+      "relative_shift_pct": -61.54,
+      "z_stat": 10.267,
+      "p_value": 0.0,
+      "cohens_h": 0.3441,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 133,
+      "n_per_arm_for_90pct_power": 178,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4A_Bot_Brain_Families (N=2,451)",
+      "vector_id": "RV-06_14d",
+      "hypothesis_label": "14-Day Merged-PR Post-Merge Regression Rate: Deterministic SAST Gate vs MultiModel RAG Prose Bot",
+      "arm1_label": "1_Deterministic_SAST_Brain",
+      "arm2_label": "2_MultiModel_RAG_Agentic_Brain",
+      "total_n": 2451,
+      "n1": 217,
+      "k1": 34,
+      "p1_pct": 15.67,
+      "ci1_95_pct": [
+        11.43,
+        21.1
+      ],
+      "n2": 2234,
+      "k2": 583,
+      "p2_pct": 26.1,
+      "ci2_95_pct": [
+        24.32,
+        27.96
+      ],
+      "diff_pp": 10.43,
+      "relative_shift_pct": 66.56,
+      "z_stat": -3.379,
+      "p_value": 0.0007268028191438347,
+      "cohens_h": 0.2584,
+      "achieved_power_pct": 95.29,
+      "n_per_arm_for_80pct_power": 236,
+      "n_per_arm_for_90pct_power": 315,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4A_Bot_Brain_Families (N=2,451)",
+      "vector_id": "RV-06_90d",
+      "hypothesis_label": "90-Day Merged-PR Post-Merge Regression Rate: Deterministic SAST Gate vs MultiModel RAG Prose Bot",
+      "arm1_label": "1_Deterministic_SAST_Brain",
+      "arm2_label": "2_MultiModel_RAG_Agentic_Brain",
+      "total_n": 2451,
+      "n1": 217,
+      "k1": 46,
+      "p1_pct": 21.2,
+      "ci1_95_pct": [
+        16.29,
+        27.11
+      ],
+      "n2": 2234,
+      "k2": 1165,
+      "p2_pct": 52.15,
+      "ci2_95_pct": [
+        50.08,
+        54.21
+      ],
+      "diff_pp": 30.95,
+      "relative_shift_pct": 146.01,
+      "z_stat": -8.706,
+      "p_value": 0.0,
+      "cohens_h": 0.6569,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 37,
+      "n_per_arm_for_90pct_power": 49,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4B_Within_281_Shared_Repos (N=6,071)",
+      "vector_id": "RV-01_Fix14d_Within281",
+      "hypothesis_label": "Within-281-Shared-Repo 14-Day Downstream Fix-PR Exposure: Reviewed vs Silent Gate",
+      "arm1_label": "Reviewed_In_Shared_Repos",
+      "arm2_label": "Silent_In_Shared_Repos",
+      "total_n": 6071,
+      "n1": 2159,
+      "k1": 1596,
+      "p1_pct": 73.92,
+      "ci1_95_pct": [
+        72.03,
+        75.73
+      ],
+      "n2": 3912,
+      "k2": 3203,
+      "p2_pct": 81.88,
+      "ci2_95_pct": [
+        80.64,
+        83.05
+      ],
+      "diff_pp": 7.95,
+      "relative_shift_pct": 10.76,
+      "z_stat": -7.289,
+      "p_value": 3.1175062531474396e-13,
+      "cohens_h": 0.1924,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 425,
+      "n_per_arm_for_90pct_power": 568,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4C_Paired_810_Repos (N=16,319)",
+      "vector_id": "RV-01_PairedAcceptance",
+      "hypothesis_label": "Within-810-Shared-Repo Merge Acceptance: Human Baseline PRs vs Coding-Agent PRs",
+      "arm1_label": "Human_Baseline_Paired",
+      "arm2_label": "Coding_Agent_Paired",
+      "total_n": 16319,
+      "n1": 6569,
+      "k1": 5044,
+      "p1_pct": 76.78,
+      "ci1_95_pct": [
+        75.75,
+        77.79
+      ],
+      "n2": 9750,
+      "k2": 5366,
+      "p2_pct": 55.04,
+      "ci2_95_pct": [
+        54.05,
+        56.02
+      ],
+      "diff_pp": -21.75,
+      "relative_shift_pct": -28.32,
+      "z_stat": 28.35,
+      "p_value": 0.0,
+      "cohens_h": 0.4644,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 73,
+      "n_per_arm_for_90pct_power": 98,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4S_BareGit_SZZ_GroundTruth (N=2,844)",
+      "vector_id": "RV-01_SZZ_14d_Reviewed_vs_Silent",
+      "hypothesis_label": "Commit-Attributed 14d SZZ Bugfix Rate: Agent+HumanOnly vs Agent+SilentOrSelfMerge",
+      "arm1_label": "SZZ_Agent+HumanOnly",
+      "arm2_label": "SZZ_Agent+SilentOrSelfMerge",
+      "total_n": 2844,
+      "n1": 1180,
+      "k1": 350,
+      "p1_pct": 29.66,
+      "ci1_95_pct": [
+        27.12,
+        32.33
+      ],
+      "n2": 1664,
+      "k2": 671,
+      "p2_pct": 40.32,
+      "ci2_95_pct": [
+        37.99,
+        42.7
+      ],
+      "diff_pp": 10.66,
+      "relative_shift_pct": 35.95,
+      "z_stat": -5.841,
+      "p_value": 5.1934865297198485e-09,
+      "cohens_h": 0.2242,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 313,
+      "n_per_arm_for_90pct_power": 419,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4S_BareGit_SZZ_GroundTruth (N=2,844)",
+      "vector_id": "RV-01_SZZ_30d_Reviewed_vs_Silent",
+      "hypothesis_label": "Commit-Attributed 30d SZZ Bugfix Rate: Agent+HumanOnly vs Agent+SilentOrSelfMerge",
+      "arm1_label": "SZZ_Agent+HumanOnly",
+      "arm2_label": "SZZ_Agent+SilentOrSelfMerge",
+      "total_n": 2844,
+      "n1": 1180,
+      "k1": 453,
+      "p1_pct": 38.39,
+      "ci1_95_pct": [
+        35.66,
+        41.2
+      ],
+      "n2": 1664,
+      "k2": 796,
+      "p2_pct": 47.84,
+      "ci2_95_pct": [
+        45.44,
+        50.24
+      ],
+      "diff_pp": 9.45,
+      "relative_shift_pct": 24.61,
+      "z_stat": -5.002,
+      "p_value": 5.688218136512546e-07,
+      "cohens_h": 0.1911,
+      "achieved_power_pct": 99.89,
+      "n_per_arm_for_80pct_power": 431,
+      "n_per_arm_for_90pct_power": 576,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4S_BareGit_SZZ_GroundTruth (N=1,680)",
+      "vector_id": "RV-01_SZZ_30d_HO_vs_Bot",
+      "hypothesis_label": "Commit-Attributed 30d SZZ Bugfix Rate: Agent+HumanOnly vs Agent+ProseBot+Human",
+      "arm1_label": "SZZ_Agent+HumanOnly",
+      "arm2_label": "SZZ_Agent+ProseBot+Human",
+      "total_n": 1680,
+      "n1": 1180,
+      "k1": 453,
+      "p1_pct": 38.39,
+      "ci1_95_pct": [
+        35.66,
+        41.2
+      ],
+      "n2": 500,
+      "k2": 206,
+      "p2_pct": 41.2,
+      "ci2_95_pct": [
+        36.97,
+        45.57
+      ],
+      "diff_pp": 2.81,
+      "relative_shift_pct": 7.32,
+      "z_stat": -1.079,
+      "p_value": 0.2807692192579445,
+      "cohens_h": 0.0574,
+      "achieved_power_pct": 18.96,
+      "n_per_arm_for_80pct_power": 4762,
+      "n_per_arm_for_90pct_power": 6374,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_4S_BareGit_SZZ_GroundTruth (N=1,680)",
+      "vector_id": "RV-01_SZZ_Revert30d_HO_vs_Bot",
+      "hypothesis_label": "Commit-Attributed 30d Hard Revert Rate: Agent+HumanOnly vs Agent+ProseBot+Human",
+      "arm1_label": "SZZ_Agent+HumanOnly",
+      "arm2_label": "SZZ_Agent+ProseBot+Human",
+      "total_n": 1680,
+      "n1": 1180,
+      "k1": 9,
+      "p1_pct": 0.76,
+      "ci1_95_pct": [
+        0.4,
+        1.44
+      ],
+      "n2": 500,
+      "k2": 3,
+      "p2_pct": 0.6,
+      "ci2_95_pct": [
+        0.2,
+        1.75
+      ],
+      "diff_pp": -0.16,
+      "relative_shift_pct": -21.33,
+      "z_stat": 0.362,
+      "p_value": 0.717288083784617,
+      "cohens_h": 0.0198,
+      "achieved_power_pct": 6.59,
+      "n_per_arm_for_80pct_power": 39982,
+      "n_per_arm_for_90pct_power": 53524,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_4S_BareGit_SZZ_GroundTruth (N=523)",
+      "vector_id": "RV-06_SZZ_30d_SAST_vs_ProseBot",
+      "hypothesis_label": "Commit-Attributed 30d SZZ Bugfix Rate: Agent+DeterministicSAST vs Agent+ProseBot+Human",
+      "arm1_label": "SZZ_Agent+DeterministicSAST",
+      "arm2_label": "SZZ_Agent+ProseBot+Human",
+      "total_n": 523,
+      "n1": 23,
+      "k1": 15,
+      "p1_pct": 65.22,
+      "ci1_95_pct": [
+        44.89,
+        81.19
+      ],
+      "n2": 500,
+      "k2": 206,
+      "p2_pct": 41.2,
+      "ci2_95_pct": [
+        36.97,
+        45.57
+      ],
+      "diff_pp": -24.02,
+      "relative_shift_pct": -36.83,
+      "z_stat": 2.28,
+      "p_value": 0.022610446316019495,
+      "cohens_h": 0.4862,
+      "achieved_power_pct": 62.55,
+      "n_per_arm_for_80pct_power": 67,
+      "n_per_arm_for_90pct_power": 89,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_4S_Paired_108_Repos_SZZ (N=3,947)",
+      "vector_id": "RV-01_SZZ_30d_Human_vs_Agent",
+      "hypothesis_label": "Within-Repo Commit-Attributed 30d SZZ Bugfix Rate: Human Baseline vs Coding-Agent PRs",
+      "arm1_label": "SZZ_Human_Baseline",
+      "arm2_label": "SZZ_Coding_Agent",
+      "total_n": 3947,
+      "n1": 1893,
+      "k1": 821,
+      "p1_pct": 43.37,
+      "ci1_95_pct": [
+        41.15,
+        45.61
+      ],
+      "n2": 2054,
+      "k2": 768,
+      "p2_pct": 37.39,
+      "ci2_95_pct": [
+        35.32,
+        39.5
+      ],
+      "diff_pp": -5.98,
+      "relative_shift_pct": -13.79,
+      "z_stat": 3.827,
+      "p_value": 0.00012968034765004077,
+      "cohens_h": 0.122,
+      "achieved_power_pct": 96.91,
+      "n_per_arm_for_80pct_power": 1056,
+      "n_per_arm_for_90pct_power": 1413,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4S_BareGit_SZZ_Constraints (N=4,038)",
+      "vector_id": "RV-06_SZZ_30d_ConstraintTier",
+      "hypothesis_label": "Commit-Attributed 30d SZZ Bugfix Rate: Low Architectural Constraints (Tier 0-1) vs High (Tier 2-3)",
+      "arm1_label": "Constraint_Tier_0_1",
+      "arm2_label": "Constraint_Tier_2_3",
+      "total_n": 4038,
+      "n1": 2044,
+      "k1": 871,
+      "p1_pct": 42.61,
+      "ci1_95_pct": [
+        40.48,
+        44.77
+      ],
+      "n2": 1994,
+      "k2": 845,
+      "p2_pct": 42.38,
+      "ci2_95_pct": [
+        40.22,
+        44.56
+      ],
+      "diff_pp": -0.24,
+      "relative_shift_pct": -0.55,
+      "z_stat": 0.151,
+      "p_value": 0.8797524869087765,
+      "cohens_h": 0.0048,
+      "achieved_power_pct": 5.26,
+      "n_per_arm_for_80pct_power": 156978,
+      "n_per_arm_for_90pct_power": 210149,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_4S_JevAdopters_SZZ (N=1,659)",
+      "vector_id": "RV-01_SZZ_30d_JevRepos_Human_vs_Agent",
+      "hypothesis_label": "Jev Adopter Repos Commit-Attributed 30d SZZ Bugfix Rate: Human Engineer vs Coding Agent (No-Bot Control)",
+      "arm1_label": "JevRepos_Human_NoBot",
+      "arm2_label": "JevRepos_Agent_NoBot",
+      "total_n": 1659,
+      "n1": 1087,
+      "k1": 681,
+      "p1_pct": 62.65,
+      "ci1_95_pct": [
+        59.73,
+        65.48
+      ],
+      "n2": 572,
+      "k2": 298,
+      "p2_pct": 52.1,
+      "ci2_95_pct": [
+        48.0,
+        56.16
+      ],
+      "diff_pp": -10.55,
+      "relative_shift_pct": -16.84,
+      "z_stat": 4.153,
+      "p_value": 3.275110657230407e-05,
+      "cohens_h": 0.2138,
+      "achieved_power_pct": 98.53,
+      "n_per_arm_for_80pct_power": 344,
+      "n_per_arm_for_90pct_power": 460,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_4S_JevAdopters_SZZ_14d (N=2,195)",
+      "vector_id": "RV-01_SZZ_14d_JevRepos_Human_vs_Agent",
+      "hypothesis_label": "Jev Adopter Repos Commit-Attributed 14d SZZ Bugfix Rate: Human Engineer vs Coding Agent (No-Bot Control)",
+      "arm1_label": "JevRepos_Human_NoBot_14d",
+      "arm2_label": "JevRepos_Agent_NoBot_14d",
+      "total_n": 2195,
+      "n1": 1453,
+      "k1": 743,
+      "p1_pct": 51.14,
+      "ci1_95_pct": [
+        48.57,
+        53.7
+      ],
+      "n2": 742,
+      "k2": 280,
+      "p2_pct": 37.74,
+      "ci2_95_pct": [
+        34.32,
+        41.28
+      ],
+      "diff_pp": -13.4,
+      "relative_shift_pct": -26.2,
+      "z_stat": 5.953,
+      "p_value": 2.6303657030268823e-09,
+      "cohens_h": 0.2705,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 215,
+      "n_per_arm_for_90pct_power": 288,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_5_Full_Curated_Benchmark (N=22,624 Matched Merged)",
+      "vector_id": "RV-07_ModeI_vs_ModeII",
+      "hypothesis_label": "Silent Zero-Human-Review Gate Rate: Peer-Merged (Mode II) vs Operator Self-Merged (Mode I)",
+      "arm1_label": "Mode_II_Peer_Merged",
+      "arm2_label": "Mode_I_Operator_Self_Merged",
+      "total_n": 22624,
+      "n1": 4010,
+      "k1": 1600,
+      "p1_pct": 39.9,
+      "ci1_95_pct": [
+        38.39,
+        41.42
+      ],
+      "n2": 18614,
+      "k2": 17688,
+      "p2_pct": 95.03,
+      "ci2_95_pct": [
+        94.7,
+        95.33
+      ],
+      "diff_pp": 55.13,
+      "relative_shift_pct": 138.16,
+      "z_stat": -89.304,
+      "p_value": 0.0,
+      "cohens_h": 1.3243,
+      "achieved_power_pct": 100.0,
+      "n_per_arm_for_80pct_power": 9,
+      "n_per_arm_for_90pct_power": 12,
+      "power_status": "FULLY_POWERED (>=90%)"
+    },
+    {
+      "scale_ring": "Ring_1_Jev_Sentry_Human_PRs (N=105)",
+      "vector_id": "RV-05_SentryGate",
+      "hypothesis_label": "getsentry/sentry Human PR Merge Rate: Jev Clean vs Jev Flagged",
+      "arm1_label": "Jev_Clean_Sentry",
+      "arm2_label": "Jev_Flagged_Sentry",
+      "total_n": 105,
+      "n1": 31,
+      "k1": 26,
+      "p1_pct": 83.87,
+      "ci1_95_pct": [
+        67.37,
+        92.91
+      ],
+      "n2": 74,
+      "k2": 46,
+      "p2_pct": 62.16,
+      "ci2_95_pct": [
+        50.77,
+        72.35
+      ],
+      "diff_pp": -21.71,
+      "relative_shift_pct": -25.88,
+      "z_stat": 2.186,
+      "p_value": 0.02883258163300262,
+      "cohens_h": 0.4985,
+      "achieved_power_pct": 64.44,
+      "n_per_arm_for_80pct_power": 64,
+      "n_per_arm_for_90pct_power": 85,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_1_Jev_Pooled_Agent_PRs (N=348)",
+      "vector_id": "SM-05_AdvisoryOverride_Merge",
+      "hypothesis_label": "Pooled Coding-Agent PR Merge Rate Under Advisory Jev: Jev Clean vs Jev Flagged",
+      "arm1_label": "2_Jev_Clean_AgentPRs",
+      "arm2_label": "1_Jev_Flagged_AgentPRs",
+      "total_n": 348,
+      "n1": 173,
+      "k1": 148,
+      "p1_pct": 85.55,
+      "ci1_95_pct": [
+        79.54,
+        90.02
+      ],
+      "n2": 175,
+      "k2": 156,
+      "p2_pct": 89.14,
+      "ci2_95_pct": [
+        83.67,
+        92.94
+      ],
+      "diff_pp": 3.59,
+      "relative_shift_pct": 4.2,
+      "z_stat": -1.009,
+      "p_value": 0.31317280548134474,
+      "cohens_h": 0.1084,
+      "achieved_power_pct": 17.27,
+      "n_per_arm_for_80pct_power": 1338,
+      "n_per_arm_for_90pct_power": 1791,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_1_Jev_Pooled_Agent_PRs (N=348)",
+      "vector_id": "SM-05_JevSilence",
+      "hypothesis_label": "Pooled Coding-Agent PRs Zero-Human-Comment Fast-Track Rate: Jev Flagged vs Jev Clean",
+      "arm1_label": "1_Jev_Flagged_AgentPRs",
+      "arm2_label": "2_Jev_Clean_AgentPRs",
+      "total_n": 348,
+      "n1": 175,
+      "k1": 148,
+      "p1_pct": 84.57,
+      "ci1_95_pct": [
+        78.48,
+        89.17
+      ],
+      "n2": 173,
+      "k2": 136,
+      "p2_pct": 78.61,
+      "ci2_95_pct": [
+        71.92,
+        84.07
+      ],
+      "diff_pp": -5.96,
+      "relative_shift_pct": -7.05,
+      "z_stat": 1.435,
+      "p_value": 0.15139725705069296,
+      "cohens_h": 0.1542,
+      "achieved_power_pct": 30.13,
+      "n_per_arm_for_80pct_power": 661,
+      "n_per_arm_for_90pct_power": 884,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_1_Jev_SZZ_14d_Agent_PRs (N=125)",
+      "vector_id": "RV-05_JevAgentSZZ14d",
+      "hypothesis_label": "Pooled Jev Coding-Agent PRs 14-Day SZZ Bugfix Rate: Jev Flagged vs Jev Clean",
+      "arm1_label": "1_Jev_Flagged_AgentPRs",
+      "arm2_label": "2_Jev_Clean_AgentPRs",
+      "total_n": 125,
+      "n1": 47,
+      "k1": 19,
+      "p1_pct": 40.43,
+      "ci1_95_pct": [
+        27.64,
+        54.66
+      ],
+      "n2": 78,
+      "k2": 49,
+      "p2_pct": 62.82,
+      "ci2_95_pct": [
+        51.73,
+        72.71
+      ],
+      "diff_pp": 22.39,
+      "relative_shift_pct": 55.4,
+      "z_stat": -2.435,
+      "p_value": 0.014889232339045488,
+      "cohens_h": 0.452,
+      "achieved_power_pct": 68.72,
+      "n_per_arm_for_80pct_power": 77,
+      "n_per_arm_for_90pct_power": 103,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    },
+    {
+      "scale_ring": "Ring_1_Jev_SZZ_14d_Human_PRs (N=65)",
+      "vector_id": "RV-05_JevHumanSZZ14d",
+      "hypothesis_label": "Pooled Jev Human-Engineer PRs 14-Day SZZ Bugfix Rate: Jev Flagged vs Jev Clean",
+      "arm1_label": "1_Jev_Flagged_HumanPRs",
+      "arm2_label": "2_Jev_Clean_HumanPRs",
+      "total_n": 65,
+      "n1": 55,
+      "k1": 41,
+      "p1_pct": 74.55,
+      "ci1_95_pct": [
+        61.7,
+        84.19
+      ],
+      "n2": 10,
+      "k2": 8,
+      "p2_pct": 80.0,
+      "ci2_95_pct": [
+        49.02,
+        94.33
+      ],
+      "diff_pp": 5.45,
+      "relative_shift_pct": 7.32,
+      "z_stat": -0.368,
+      "p_value": 0.7126262600475062,
+      "cohens_h": 0.1304,
+      "achieved_power_pct": 6.66,
+      "n_per_arm_for_80pct_power": 924,
+      "n_per_arm_for_90pct_power": 1237,
+      "power_status": "NEEDS_BROADENING (<80%)"
+    }
+  ]
+}

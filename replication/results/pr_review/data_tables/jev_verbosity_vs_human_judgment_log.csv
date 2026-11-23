@@ -1,0 +1,9 @@
+ecosystem,verbosity_bucket,prs,median_bot_chars,formal_reviewed_prs,post_bot_human_comment_pct,human_cr_veto_pct,rubber_stamp_pct,mean_human_review_body_chars
+Jev_Mined::getsentry/sentry,1_<400_chars,51,64.0,38,19.61,2.63,63.16,45.6
+Jev_Mined::getsentry/sentry,2_400_799_chars,119,464.0,60,22.69,3.33,73.33,38.6
+Jev_Mined::getsentry/sentry,3_800_1499_chars,29,1232.0,13,31.03,0.0,69.23,4.0
+Jev_Mined::getsentry/sentry,4_1500plus_chars,55,2538.0,10,45.45,0.0,50.0,30.9
+AIDev_Cohort_C,1_<500_chars,159,285.0,159,,9.43,52.2,8.8
+AIDev_Cohort_C,2_500_1499_chars,348,1019.5,348,,11.78,51.72,26.7
+AIDev_Cohort_C,3_1500_3999_chars,417,2085.0,417,,14.39,42.21,27.7
+AIDev_Cohort_C,4_4000plus_chars,747,10721.0,747,,7.36,42.3,22.7

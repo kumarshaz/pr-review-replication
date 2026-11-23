@@ -1,0 +1,251 @@
+pr_id,repo_full_name,pr_number,html_url,agent,state,is_merged,human_changes_requested_count,human_approved_count,final_human_verdict,last_cr_reviewer,review_dismissed_events,dismissal_actors,cr_reason_snippet,merged_at
+3226265972,DaveSkender/Stock.Indicators,1371,https://github.com/DaveSkender/Stock.Indicators/pull/1371,Copilot,closed,1,10,0,CHANGES_REQUESTED,DaveSkender,0,,"You have a severely flawed implementation approach for these catalog use tests that are failing.  Please fix the overall approach to the tests, or make a thoughtful recommendation on how to address the catalog code imple",2025-07-17T06:54:28Z
+3131780712,Azure/azure-sdk-tools,10842,https://github.com/Azure/azure-sdk-tools/pull/10842,Copilot,closed,1,9,0,CHANGES_REQUESTED,KrzysztofCwalina,0,,,2025-06-11T21:10:56Z
+3134438774,Azure/azure-sdk-tools,10850,https://github.com/Azure/azure-sdk-tools/pull/10850,Copilot,closed,1,7,0,CHANGES_REQUESTED,KrzysztofCwalina,0,,,2025-06-12T22:49:07Z
+3144671213,dotnet/maui,29991,https://github.com/dotnet/maui/pull/29991,Copilot,closed,1,7,0,CHANGES_REQUESTED,PureWeen,0,,Use the documentation here https://github.com/dotnet/maui/blob/main/.github/DEVELOPMENT.md to add additional information to the copilot-instructions.md file,2025-06-16T16:33:50Z
+3090570894,spcl/dace,2019,https://github.com/spcl/dace/pull/2019,Copilot,closed,1,6,0,CHANGES_REQUESTED,tbennun,0,,"See comments. There was some confusion about the tests. The rules should be:  1. Symbols that are used in the SDFG (e.g., on an interstate edge, map dimension, etc.) and are undefined should fail sdfg.validate()  2. Tran",2025-06-09T16:07:13Z
+3084876668,JMBeresford/retrom,310,https://github.com/JMBeresford/retrom/pull/310,Copilot,closed,1,5,0,CHANGES_REQUESTED,JMBeresford,0,,@copilot please address these things,2025-05-26T22:49:48Z
+3193524394,NewFuture/DDNS,498,https://github.com/NewFuture/DDNS/pull/498,Copilot,closed,1,5,0,CHANGES_REQUESTED,NewFuture,0,,记住永远要  **测试**  **lint格式化**    ```  ./ddns/provider/aliesa.py:40:1: W293 blank line contains whitespace  ./ddns/provider/aliesa.py:45:1: W293 blank line contains whitespace  ./ddns/provider/aliesa.py:58:1: W293 blank line,2025-07-09T10:33:23Z
+3186281968,cybersemics/em,3094,https://github.com/cybersemics/em/pull/3094,Copilot,closed,1,5,0,CHANGES_REQUESTED,raineorshine,0,,Test is failing.   I will rerun in case it's a flaky test. ,2025-06-30T02:14:27Z
+3151566859,dotnet/dotnet-api-docs,11458,https://github.com/dotnet/dotnet-api-docs/pull/11458,Copilot,closed,1,5,0,CHANGES_REQUESTED,jeffhandley,0,,"I started leaving comments with suggestions that call out a new problem introduced. Where line breaks are helpful for preventing long lines of text within the XML elements, those line breaks have errant `</para>` tags at",2025-06-19T07:27:40Z
+3105213630,foxminchan/BookWorm,53,https://github.com/foxminchan/BookWorm/pull/53,Copilot,closed,1,4,0,CHANGES_REQUESTED,foxminchan,0,,,2025-05-31T18:30:55Z
+3099470459,specmatic/specmatic,1860,https://github.com/specmatic/specmatic/pull/1860,Copilot,closed,1,4,0,CHANGES_REQUESTED,joelrosario,0,,,2025-05-29T12:34:43Z
+3100226241,specmatic/specmatic,1864,https://github.com/specmatic/specmatic/pull/1864,Copilot,closed,1,3,0,CHANGES_REQUESTED,joelrosario,0,,,2025-05-30T09:20:23Z
+3256695032,QL-Win/QuickLook,1713,https://github.com/QL-Win/QuickLook/pull/1713,Copilot,closed,1,3,0,CHANGES_REQUESTED,emako,0,,Please check,2025-07-23T15:57:14Z
+2892552345,stack-auth/stack-auth,503,https://github.com/stack-auth/stack-auth/pull/503,Devin,closed,1,3,0,CHANGES_REQUESTED,fomalhautb,0,,"added a few comments, Devin can maybe fix them partly — please do the rest    also, make sure that all code that Devin generates is up to your own standards (including that you tested and ran it, and reviewed every line ",2025-03-13T01:44:34Z
+3155033567,microsoft/react-native-windows,14793,https://github.com/microsoft/react-native-windows/pull/14793,Copilot,closed,1,3,0,CHANGES_REQUESTED,anupriya13,0,,Add e2etestappfabric test case ,2025-06-18T10:02:15Z
+3119010150,Azure/azure-container-networking,3697,https://github.com/Azure/azure-container-networking/pull/3697,Copilot,closed,1,3,2,APPROVED,rbtr,1,Copilot,Linting is failing on the changed files and needs to be fixed:  ```  cns/ipampool/v2/adapter.go:45: File is not `gci`-ed with --skip-generated -s standard -s default (gci)  cns/ipampool/v2/adapter_test.go:101: File is no,2025-06-09T18:31:21Z
+3183936442,james-gould/azure-keyvault-emulator,234,https://github.com/james-gould/azure-keyvault-emulator/pull/234,Copilot,closed,1,3,0,CHANGES_REQUESTED,james-gould,0,,Changes requested,2025-06-27T22:01:18Z
+3241319003,DaveSkender/Stock.Indicators,1374,https://github.com/DaveSkender/Stock.Indicators/pull/1374,Copilot,closed,1,3,0,CHANGES_REQUESTED,DaveSkender,0,,"You forgot to remove the paragraph icon when replacing with link icons    <img width=""744"" height=""105"" alt=""image"" src=""https://github.com/user-attachments/assets/bd43141c-c336-4320-a9c6-8186ba4ee812"" />      you made l",2025-07-18T06:48:01Z
+3081285523,J-Tech-Japan/Sekiban,642,https://github.com/J-Tech-Japan/Sekiban/pull/642,Copilot,closed,1,3,0,CHANGES_REQUESTED,tomohisa,0,,非常に良いです。読者には日本人が多いため、  ./docs/llm_ja/  に同じドキュメントを日本語で作ってください。内容は独自のものを入れずに、同じ内容を日本語に翻訳したものとしてください。,2025-05-21T21:55:14Z
+3102987892,specmatic/specmatic,1872,https://github.com/specmatic/specmatic/pull/1872,Copilot,closed,1,3,0,CHANGES_REQUESTED,joelrosario,0,,,2025-06-01T11:02:48Z
+3226056235,DaveSkender/Stock.Indicators,1370,https://github.com/DaveSkender/Stock.Indicators/pull/1370,Copilot,closed,1,3,0,CHANGES_REQUESTED,DaveSkender,0,,"Do a final pass to check for missing catalog entries or corresponding tests.  Some indicators have up to three styles series, stream, buffer)",2025-07-13T05:40:51Z
+3107702547,warting/android-signaturepad,352,https://github.com/warting/android-signaturepad/pull/352,Copilot,closed,1,3,0,CHANGES_REQUESTED,warting,0,,disable AndroidGradlePluginVersion check,2025-06-01T20:42:55Z
+3183341186,specmatic/specmatic,1930,https://github.com/specmatic/specmatic/pull/1930,Copilot,closed,1,2,0,CHANGES_REQUESTED,joelrosario,0,,The datatype of all the newly added `example` fields should be `String?`,2025-06-28T12:03:45Z
+3174281934,CommunityToolkit/Aspire,741,https://github.com/CommunityToolkit/Aspire/pull/741,Copilot,closed,1,2,1,CHANGES_REQUESTED,aaronpowell,0,,,2025-07-02T03:41:00Z
+3104234803,demergent-labs/azle,3087,https://github.com/demergent-labs/azle/pull/3087,Copilot,closed,1,2,1,APPROVED,lastmjs,1,lastmjs,"So, you did not create an example like I asked. I need you to create an example in `azle/examples/stable/test/end_to_end/candid_rpc/candid_backtraces`. This example should deploy a canister multiple times with and withou",2025-05-31T20:55:38Z
+3113891346,dvcrn/mcp-server-siri-shortcuts,6,https://github.com/dvcrn/mcp-server-siri-shortcuts/pull/6,Copilot,closed,1,2,0,CHANGES_REQUESTED,dvcrn,0,,Add a GitHub workflow to run the tests,2025-06-03T23:27:07Z
+3083216022,mvdicarlo/postybirb,375,https://github.com/mvdicarlo/postybirb/pull/375,Copilot,closed,1,2,0,CHANGES_REQUESTED,mvdicarlo,0,,,2025-05-30T12:27:22Z
+3076064186,dotnet/fsharp,18578,https://github.com/dotnet/fsharp/pull/18578,Copilot,closed,1,2,0,CHANGES_REQUESTED,T-Gro,0,,The workflow is failing.    Change `ubuntu-20.04` in the commands.yml file to become `ubuntu-latest`,2025-05-20T12:19:20Z
+3212186764,matthias-k/pysaliency,110,https://github.com/matthias-k/pysaliency/pull/110,Copilot,closed,1,2,0,CHANGES_REQUESTED,matthias-k,0,,"Thanks! I see that the HTTP models are still imported, but now via the module. This still enforces the installation of `orjson`. Is there an elegant way to avoid this? Otherwise I would prefer to keep `http_models` unimp",2025-07-08T21:15:55Z
+3275437185,DaveSkender/Stock.Indicators,1377,https://github.com/DaveSkender/Stock.Indicators/pull/1377,Copilot,closed,1,2,0,CHANGES_REQUESTED,DaveSkender,0,,Fix failing tests,2025-07-30T06:26:21Z
+2948031260,get-convex/convex-helpers,515,https://github.com/get-convex/convex-helpers/pull/515,Devin,closed,1,2,0,CHANGES_REQUESTED,ianmacartney,0,,please test for optional values too,2025-03-26T04:26:27Z
+3189891999,dotnet/maui,30337,https://github.com/dotnet/maui/pull/30337,Copilot,closed,1,2,0,CHANGES_REQUESTED,PureWeen,0,,Make sure whatever solution you come up with will for the changes to `Issue28986` will test at the top and bottoms of the screen when in portrait mode.     I want to make sure that when we toggle the edges for testing we,2025-07-28T14:01:30Z
+3084633214,navidrome/navidrome,4107,https://github.com/navidrome/navidrome/pull/4107,Copilot,closed,1,2,0,CHANGES_REQUESTED,deluan,0,,"See comments. Also, code is not properly formatted:    ```  git status --porcelain   M scanner/scanner_test.go  To fix this check, run ""make format"" and   ```",2025-05-23T00:50:15Z
+3076780891,git/git-scm.com,2007,https://github.com/git/git-scm.com/pull/2007,Copilot,closed,1,2,0,CHANGES_REQUESTED,dscho,0,,"Please drop the first commit, it is empty and therefore quite useless.",2025-05-23T14:29:20Z
+2802417432,crewAIInc/crewAI,1937,https://github.com/crewAIInc/crewAI/pull/1937,Devin,closed,1,2,0,CHANGES_REQUESTED,bhancockio,0,,,2025-02-09T19:20:17Z
+3202444418,debs-obrien/debbie.codes,493,https://github.com/debs-obrien/debbie.codes/pull/493,Copilot,closed,1,2,0,CHANGES_REQUESTED,debs-obrien,0,,1. the component showing how many posts per year should be centered  2. the tags see to be broken can you see if you can fix it   3. there are duplicate tags and some tags with space and nonspace but are the same  4. whe,2025-07-08T07:47:40Z
+2936502154,wolfSSL/wolfssl-examples,497,https://github.com/wolfSSL/wolfssl-examples/pull/497,Devin,closed,1,2,1,APPROVED,dgarske,1,devin-ai-integration[bot],,2025-03-21T18:40:44Z
+3225037054,NewFuture/DDNS,514,https://github.com/NewFuture/DDNS/pull/514,Copilot,closed,1,2,0,CHANGES_REQUESTED,NewFuture,0,,flake8 lint before commit,2025-07-13T06:10:55Z
+3227274544,python/python-docs-zh-tw,1114,https://github.com/python/python-docs-zh-tw/pull/1114,Copilot,closed,1,2,0,CHANGES_REQUESTED,mattwang44,0,,"for those translation of code blocks, the docstring and code commets are ought to be translated. please review all your transaltions again.",2025-07-14T07:35:38Z
+3190159928,oven-sh/bun,20737,https://github.com/oven-sh/bun/pull/20737,Cursor,closed,1,2,0,CHANGES_REQUESTED,190n,0,,,2025-07-13T11:27:43Z
+3084561388,vapourismo/knx-go,103,https://github.com/vapourismo/knx-go/pull/103,Copilot,closed,1,2,0,CHANGES_REQUESTED,vapourismo,0,,,2025-05-22T21:44:06Z
+3176926598,mendableai/firecrawl,1714,https://github.com/mendableai/firecrawl/pull/1714,Devin,closed,1,2,0,CHANGES_REQUESTED,mogery,0,,a few changes plz,2025-07-03T16:41:57Z
+3201388775,JMBeresford/retrom,345,https://github.com/JMBeresford/retrom/pull/345,Copilot,closed,1,2,0,CHANGES_REQUESTED,JMBeresford,0,,Rename the `src` directory to `components` instead,2025-07-13T21:36:24Z
+3156457181,appdotbuild/agent,298,https://github.com/appdotbuild/agent/pull/298,Devin,closed,1,2,0,CHANGES_REQUESTED,keugenek,0,,"in ths PR make sure there are 3 category of models we currently use: 1. fast model (where we currently use flash), 2. main model (where we use claude, make sure to support reasoning flag in ollama), 3. vision model (wher",2025-06-25T19:13:32Z
+3182255512,dotnet/maui,30270,https://github.com/dotnet/maui/pull/30270,Copilot,closed,1,2,1,APPROVED,PureWeen,1,PureWeen,"Never make changes to the ""Shipped.txt"" files all changes in PRs need to happen to the ""Unshipped.txt"" files.    Use the feature where you prefix things with ""REMOVE"" if those APIs are going to be removed",2025-07-17T03:50:56Z
+3263074697,samchon/nestia,1345,https://github.com/samchon/nestia/pull/1345,Copilot,closed,1,2,0,CHANGES_REQUESTED,samchon,0,,"Very well done. Now, revert every changes from the test directory, then everything be completed.",2025-07-26T13:07:46Z
+3085647764,juicyllama/llana,237,https://github.com/juicyllama/llana/pull/237,Devin,closed,1,1,0,CHANGES_REQUESTED,andyslack,0,,,2025-05-23T08:45:35Z
+3105376649,cybersemics/em,2994,https://github.com/cybersemics/em/pull/2994,Copilot,closed,1,1,0,CHANGES_REQUESTED,raineorshine,0,,Linter failed,2025-06-02T17:06:55Z
+3163779556,antiwork/flexile,390,https://github.com/antiwork/flexile/pull/390,Devin,closed,1,1,0,CHANGES_REQUESTED,slavingia,0,,,2025-06-21T08:24:44Z
+3208358320,elevenlabs/elevenlabs-docs,1298,https://github.com/elevenlabs/elevenlabs-docs/pull/1298,Cursor,closed,1,1,0,CHANGES_REQUESTED,PaulAsjes,0,,,2025-07-10T08:40:54Z
+3084897200,microsoft/finops-toolkit,1630,https://github.com/microsoft/finops-toolkit/pull/1630,Copilot,closed,1,1,0,CHANGES_REQUESTED,flanakin,0,,,2025-05-31T01:36:05Z
+3120854116,estruyf/vscode-demo-time,142,https://github.com/estruyf/vscode-demo-time/pull/142,Copilot,closed,1,1,0,CHANGES_REQUESTED,estruyf,0,,,2025-06-05T16:34:18Z
+3124658074,specmatic/specmatic,1897,https://github.com/specmatic/specmatic/pull/1897,Copilot,closed,1,1,0,CHANGES_REQUESTED,joelrosario,0,,,2025-06-06T13:51:39Z
+3208758336,alfg/opendrinks,1449,https://github.com/alfg/opendrinks/pull/1449,Copilot,closed,1,1,0,CHANGES_REQUESTED,alfg,0,,Requested some changes.,2025-07-07T13:46:03Z
+2904255373,different-ai/note-companion,356,https://github.com/different-ai/note-companion/pull/356,Devin,closed,1,1,0,CHANGES_REQUESTED,benjaminshafii,0,,Potential UX inconsistency with remaining footer link to daos.fun that may confuse users since announcement is gone  remove footer links to maintain consistent messaging around DAO involvement,2025-03-08T01:52:08Z
+3105321269,specmatic/specmatic,1879,https://github.com/specmatic/specmatic/pull/1879,Copilot,closed,1,1,0,CHANGES_REQUESTED,joelrosario,0,,,2025-05-31T17:02:34Z
+3084021151,Azure/AppConfiguration,1067,https://github.com/Azure/AppConfiguration/pull/1067,Copilot,closed,1,1,2,APPROVED,mrm9084,1,mrm9084,,2025-05-22T18:26:43Z
+3105093317,specmatic/specmatic,1877,https://github.com/specmatic/specmatic/pull/1877,Copilot,closed,1,1,0,CHANGES_REQUESTED,joelrosario,0,,,2025-05-31T08:59:56Z
+3222599276,microsoft/autogen,6799,https://github.com/microsoft/autogen/pull/6799,Copilot,closed,1,1,0,CHANGES_REQUESTED,ekzhu,0,,,2025-07-20T07:30:42Z
+3264893793,benwbrum/fromthepage,4791,https://github.com/benwbrum/fromthepage/pull/4791,Copilot,closed,1,1,1,CHANGES_REQUESTED,benwbrum,0,,"This looks good and seems to work well, but the spec tests are failing.  Please fix them.",2025-07-26T22:43:04Z
+3074351366,mendableai/firecrawl,1569,https://github.com/mendableai/firecrawl/pull/1569,Devin,closed,1,1,0,CHANGES_REQUESTED,mogery,0,,,2025-05-20T21:39:56Z
+3099133512,gtg922r/obsidian-numerals,102,https://github.com/gtg922r/obsidian-numerals/pull/102,Copilot,closed,1,1,0,CHANGES_REQUESTED,gtg922r,0,,Update CHANGELOG as well please,2025-05-31T07:39:59Z
+3190616003,aaronpowell/httpstatus,164,https://github.com/aaronpowell/httpstatus/pull/164,Copilot,closed,1,1,0,CHANGES_REQUESTED,aaronpowell,0,,,2025-07-01T05:47:56Z
+3188772752,microsoft/vscode,253010,https://github.com/microsoft/vscode/pull/253010,Copilot,closed,1,1,4,APPROVED,Tyriar,1,meganrogge,,2025-07-01T16:46:13Z
+3191875426,oss-apps/split-pro,260,https://github.com/oss-apps/split-pro/pull/260,Copilot,closed,1,1,0,CHANGES_REQUESTED,krokosik,0,,,2025-07-01T23:17:48Z
+3134892391,microsoft/perfview,2230,https://github.com/microsoft/perfview/pull/2230,Copilot,closed,1,1,3,APPROVED,cincuranet,2,Copilot,,2025-06-19T23:21:13Z
+3022450521,michaellatman/mcp-get,129,https://github.com/michaellatman/mcp-get/pull/129,Devin,closed,1,1,0,CHANGES_REQUESTED,michaellatman,0,,,2025-04-27T00:28:44Z
+3075563001,demergent-labs/azle,3057,https://github.com/demergent-labs/azle/pull/3057,Copilot,closed,1,1,0,CHANGES_REQUESTED,bdemann,2,lastmjs,,2025-05-20T22:07:17Z
+3235347485,NewFuture/DDNS,528,https://github.com/NewFuture/DDNS/pull/528,Copilot,closed,1,1,0,CHANGES_REQUESTED,NewFuture,0,,also add an real test in the tests_until_http to test the basic auth.  run tests to check.  don't forget flake8 and black before commit. ,2025-07-16T17:10:15Z
+3081566388,microsoft/GSL,1208,https://github.com/microsoft/GSL/pull/1208,Copilot,closed,1,1,0,CHANGES_REQUESTED,carsonRadtke,0,,,2025-05-22T17:52:47Z
+3078425912,J-Tech-Japan/Sekiban,640,https://github.com/J-Tech-Japan/Sekiban/pull/640,Copilot,closed,1,1,0,CHANGES_REQUESTED,tomohisa,0,,Can you move whole project under   ./tools/   folder instead of ./src/ folder?,2025-05-21T19:40:11Z
+2911062935,wolfSSL/wolfssl,8548,https://github.com/wolfSSL/wolfssl/pull/8548,Devin,closed,1,1,2,APPROVED,philljj,1,devin-ai-integration[bot],wolfclu doesn't build when linking against this cmake build from a fresh build.    ```  src/hash/clu_hash.c:51:15: error: nested extern declaration of ‘wolfSSL_BIO_new’ [-Werror=nested-externs]  cc1: all warnings being t,2025-03-20T23:50:03Z
+3264895237,benwbrum/fromthepage,4794,https://github.com/benwbrum/fromthepage/pull/4794,Copilot,closed,1,1,0,CHANGES_REQUESTED,benwbrum,0,,"This looks pretty good, but it needs a few changes.",2025-07-29T18:53:15Z
+3101333962,specmatic/specmatic,1868,https://github.com/specmatic/specmatic/pull/1868,Copilot,closed,1,1,0,CHANGES_REQUESTED,joelrosario,0,,,2025-05-30T07:18:18Z
+3251777422,debs-obrien/debbie.codes,507,https://github.com/debs-obrien/debbie.codes/pull/507,Copilot,closed,1,1,0,CHANGES_REQUESTED,debs-obrien,0,,1. change host to Debbie's youtube channel  2. todays date is 22 July 2025. please fix dates on videos to correct dates  3. remove image meta tag  4. remove dev-rel tag  5. add ai tag to all videos,2025-07-22T18:14:25Z
+3236247779,dotnet/docs,47428,https://github.com/dotnet/docs/pull/47428,Copilot,closed,1,1,0,CHANGES_REQUESTED,gewarren,0,,There are a lot of code examples in the release notes that were omitted here. I think they should be added.,2025-07-16T19:46:41Z
+2831233724,AnswerDotAI/shell_sage,31,https://github.com/AnswerDotAI/shell_sage/pull/31,Devin,closed,1,1,0,CHANGES_REQUESTED,ncoop57,0,,Please fix the issue with the single quote in your docker example since that will error on most shells. Also add back in the stuff at the top that describes shell sage,2025-02-04T20:52:47Z
+2991406336,mendableai/firecrawl,1450,https://github.com/mendableai/firecrawl/pull/1450,Devin,closed,1,1,0,CHANGES_REQUESTED,mogery,0,,,2025-04-13T18:52:01Z
+3113913072,dvcrn/mcp-server-siri-shortcuts,8,https://github.com/dvcrn/mcp-server-siri-shortcuts/pull/8,Copilot,closed,1,1,0,CHANGES_REQUESTED,dvcrn,0,,"Rebase latest main, add tests ",2025-06-04T04:30:21Z
+3122389974,Azure/azure-container-networking,3701,https://github.com/Azure/azure-container-networking/pull/3701,Copilot,closed,1,1,3,APPROVED,rbtr,1,rbtr,no changes were made yet,2025-06-10T09:36:14Z
+3058723574,calcom/cal.com,21267,https://github.com/calcom/cal.com/pull/21267,Devin,closed,1,1,1,APPROVED,hbjORbj,1,devin-ai-integration[bot],Fix the failing unit tests,2025-05-14T01:55:58Z
+2823839042,ensdomains/docs,387,https://github.com/ensdomains/docs/pull/387,Devin,closed,1,1,0,CHANGES_REQUESTED,Arachnid,0,,,2025-01-31T20:52:43Z
+3086723569,antiwork/flexile,335,https://github.com/antiwork/flexile/pull/335,Devin,closed,1,1,0,CHANGES_REQUESTED,slavingia,0,,,2025-05-23T21:46:40Z
+3147795708,remotion-dev/remotion,5378,https://github.com/remotion-dev/remotion/pull/5378,Copilot,closed,1,1,0,CHANGES_REQUESTED,JonnyBurger,0,,"the requesthandler must be passed fully throughout all methods.  Adjust packages/serverless to allow a requesthandler where necessary, and make it generic so the Awsimplementation can use the lambda package.",2025-06-16T16:30:40Z
+3275739591,chrxh/alien,145,https://github.com/chrxh/alien/pull/145,Copilot,closed,1,1,0,CHANGES_REQUESTED,chrxh,0,,,2025-07-30T15:45:07Z
+3157844465,debs-obrien/debbie.codes,481,https://github.com/debs-obrien/debbie.codes/pull/481,Copilot,closed,1,1,0,CHANGES_REQUESTED,debs-obrien,0,,only use tags that are already available and don't add images for the blog posts as we do not have any images available ,2025-06-19T09:09:54Z
+3201615275,shugo/textbringer,124,https://github.com/shugo/textbringer/pull/124,Copilot,closed,1,1,0,CHANGES_REQUESTED,shugo,0,,@copilot git rebase mainしてください,2025-07-04T08:15:24Z
+3252835264,microsoft/genaiscript,1762,https://github.com/microsoft/genaiscript/pull/1762,Copilot,closed,1,1,0,CHANGES_REQUESTED,pelikhan,0,,,2025-07-23T03:15:02Z
+3190568208,jamesmh/coravel,443,https://github.com/jamesmh/coravel/pull/443,Copilot,closed,1,1,0,CHANGES_REQUESTED,jamesmh,0,,,2025-07-10T02:11:47Z
+3053850042,ryokun6/ryos,20,https://github.com/ryokun6/ryos/pull/20,Devin,closed,1,1,0,CHANGES_REQUESTED,ryokun6,0,,,2025-05-10T07:33:25Z
+3196619353,nvm-sh/nvm,3609,https://github.com/nvm-sh/nvm/pull/3609,Copilot,closed,1,1,0,CHANGES_REQUESTED,ljharb,0,,,2025-07-03T22:16:47Z
+3166366433,oven-sh/bun,20577,https://github.com/oven-sh/bun/pull/20577,OpenAI_Codex,closed,1,1,2,APPROVED,cirospaciari,1,cirospaciari,we need to check if `this[kAbortController]` already exists in `send`  function to avoid creating it twice but LGTM otherwise,2025-06-25T01:48:23Z
+3215898746,microsoft/vscode,254873,https://github.com/microsoft/vscode/pull/254873,Copilot,closed,1,1,3,APPROVED,Tyriar,2,meganrogge;Tyriar,,2025-07-10T11:08:18Z
+3077533825,dynamoose/dynamoose,1745,https://github.com/dynamoose/dynamoose/pull/1745,Copilot,closed,1,1,0,CHANGES_REQUESTED,fishcharlie,0,,It doesn't look like you updated any of the documentation in the `docs/docs_src` folder. Can you please do that to document the changes you made so that users can understand how to use this new feature?,2025-05-20T23:19:33Z
+3157550083,estruyf/vscode-demo-time,163,https://github.com/estruyf/vscode-demo-time/pull/163,Copilot,closed,1,1,0,CHANGES_REQUESTED,estruyf,0,,"Great work!  One thing, when the laser is turned on, hide the mouse cursor when you move over the slide, it can be shown when hovering over the action bar.  Once the user disables the laser, the cursor can go back to nor",2025-06-19T08:35:47Z
+3264894473,benwbrum/fromthepage,4793,https://github.com/benwbrum/fromthepage/pull/4793,Copilot,closed,1,1,1,CHANGES_REQUESTED,benwbrum,0,,Please fix failing spec tests.,2025-07-26T18:48:11Z
+3124466173,specmatic/specmatic,1895,https://github.com/specmatic/specmatic/pull/1895,Copilot,closed,1,1,0,CHANGES_REQUESTED,joelrosario,0,,,2025-06-07T15:46:47Z
+3224777239,14790897/handwriting-web,45,https://github.com/14790897/handwriting-web/pull/45,Copilot,closed,1,1,0,CHANGES_REQUESTED,14790897,0,,只对英文修改,2025-07-12T08:11:00Z
+3128183831,orangewise/s3-zip,107,https://github.com/orangewise/s3-zip/pull/107,Copilot,closed,1,1,0,CHANGES_REQUESTED,orangewise,0,,"Use npm i, not npm ci. No lock file in repo.",2025-06-08T11:30:25Z
+3203786184,thirdweb-dev/js,7529,https://github.com/thirdweb-dev/js/pull/7529,Cursor,closed,1,1,0,CHANGES_REQUESTED,jnsdls,0,,,2025-07-05T08:01:25Z
+3244943143,home-assistant/frontend,26231,https://github.com/home-assistant/frontend/pull/26231,Copilot,closed,1,1,1,APPROVED,balloob,1,bramkragten,Look at Silamons comment https://github.com/home-assistant/frontend/pull/26231#issuecomment-3091968431 and use modern sorting techniques. ,2025-07-23T12:41:34Z
+3100694013,specmatic/specmatic,1866,https://github.com/specmatic/specmatic/pull/1866,Copilot,closed,1,1,0,CHANGES_REQUESTED,joelrosario,0,,,2025-05-29T19:47:19Z
+3258059378,NeuraLegion/brokencrystals,698,https://github.com/NeuraLegion/brokencrystals/pull/698,Copilot,closed,1,1,0,CHANGES_REQUESTED,abright25,0,,you forgot to add   ollama run <model>   command after pulling image,2025-07-24T15:01:21Z
+3075074837,tokens-studio/figma-plugin,3359,https://github.com/tokens-studio/figma-plugin/pull/3359,Copilot,closed,1,1,0,CHANGES_REQUESTED,six7,0,,,2025-05-20T13:43:35Z
+3193560962,promptfoo/promptfoo,4723,https://github.com/promptfoo/promptfoo/pull/4723,OpenAI_Codex,closed,1,1,1,APPROVED,mldangelo,1,will-holley,Can't go in in it's current form but you could make it opt in. ,2025-07-02T14:13:04Z
+3133214926,mvdicarlo/postybirb,380,https://github.com/mvdicarlo/postybirb/pull/380,Copilot,closed,1,1,0,CHANGES_REQUESTED,mvdicarlo,0,,,2025-06-11T11:11:20Z
+3234152217,octgn/OCTGN,2259,https://github.com/octgn/OCTGN/pull/2259,Copilot,closed,1,1,0,CHANGES_REQUESTED,kellyelton,0,,"Shaking should be something that happens for a few seconds and stops, its not a constant state.  It also doesnt require a request, just a shake network call.  Also, you can't rearrange the network calls, it will break ol",2025-07-16T04:44:27Z
+3212810620,dotnet/android-libraries,1200,https://github.com/dotnet/android-libraries/pull/1200,Copilot,closed,1,1,0,CHANGES_REQUESTED,mattleibow,0,,,2025-07-14T15:03:59Z
+3128262267,orangewise/s3-zip,109,https://github.com/orangewise/s3-zip/pull/109,Copilot,closed,1,1,0,CHANGES_REQUESTED,orangewise,0,,"Npm ci won't work, there is no lock file",2025-06-08T13:02:57Z
+3123753927,sam-goodwin/alchemy,286,https://github.com/sam-goodwin/alchemy/pull/286,Devin,closed,1,1,0,CHANGES_REQUESTED,sam-goodwin,0,,,2025-06-06T06:24:36Z
+3123745080,sam-goodwin/alchemy,285,https://github.com/sam-goodwin/alchemy/pull/285,Devin,closed,1,1,0,CHANGES_REQUESTED,sam-goodwin,0,,,2025-06-06T06:09:29Z
+3036314560,mendableai/firecrawl,1514,https://github.com/mendableai/firecrawl/pull/1514,Devin,closed,1,1,0,CHANGES_REQUESTED,mogery,0,,,2025-05-02T16:00:16Z
+3000083193,cornerstonejs/cornerstone3D,2016,https://github.com/cornerstonejs/cornerstone3D/pull/2016,Devin,closed,1,1,0,CHANGES_REQUESTED,sedghi,0,,"  You need to make it for all the tools not just ArrowAnnotate, search in all the tools hydrate method    ",2025-04-16T16:21:28Z
+3264455715,mendableai/firecrawl,1855,https://github.com/mendableai/firecrawl/pull/1855,Devin,closed,1,1,1,CHANGES_REQUESTED,mogery,0,,rebase and fix conflicts pls,2025-07-25T22:14:48Z
+3134693594,microsoft/vcpkg,45925,https://github.com/microsoft/vcpkg/pull/45925,Copilot,closed,1,1,6,APPROVED,ras0219-msft,1,ras0219-msft,"Address the common mistakes check failures. Increment port version, add it to the database. Make sure to use the tool to do the addition; it is impossible to guess the correct hash.",2025-06-11T21:23:02Z
+3238046925,dotnet/maui,30672,https://github.com/dotnet/maui/pull/30672,Copilot,closed,1,1,1,CHANGES_REQUESTED,mattleibow,0,,,2025-07-18T03:58:53Z
+3151984235,CommunityToolkit/Aspire,735,https://github.com/CommunityToolkit/Aspire/pull/735,Copilot,closed,1,1,0,CHANGES_REQUESTED,aaronpowell,0,,,2025-06-20T03:57:11Z
+3105380371,cybersemics/em,2998,https://github.com/cybersemics/em/pull/2998,Copilot,closed,1,1,0,CHANGES_REQUESTED,raineorshine,0,,,2025-06-02T16:37:51Z
+3078444990,promptfoo/promptfoo,4107,https://github.com/promptfoo/promptfoo/pull/4107,OpenAI_Codex,closed,1,1,0,CHANGES_REQUESTED,sklein12,1,mldangelo,1. Needs to show the stateful configuration UI  2. Needs to support stateful true/false  3. Needs to support sessionIds,2025-07-09T16:15:34Z
+3249955137,benwbrum/fromthepage,4765,https://github.com/benwbrum/fromthepage/pull/4765,OpenAI_Codex,closed,1,1,0,CHANGES_REQUESTED,benwbrum,0,,"This wording is good, and the message is badly needed, but I'm afraid that ""overnight"" will not work well for our Australian users.      Please:  * Add a calculation of the last record for the current user in `AhoyActivi",2025-07-30T16:59:28Z
+3018945300,dcSpark/shinkai-local-ai-agents,830,https://github.com/dcSpark/shinkai-local-ai-agents/pull/830,Devin,closed,1,1,0,CHANGES_REQUESTED,nicarq,0,,Devin can you rebase from main?,2025-04-29T17:10:58Z
+3075291570,mvdicarlo/postybirb,363,https://github.com/mvdicarlo/postybirb/pull/363,Copilot,closed,1,1,0,CHANGES_REQUESTED,mvdicarlo,0,,,2025-06-10T11:22:48Z
+3067625628,michaellatman/mcp-get,140,https://github.com/michaellatman/mcp-get/pull/140,Devin,closed,1,1,0,CHANGES_REQUESTED,michaellatman,0,,Please fix tests to catch this situation and fail build if any invalid json present,2025-05-16T00:29:17Z
+3148367585,oven-sh/bun,20419,https://github.com/oven-sh/bun/pull/20419,Cursor,closed,1,0,1,APPROVED,,1,Jarred-Sumner,,2025-06-17T20:31:17Z
+3260752408,alchemyplatform/aa-sdk,1799,https://github.com/alchemyplatform/aa-sdk/pull/1799,OpenAI_Codex,closed,1,0,1,APPROVED,,1,noam-alchemy,,2025-07-25T18:25:12Z
+3124252797,celestiaorg/celestia-core,1914,https://github.com/celestiaorg/celestia-core/pull/1914,Copilot,closed,1,0,5,APPROVED,,1,rach-id,,2025-06-10T18:20:29Z
+3189297953,microsoft/msquic,5202,https://github.com/microsoft/msquic/pull/5202,Copilot,closed,1,0,2,APPROVED,,2,Copilot,,2025-07-09T16:07:03Z
+3122685221,microsoft/vscode,250784,https://github.com/microsoft/vscode/pull/250784,Copilot,closed,1,0,2,APPROVED,,1,meganrogge,,2025-06-06T15:21:55Z
+3212776826,promptfoo/promptfoo,4807,https://github.com/promptfoo/promptfoo/pull/4807,OpenAI_Codex,closed,1,0,0,NONE,,1,will-holley,,2025-07-09T16:23:27Z
+3245682772,parse-community/parse-dashboard,2930,https://github.com/parse-community/parse-dashboard/pull/2930,OpenAI_Codex,closed,1,0,0,NONE,,2,mtrezza,,2025-07-19T23:53:46Z
+3236016989,parse-community/parse-dashboard,2909,https://github.com/parse-community/parse-dashboard/pull/2909,OpenAI_Codex,closed,1,0,0,NONE,,5,mtrezza,,2025-07-16T22:00:52Z
+3132733770,keephq/keep,5001,https://github.com/keephq/keep/pull/5001,Cursor,closed,1,0,1,APPROVED,,1,cursor[bot],,2025-06-10T09:19:41Z
+2840161375,marimo-team/marimo,3729,https://github.com/marimo-team/marimo/pull/3729,Devin,closed,1,0,0,NONE,,1,mscolnick,,2025-02-10T20:17:17Z
+3150145768,calcom/cal.com,21842,https://github.com/calcom/cal.com/pull/21842,Devin,closed,1,0,1,APPROVED,,1,eunjae-lee,,2025-06-20T07:11:08Z
+3029881950,reflex-dev/reflex-web,1330,https://github.com/reflex-dev/reflex-web/pull/1330,Devin,closed,1,0,1,APPROVED,,1,Alek99,,2025-05-01T18:23:25Z
+3122232574,microsoft/vscode,250771,https://github.com/microsoft/vscode/pull/250771,Copilot,closed,1,0,2,APPROVED,,1,Tyriar,,2025-06-13T16:03:56Z
+3084778291,microsoft/perfview,2208,https://github.com/microsoft/perfview/pull/2208,Copilot,closed,1,0,2,APPROVED,,1,Copilot,,2025-05-23T01:31:55Z
+3146957267,microsoft/vscode,251511,https://github.com/microsoft/vscode/pull/251511,Copilot,closed,1,0,3,APPROVED,,1,Copilot,,2025-06-16T22:30:10Z
+3111046542,Epix-Incorporated/Adonis,1907,https://github.com/Epix-Incorporated/Adonis/pull/1907,Copilot,closed,1,0,1,APPROVED,,1,Dimenpsyonal,,2025-06-06T11:31:32Z
+3093399248,microsoft/testfx,5650,https://github.com/microsoft/testfx/pull/5650,Copilot,closed,1,0,1,APPROVED,,1,Youssef1313,,2025-05-27T14:02:46Z
+2971908072,digitaldemocracy2030/kouchou-ai,232,https://github.com/digitaldemocracy2030/kouchou-ai/pull/232,Devin,closed,1,0,1,APPROVED,,1,nishio,,2025-04-08T11:55:39Z
+3206168836,aldinokemal/go-whatsapp-web-multidevice,316,https://github.com/aldinokemal/go-whatsapp-web-multidevice/pull/316,Cursor,closed,1,0,0,NONE,,1,aldinokemal,,2025-07-06T14:11:03Z
+3074882049,commonwarexyz/monorepo,962,https://github.com/commonwarexyz/monorepo/pull/962,OpenAI_Codex,closed,1,0,0,NONE,,1,patrick-ogrady,,2025-05-19T22:06:39Z
+3193677233,cartography-cncf/cartography,1664,https://github.com/cartography-cncf/cartography/pull/1664,OpenAI_Codex,closed,1,0,1,APPROVED,,2,kunaals,,2025-07-04T06:54:15Z
+3193322434,microsoft/vscode-pull-request-github,7179,https://github.com/microsoft/vscode-pull-request-github/pull/7179,Copilot,closed,1,0,5,APPROVED,,1,Copilot,,2025-07-03T17:46:12Z
+3196844594,microsoft/fabric-cicd,389,https://github.com/microsoft/fabric-cicd/pull/389,Copilot,closed,1,0,3,APPROVED,,2,JacobKnightley,,2025-07-02T21:13:09Z
+3113227677,celestiaorg/celestia-core,1906,https://github.com/celestiaorg/celestia-core/pull/1906,Copilot,closed,1,0,3,APPROVED,,4,Copilot,,2025-06-10T14:51:04Z
+3131569548,Azure/azure-sdk-for-python,41492,https://github.com/Azure/azure-sdk-for-python/pull/41492,Copilot,closed,1,0,4,APPROVED,,3,github-actions[bot],,2025-06-10T18:57:25Z
+3143923654,forntoh/LcdMenu,374,https://github.com/forntoh/LcdMenu/pull/374,OpenAI_Codex,closed,1,0,0,NONE,,1,forntoh,,2025-06-14T23:24:16Z
+3231764619,parse-community/parse-dashboard,2904,https://github.com/parse-community/parse-dashboard/pull/2904,OpenAI_Codex,closed,1,0,0,NONE,,1,mtrezza,,2025-07-15T13:35:29Z
+3095454351,calcom/cal.com,21552,https://github.com/calcom/cal.com/pull/21552,Devin,closed,1,0,2,APPROVED,,1,hbjORbj,,2025-05-29T19:01:45Z
+2982400275,calcom/cal.com,20629,https://github.com/calcom/cal.com/pull/20629,Devin,closed,1,0,1,APPROVED,,1,devin-ai-integration[bot],,2025-04-14T11:13:06Z
+3078256987,dotnet/diagnostics,5489,https://github.com/dotnet/diagnostics/pull/5489,Copilot,closed,1,0,2,APPROVED,,1,noahfalk,,2025-05-21T07:12:01Z
+3146958127,microsoft/vscode,251512,https://github.com/microsoft/vscode/pull/251512,Copilot,closed,1,0,3,APPROVED,,1,Copilot,,2025-06-16T22:29:03Z
+3110867755,celestiaorg/celestia-app,4915,https://github.com/celestiaorg/celestia-app/pull/4915,Copilot,closed,1,0,5,APPROVED,,1,evan-forbes,,2025-06-06T15:26:25Z
+3210834321,filecoin-project/lotus,13204,https://github.com/filecoin-project/lotus/pull/13204,Copilot,closed,1,0,3,APPROVED,,1,github-actions[bot],,2025-07-08T06:51:15Z
+3100623808,roboflow/inference,1319,https://github.com/roboflow/inference/pull/1319,OpenAI_Codex,closed,1,0,1,APPROVED,,1,PawelPeczek-Roboflow,,2025-05-29T15:57:36Z
+3151623064,promptfoo/promptfoo,4516,https://github.com/promptfoo/promptfoo/pull/4516,OpenAI_Codex,closed,1,0,0,NONE,,1,MrFlounder,,2025-06-20T20:52:20Z
+3253972976,alchemyplatform/aa-sdk,1790,https://github.com/alchemyplatform/aa-sdk/pull/1790,OpenAI_Codex,closed,1,0,1,APPROVED,,1,noam-alchemy,,2025-07-22T20:55:10Z
+3243017418,aldinokemal/go-whatsapp-web-multidevice,362,https://github.com/aldinokemal/go-whatsapp-web-multidevice/pull/362,Cursor,closed,1,0,0,NONE,,3,aldinokemal;cursor[bot],,2025-07-19T08:12:54Z
+3225182056,aldinokemal/go-whatsapp-web-multidevice,342,https://github.com/aldinokemal/go-whatsapp-web-multidevice/pull/342,Cursor,closed,1,0,0,NONE,,1,aldinokemal,,2025-07-12T15:24:49Z
+2792408591,appsmithorg/appsmith,38700,https://github.com/appsmithorg/appsmith/pull/38700,Devin,closed,1,0,1,APPROVED,,1,devin-ai-integration[bot],,2025-01-17T07:57:31Z
+2776459226,marimo-team/marimo,3378,https://github.com/marimo-team/marimo/pull/3378,Devin,closed,1,0,1,APPROVED,,1,devin-ai-integration[bot],,2025-01-08T22:45:55Z
+2979146839,calcom/cal.com,20603,https://github.com/calcom/cal.com/pull/20603,Devin,closed,1,0,1,APPROVED,,1,eunjae-lee,,2025-04-08T15:26:01Z
+2899248773,OneKeyHQ/app-monorepo,6821,https://github.com/OneKeyHQ/app-monorepo/pull/6821,Devin,closed,1,0,2,APPROVED,,1,devin-ai-integration[bot],,2025-03-06T11:21:41Z
+3097760492,calcom/cal.com,21590,https://github.com/calcom/cal.com/pull/21590,Devin,closed,1,0,2,APPROVED,,1,devin-ai-integration[bot],,2025-06-10T20:23:29Z
+3072460329,vdaas/vald,2977,https://github.com/vdaas/vald/pull/2977,Devin,closed,1,0,3,APPROVED,,2,Matts966,,2025-05-20T05:54:34Z
+3252908985,obophenotype/cell-ontology,3200,https://github.com/obophenotype/cell-ontology/pull/3200,Copilot,closed,1,0,1,APPROVED,,1,Caroline-99,,2025-07-24T14:16:23Z
+2895280316,marimo-team/marimo,3978,https://github.com/marimo-team/marimo/pull/3978,Devin,closed,1,0,0,NONE,,1,devin-ai-integration[bot],,2025-03-04T23:06:56Z
+3203146305,calcom/cal.com,22270,https://github.com/calcom/cal.com/pull/22270,Devin,closed,1,0,1,APPROVED,,1,devin-ai-integration[bot],,2025-07-04T20:08:05Z
+3074649485,Azure/azure-mcp,226,https://github.com/Azure/azure-mcp/pull/226,Copilot,closed,1,0,3,APPROVED,,1,joshfree,,2025-05-19T18:45:22Z
+3205042667,aldinokemal/go-whatsapp-web-multidevice,315,https://github.com/aldinokemal/go-whatsapp-web-multidevice/pull/315,Cursor,closed,1,0,0,NONE,,2,aldinokemal,,2025-07-05T15:25:21Z
+3187312401,keephq/keep,5113,https://github.com/keephq/keep/pull/5113,Cursor,closed,1,0,1,APPROVED,,2,talboren,,2025-06-30T13:31:53Z
+3132024225,cartography-cncf/cartography,1623,https://github.com/cartography-cncf/cartography/pull/1623,OpenAI_Codex,closed,1,0,2,APPROVED,,1,achantavy,,2025-07-18T17:26:45Z
+3137534953,forntoh/LcdMenu,366,https://github.com/forntoh/LcdMenu/pull/366,OpenAI_Codex,closed,1,0,0,NONE,,2,forntoh,,2025-06-11T17:49:50Z
+3215510373,parse-community/parse-dashboard,2877,https://github.com/parse-community/parse-dashboard/pull/2877,OpenAI_Codex,closed,1,0,0,NONE,,4,mtrezza,,2025-07-09T12:41:25Z
+3235553836,parse-community/parse-dashboard,2908,https://github.com/parse-community/parse-dashboard/pull/2908,OpenAI_Codex,closed,1,0,0,NONE,,1,mtrezza,,2025-07-16T12:14:19Z
+3160287486,bruin-data/ingestr,261,https://github.com/bruin-data/ingestr/pull/261,OpenAI_Codex,closed,1,0,1,APPROVED,,1,turtleDev,,2025-06-24T14:59:15Z
+3131081344,microsoft/vscode,251027,https://github.com/microsoft/vscode/pull/251027,Copilot,closed,1,0,3,APPROVED,,2,Yoyokrazy;Copilot,,2025-06-11T16:37:31Z
+2886897797,OneKeyHQ/app-monorepo,6756,https://github.com/OneKeyHQ/app-monorepo/pull/6756,Devin,closed,1,0,2,APPROVED,,2,sidmorizon,,2025-03-04T14:14:02Z
+2982207439,calcom/cal.com,20627,https://github.com/calcom/cal.com/pull/20627,Devin,closed,1,0,1,APPROVED,,1,devin-ai-integration[bot],,2025-04-14T06:06:52Z
+3202135682,JuliaLang/Pkg.jl,4306,https://github.com/JuliaLang/Pkg.jl/pull/4306,Claude_Code,closed,1,0,0,NONE,,1,KristofferC,,2025-07-04T12:21:04Z
+3078060956,demergent-labs/azle,3069,https://github.com/demergent-labs/azle/pull/3069,Copilot,closed,1,0,1,APPROVED,,1,lastmjs,,2025-05-20T22:17:23Z
+2932649410,wolfSSL/wolfssl,8570,https://github.com/wolfSSL/wolfssl/pull/8570,Devin,closed,1,0,1,APPROVED,,1,devin-ai-integration[bot],,2025-03-21T17:04:41Z
+3175767337,calcom/cal.com,22034,https://github.com/calcom/cal.com/pull/22034,Devin,closed,1,0,1,APPROVED,,2,devin-ai-integration[bot],,2025-06-25T20:39:47Z
+3207238334,parse-community/parse-dashboard,2866,https://github.com/parse-community/parse-dashboard/pull/2866,OpenAI_Codex,closed,1,0,0,NONE,,4,mtrezza,,2025-07-07T10:36:02Z
+3216213252,roboflow/roboflow-python,395,https://github.com/roboflow/roboflow-python/pull/395,OpenAI_Codex,closed,1,0,1,APPROVED,,1,ford-downer-robo,,2025-07-09T14:54:47Z
+3095850088,LayerZero-Labs/devtools,1527,https://github.com/LayerZero-Labs/devtools/pull/1527,OpenAI_Codex,closed,1,0,2,APPROVED,,1,nazreen,,2025-07-15T17:29:41Z
+3122564816,microsoft/perfview,2222,https://github.com/microsoft/perfview/pull/2222,Copilot,closed,1,0,1,APPROVED,,1,brianrob,,2025-06-05T23:53:26Z
+3088248911,oven-sh/bun,19885,https://github.com/oven-sh/bun/pull/19885,OpenAI_Codex,closed,1,0,1,APPROVED,,1,github-actions[bot],,2025-05-27T04:56:32Z
+3164130684,microsoft/ebpf-for-windows,4466,https://github.com/microsoft/ebpf-for-windows/pull/4466,Copilot,closed,1,0,5,APPROVED,,1,Copilot,,2025-07-30T17:26:00Z
+3012304281,magiclabs/magic-js,881,https://github.com/magiclabs/magic-js/pull/881,Devin,closed,1,0,1,APPROVED,,1,Ethella,,2025-04-23T00:03:52Z
+3189270676,microsoft/vscode,253040,https://github.com/microsoft/vscode/pull/253040,Copilot,closed,1,0,2,APPROVED,,1,Tyriar,,2025-07-01T15:41:36Z
+3209727238,microsoft/perfview,2254,https://github.com/microsoft/perfview/pull/2254,Copilot,closed,1,0,2,APPROVED,,1,Copilot,,2025-07-10T22:45:24Z
+3134926821,microsoft/vscode,251156,https://github.com/microsoft/vscode/pull/251156,Copilot,closed,1,0,2,APPROVED,,1,Yoyokrazy,,2025-06-12T22:47:30Z
+3076882541,microsoft/vscode-docs,8400,https://github.com/microsoft/vscode-docs/pull/8400,Copilot,closed,1,0,1,APPROVED,,1,ntrogh,,2025-05-20T13:54:22Z
+3150387821,primer/react,6206,https://github.com/primer/react/pull/6206,Copilot,closed,1,0,2,APPROVED,,1,mperrotti,,2025-06-16T16:46:23Z
+3144002766,forntoh/LcdMenu,375,https://github.com/forntoh/LcdMenu/pull/375,OpenAI_Codex,closed,1,0,0,NONE,,1,forntoh,,2025-06-15T20:23:32Z
+3179011328,bruin-data/bruin,843,https://github.com/bruin-data/bruin/pull/843,OpenAI_Codex,closed,1,0,1,APPROVED,,1,terzioglub,,2025-06-27T11:01:11Z
+2982048284,calcom/cal.com,20623,https://github.com/calcom/cal.com/pull/20623,Devin,closed,1,0,1,APPROVED,,1,retrogtx,,2025-04-14T06:28:18Z
+3085150302,promptfoo/promptfoo,4132,https://github.com/promptfoo/promptfoo/pull/4132,OpenAI_Codex,closed,1,0,0,NONE,,1,mldangelo,,2025-05-26T05:23:46Z
+3238351006,parse-community/parse-dashboard,2915,https://github.com/parse-community/parse-dashboard/pull/2915,OpenAI_Codex,closed,1,0,0,NONE,,1,mtrezza,,2025-07-17T12:15:59Z
+3214066009,parse-community/parse-dashboard,2875,https://github.com/parse-community/parse-dashboard/pull/2875,OpenAI_Codex,closed,1,0,0,NONE,,4,mtrezza,,2025-07-09T01:00:30Z
+3078160044,dotnet/winforms,13489,https://github.com/dotnet/winforms/pull/13489,Copilot,closed,1,0,2,APPROVED,,1,JeremyKuhne,,2025-05-20T22:06:06Z
+3123082755,prequel-dev/preq,52,https://github.com/prequel-dev/preq/pull/52,OpenAI_Codex,closed,1,0,0,NONE,,1,tonymeehan,,2025-06-06T16:11:11Z
+2989721425,calcom/cal.com,20672,https://github.com/calcom/cal.com/pull/20672,Devin,closed,1,0,1,APPROVED,,1,hbjORbj,,2025-04-12T05:50:04Z
+3143424792,latitude-dev/latitude-llm,1390,https://github.com/latitude-dev/latitude-llm/pull/1390,Cursor,closed,1,0,0,NONE,,2,geclos,,2025-06-16T13:41:31Z
+3199882677,calcom/cal.com,22246,https://github.com/calcom/cal.com/pull/22246,Devin,closed,1,0,1,APPROVED,,1,devin-ai-integration[bot],,2025-07-11T14:53:40Z
+3050463039,calcom/cal.com,21201,https://github.com/calcom/cal.com/pull/21201,Devin,closed,1,0,1,APPROVED,,3,devin-ai-integration[bot];CarinaWolli,,2025-05-09T16:08:21Z
+3103884734,microsoft/DacFx,640,https://github.com/microsoft/DacFx/pull/640,Copilot,closed,1,0,1,APPROVED,,1,zijchen,,2025-05-30T20:41:13Z
+3137753437,forntoh/LcdMenu,370,https://github.com/forntoh/LcdMenu/pull/370,OpenAI_Codex,closed,1,0,0,NONE,,2,forntoh,,2025-06-12T07:25:58Z
+3124970716,bruin-data/bruin,743,https://github.com/bruin-data/bruin/pull/743,OpenAI_Codex,closed,1,0,1,APPROVED,,1,terzioglub,,2025-06-10T12:56:29Z
+3200437883,Significant-Gravitas/AutoGPT,10304,https://github.com/Significant-Gravitas/AutoGPT/pull/10304,OpenAI_Codex,closed,1,0,1,APPROVED,,1,majdyz,,2025-07-03T20:22:22Z
+3236824338,parse-community/parse-dashboard,2910,https://github.com/parse-community/parse-dashboard/pull/2910,OpenAI_Codex,closed,1,0,0,NONE,,5,mtrezza,,2025-07-16T23:39:32Z
+3245672480,parse-community/parse-dashboard,2929,https://github.com/parse-community/parse-dashboard/pull/2929,OpenAI_Codex,closed,1,0,0,NONE,,1,mtrezza,,2025-07-19T21:28:21Z
+3204645193,aldinokemal/go-whatsapp-web-multidevice,313,https://github.com/aldinokemal/go-whatsapp-web-multidevice/pull/313,Cursor,closed,1,0,0,NONE,,3,aldinokemal,,2025-07-05T11:29:20Z
+3058727828,calcom/cal.com,21268,https://github.com/calcom/cal.com/pull/21268,Devin,closed,1,0,1,APPROVED,,1,devin-ai-integration[bot],,2025-05-13T09:18:01Z
+3185723605,dotnet/maui,30300,https://github.com/dotnet/maui/pull/30300,Copilot,open,0,3,0,CHANGES_REQUESTED,PureWeen,1,PureWeen,You keep ping ponging between the same two solutions    Can you try again but keep these few things in mind that you are not allowed to do and that you must make sure the user is able to accomplish    1) We can't add new,
+3074893038,Azure/azure-container-networking,3671,https://github.com/Azure/azure-container-networking/pull/3671,Copilot,open,0,2,0,CHANGES_REQUESTED,thatmattlong,1,Copilot,"@copilot  don't check in binaries, remove the file cns/service/service and update the .gitignore file so it doesn't get checked in again by anyone else",
+3221627962,reflex-dev/reflex-web,1493,https://github.com/reflex-dev/reflex-web/pull/1493,Devin,closed,0,2,0,CHANGES_REQUESTED,Alek99,1,LineIndent, main  branch of  reflex-web  does not contain the path  docs/docs/getting_started/introduction.md.   the first page edit page link I tried didn't work ,
+3268184875,microsoft/mssql-python,156,https://github.com/microsoft/mssql-python/pull/156,Copilot,open,0,1,0,CHANGES_REQUESTED,dlevy-msft-sql,1,Copilot,We need to fix the broken links before this goes out. The other things seem like nice to haves.,
+3189024935,dotnet/maui,30330,https://github.com/dotnet/maui/pull/30330,Copilot,open,0,1,0,CHANGES_REQUESTED,PureWeen,1,PureWeen,Can you try to go back to the mapper approach? But this time instead of changing the order of the dictionary implement a second mapper that you can use to control the order.     https://github.com/dotnet/maui/blob/4dc9f3,
+3019918047,calcom/cal.com,20973,https://github.com/calcom/cal.com/pull/20973,Devin,open,0,1,0,CHANGES_REQUESTED,hbjORbj,1,devin-ai-integration[bot],,
+3134478540,dotnet/diagnostics,5499,https://github.com/dotnet/diagnostics/pull/5499,Copilot,closed,0,1,2,CHANGES_REQUESTED,noahfalk,1,Copilot,,
+3253109904,obophenotype/cell-ontology,3203,https://github.com/obophenotype/cell-ontology/pull/3203,Copilot,open,0,0,1,APPROVED,,1,Caroline-99,,
+3161518646,cloudposse/atmos,1321,https://github.com/cloudposse/atmos/pull/1321,OpenAI_Codex,closed,0,0,0,NONE,,1,osterman,,
+3102876964,openops-cloud/openops,711,https://github.com/openops-cloud/openops/pull/711,Copilot,closed,0,0,0,NONE,,1,cezudas,,
+3218205312,microsoft/AL-Go,1824,https://github.com/microsoft/AL-Go/pull/1824,Copilot,open,0,0,0,NONE,,1,mazhelez,,
+3084851925,microsoft/vscode-python,25103,https://github.com/microsoft/vscode-python/pull/25103,Copilot,closed,0,0,0,NONE,,2,karthiknadig;eleanorjboyd,,
+3070899170,modular/modular,4614,https://github.com/modular/modular/pull/4614,OpenAI_Codex,closed,0,0,0,NONE,,1,github-actions[bot],,
+3155893392,Portkey-AI/gateway,1149,https://github.com/Portkey-AI/gateway/pull/1149,OpenAI_Codex,closed,0,0,0,NONE,,1,vrushankportkey,,
+3103367606,LayerZero-Labs/devtools,1539,https://github.com/LayerZero-Labs/devtools/pull/1539,OpenAI_Codex,open,0,0,0,NONE,,1,nazreen,,
+3179554058,calcom/cal.com,22067,https://github.com/calcom/cal.com/pull/22067,Devin,closed,0,0,0,NONE,,1,devin-ai-integration[bot],,
+2867174561,box/box-ui-elements,3944,https://github.com/box/box-ui-elements/pull/3944,Devin,open,0,0,1,APPROVED,,1,devin-ai-integration[bot],,
+3208727721,parse-community/parse-dashboard,2872,https://github.com/parse-community/parse-dashboard/pull/2872,OpenAI_Codex,open,0,0,0,NONE,,2,mtrezza,,
+3162624847,calcom/cal.com,21938,https://github.com/calcom/cal.com/pull/21938,Devin,closed,0,0,0,NONE,,1,sean-brydon,,
+2876473421,box/box-ui-elements,3960,https://github.com/box/box-ui-elements/pull/3960,Devin,closed,0,0,0,NONE,,1,devin-ai-integration[bot],,
+3080811433,Azure/azure-sdk-for-python,41243,https://github.com/Azure/azure-sdk-for-python/pull/41243,Copilot,closed,0,0,1,APPROVED,,3,github-actions[bot],,
+3070903485,modular/modular,4616,https://github.com/modular/modular/pull/4616,OpenAI_Codex,closed,0,0,0,NONE,,1,github-actions[bot],,
+3070903672,modular/modular,4617,https://github.com/modular/modular/pull/4617,OpenAI_Codex,closed,0,0,0,NONE,,1,github-actions[bot],,
+3071839438,modular/modular,4623,https://github.com/modular/modular/pull/4623,OpenAI_Codex,closed,0,0,1,APPROVED,,1,github-actions[bot],,
+3239537329,parse-community/parse-dashboard,2919,https://github.com/parse-community/parse-dashboard/pull/2919,OpenAI_Codex,closed,0,0,0,NONE,,2,mtrezza,,
+3250036806,alchemyplatform/aa-sdk,1786,https://github.com/alchemyplatform/aa-sdk/pull/1786,OpenAI_Codex,closed,0,0,0,NONE,,1,avarobinson,,
+3276548217,microsoft/vscode-pull-request-github,7465,https://github.com/microsoft/vscode-pull-request-github/pull/7465,Copilot,open,0,0,2,APPROVED,,1,alexr00,,
+3158465046,cloudposse/atmos,1317,https://github.com/cloudposse/atmos/pull/1317,OpenAI_Codex,closed,0,0,0,NONE,,1,osterman,,
+3172572289,microsoft/ebpf-for-windows,4476,https://github.com/microsoft/ebpf-for-windows/pull/4476,Copilot,open,0,0,3,APPROVED,,1,Copilot,,
+3070903361,modular/modular,4615,https://github.com/modular/modular/pull/4615,OpenAI_Codex,closed,0,0,1,APPROVED,,1,github-actions[bot],,
+3007108786,calcom/cal.com,20777,https://github.com/calcom/cal.com/pull/20777,Devin,closed,0,0,1,APPROVED,,1,PeerRich,,
+3230708925,shader-slang/slang,7763,https://github.com/shader-slang/slang/pull/7763,Copilot,closed,0,0,0,NONE,,1,Copilot,,
+3164310659,microsoft/promptpex,179,https://github.com/microsoft/promptpex/pull/179,Copilot,closed,0,0,1,APPROVED,,1,pelikhan,,

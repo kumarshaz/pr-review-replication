@@ -1,0 +1,661 @@
+{
+  "execution_timestamp_utc": "2026-11-22T19:32:07.740137+00:00",
+  "dataset": "AIDev (Li et al., MSR 2026; Zenodo 10.5281/zenodo.16899501)",
+  "input_parquet_manifest": {
+    "pull_request.parquet": {
+      "size_bytes": 16855612,
+      "row_count": 33596,
+      "sha256": "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+    },
+    "human_pull_request.parquet": {
+      "size_bytes": 4387171,
+      "row_count": 6618,
+      "sha256": "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+    },
+    "pr_reviews.parquet": {
+      "size_bytes": 7517041,
+      "row_count": 28875,
+      "sha256": "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+    },
+    "pr_review_comments.parquet": {
+      "size_bytes": 14728130,
+      "row_count": 19450,
+      "sha256": "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+    },
+    "pr_review_comments_v2.parquet": {
+      "size_bytes": 21125785,
+      "row_count": 26868,
+      "sha256": "a0739f9c808fa1c720037e162efa27baadeedb7180ea94a22dad5062adc71be8"
+    },
+    "pr_comments.parquet": {
+      "size_bytes": 25857243,
+      "row_count": 39122,
+      "sha256": "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+    },
+    "pr_commits.parquet": {
+      "size_bytes": 8314097,
+      "row_count": 88576,
+      "sha256": "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+    },
+    "related_issue.parquet": {
+      "size_bytes": 75579,
+      "row_count": 4923,
+      "sha256": "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+    },
+    "pr_task_type.parquet": {
+      "size_bytes": 2993264,
+      "row_count": 33596,
+      "sha256": "f32a97a45ac944f4ea473327e62d8f41361502c2b6b3778e76fb64c2b8896476"
+    },
+    "repository.parquet": {
+      "size_bytes": 167251,
+      "row_count": 2807,
+      "sha256": "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+    },
+    "user.parquet": {
+      "size_bytes": 68935,
+      "row_count": 1796,
+      "sha256": "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+    }
+  },
+  "generated_audit_logs": {
+    "repositories_csv": "analyzed_repositories_log.csv",
+    "repositories_logged_count": 2807,
+    "human_reviewed_prs_csv": "analyzed_human_reviewed_prs_log.csv",
+    "human_reviewed_prs_logged_count": 5997,
+    "operator_config_prs_csv": "aidev_operator_config_prs_log.csv",
+    "operator_config_pr_path_rows_count": 225,
+    "execution_modes_and_task_penalties_csv": "aidev_execution_modes_and_task_penalties_log.csv",
+    "execution_modes_and_task_penalties_rows_count": 42
+  },
+  "macro_corpus_summary": {
+    "agentic_prs_total": 33596,
+    "agentic_prs_merged": 24014,
+    "agentic_prs_merge_rate_pct": 71.48,
+    "agentic_prs_rejected_closed": 7270,
+    "agentic_prs_with_formal_human_review": 5997,
+    "agentic_prs_bypassing_formal_human_review_pct": 82.15,
+    "human_baseline_prs_total": 6618,
+    "human_baseline_prs_merged": 5081,
+    "human_baseline_merge_rate_pct": 76.78
+  },
+  "human_reviewed_cohorts": {
+    "cohort_b_human_only_n": 4321,
+    "cohort_c_tier1_bot_plus_human_n": 1676,
+    "total_human_reviewed_agent_prs": 5997,
+    "comparisons": {
+      "merge_rate": {
+        "cohort_b_human_only_mean": 0.7427,
+        "cohort_b_human_only_median": 1.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.8115,
+        "cohort_c_tier1_bot_plus_human_median": 1.0,
+        "relative_shift_pct": 9.26,
+        "mann_whitney_p": 1.9883307890971764e-08,
+        "vargha_delaney_a12": 0.5344,
+        "cliffs_delta": 0.0688,
+        "bh_fdr_q": 5.964992367291529e-08
+      },
+      "human_changes_requested_per_pr": {
+        "cohort_b_human_only_mean": 0.29,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.151,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": -47.94,
+        "mann_whitney_p": 4.6192423136727815e-12,
+        "vargha_delaney_a12": 0.464,
+        "cliffs_delta": -0.0719,
+        "bh_fdr_q": 5.543090776407338e-11
+      },
+      "any_human_changes_requested_rate": {
+        "cohort_b_human_only_mean": 0.1726,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.1026,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": -40.56,
+        "mann_whitney_p": 1.406310508598058e-11,
+        "vargha_delaney_a12": 0.465,
+        "cliffs_delta": -0.07,
+        "bh_fdr_q": 8.437863051588348e-11
+      },
+      "human_review_body_chars": {
+        "cohort_b_human_only_mean": 33.0118,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 23.3989,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": -29.12,
+        "mann_whitney_p": 9.93496904626893e-05,
+        "vargha_delaney_a12": 0.5281,
+        "cliffs_delta": 0.0563,
+        "bh_fdr_q": 0.00023843925711045433
+      },
+      "human_inline_comments_per_pr": {
+        "cohort_b_human_only_mean": 2.0646,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 1.8455,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": -10.61,
+        "mann_whitney_p": 0.048957936142630616,
+        "vargha_delaney_a12": 0.4849,
+        "cliffs_delta": -0.0301,
+        "bh_fdr_q": 0.05874952337115674
+      },
+      "inspection_intensity_inline_per_commit": {
+        "cohort_b_human_only_mean": 0.3855,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.3095,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": -19.72,
+        "mann_whitney_p": 0.012385670928987756,
+        "vargha_delaney_a12": 0.4808,
+        "cliffs_delta": -0.0384,
+        "bh_fdr_q": 0.018578506393481634
+      },
+      "rubber_stamp_approval_rate": {
+        "cohort_b_human_only_mean": 0.4071,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.4505,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": 10.66,
+        "mann_whitney_p": 0.002243540395818252,
+        "vargha_delaney_a12": 0.5217,
+        "cliffs_delta": 0.0434,
+        "bh_fdr_q": 0.003846069249974146
+      },
+      "arch_security_inline_comments_per_pr": {
+        "cohort_b_human_only_mean": 0.1416,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.1122,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": -20.8,
+        "mann_whitney_p": 0.3628009275653291,
+        "vargha_delaney_a12": 0.4965,
+        "cliffs_delta": -0.007,
+        "bh_fdr_q": 0.36280092756532917
+      },
+      "commit_churn_per_pr": {
+        "cohort_b_human_only_mean": 5.526,
+        "cohort_b_human_only_median": 4.0,
+        "cohort_c_tier1_bot_plus_human_mean": 6.349,
+        "cohort_c_tier1_bot_plus_human_median": 4.0,
+        "relative_shift_pct": 14.89,
+        "mann_whitney_p": 0.025134867163297322,
+        "vargha_delaney_a12": 0.5185,
+        "cliffs_delta": 0.037,
+        "bh_fdr_q": 0.03351315621772976
+      },
+      "corrective_fix_commits_per_pr": {
+        "cohort_b_human_only_mean": 0.2023,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.2357,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": 16.52,
+        "mann_whitney_p": 0.05417063011921063,
+        "vargha_delaney_a12": 0.5099,
+        "cliffs_delta": 0.0197,
+        "bh_fdr_q": 0.059095232857320684
+      },
+      "intent_rationale_deficit_ibd_rate": {
+        "cohort_b_human_only_mean": 0.2249,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.2977,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": 32.36,
+        "mann_whitney_p": 4.15034423468191e-09,
+        "vargha_delaney_a12": 0.5364,
+        "cliffs_delta": 0.0728,
+        "bh_fdr_q": 1.660137693872764e-08
+      },
+      "merged_unattested_intent_debt_rate": {
+        "cohort_b_human_only_mean": 0.1377,
+        "cohort_b_human_only_median": 0.0,
+        "cohort_c_tier1_bot_plus_human_mean": 0.1712,
+        "cohort_c_tier1_bot_plus_human_median": 0.0,
+        "relative_shift_pct": 24.36,
+        "mann_whitney_p": 0.0009995320569363266,
+        "vargha_delaney_a12": 0.5168,
+        "cliffs_delta": 0.0335,
+        "bh_fdr_q": 0.001999064113872653
+      }
+    }
+  },
+  "coarsened_exact_matching_control": {
+    "matched_pairs_n": 1665,
+    "metrics": {
+      "merge_rate": {
+        "matched_b_mean": 0.7237,
+        "matched_c_mean": 0.8108,
+        "relative_shift_pct": 12.03,
+        "mann_whitney_p": 2.7588127122919402e-09,
+        "cliffs_delta": 0.0871
+      },
+      "human_changes_requested_per_pr": {
+        "matched_b_mean": 0.3423,
+        "matched_c_mean": 0.1514,
+        "relative_shift_pct": -55.79,
+        "mann_whitney_p": 9.214587563232569e-13,
+        "cliffs_delta": -0.0874
+      },
+      "any_human_changes_requested_rate": {
+        "matched_b_mean": 0.1868,
+        "matched_c_mean": 0.1027,
+        "relative_shift_pct": -45.02,
+        "mann_whitney_p": 5.4134423355053365e-12,
+        "cliffs_delta": -0.0841
+      },
+      "human_review_body_chars": {
+        "matched_b_mean": 31.1394,
+        "matched_c_mean": 23.5464,
+        "relative_shift_pct": -24.38,
+        "mann_whitney_p": 0.039557088618741874,
+        "cliffs_delta": 0.0366
+      },
+      "inspection_intensity_inline_per_commit": {
+        "matched_b_mean": 0.3875,
+        "matched_c_mean": 0.3017,
+        "relative_shift_pct": -22.12,
+        "mann_whitney_p": 0.0009151397270464152,
+        "cliffs_delta": -0.0615
+      },
+      "merged_unattested_intent_debt_rate": {
+        "matched_b_mean": 0.1508,
+        "matched_c_mean": 0.1724,
+        "relative_shift_pct": 14.34,
+        "mann_whitney_p": 0.09012458516588788,
+        "cliffs_delta": 0.0216
+      }
+    }
+  },
+  "paired_control_summary": {
+    "shared_repos_count": 810,
+    "human_prs_total": 6569,
+    "human_prs_merged": 5044,
+    "human_merge_rate_pct": 76.78,
+    "agent_prs_total": 9750,
+    "agent_prs_merged": 5366,
+    "agent_merge_rate_pct": 55.04,
+    "paired_merge_penalty_pp": 21.74,
+    "chi2_stat": 802.79,
+    "p_value": 1.3343958762813824e-176,
+    "odds_ratio": 0.37
+  },
+  "execution_mode_and_task_stratification": {
+    "matched_merged_prs_total": 22624,
+    "mode_i_self_merged_total": 18614,
+    "mode_ii_peer_merged_total": 4010,
+    "execution_modes": [
+      {
+        "execution_mode": "Self-Merged (Mode I)",
+        "agent_family": "Codex",
+        "n_prs": 17539,
+        "silent_gate_pct": 96.19,
+        "median_merge_minutes": 0.75,
+        "avg_repo_agent_prs": 4630.2,
+        "avg_commits": 1.27
+      },
+      {
+        "execution_mode": "Peer-Merged (Mode II)",
+        "agent_family": "Non-Codex",
+        "n_prs": 3661,
+        "silent_gate_pct": 40.54,
+        "median_merge_minutes": 138.57,
+        "avg_repo_agent_prs": 83.9,
+        "avg_commits": 3.4
+      },
+      {
+        "execution_mode": "Self-Merged (Mode I)",
+        "agent_family": "Non-Codex",
+        "n_prs": 1075,
+        "silent_gate_pct": 76.0,
+        "median_merge_minutes": 25.45,
+        "avg_repo_agent_prs": 41.0,
+        "avg_commits": 3.52
+      },
+      {
+        "execution_mode": "Peer-Merged (Mode II)",
+        "agent_family": "Codex",
+        "n_prs": 349,
+        "silent_gate_pct": 33.24,
+        "median_merge_minutes": 704.73,
+        "avg_repo_agent_prs": 45.6,
+        "avg_commits": 2.72
+      }
+    ],
+    "per_agent_profile": [
+      {
+        "agent": "OpenAI_Codex",
+        "total_prs": 21799,
+        "merged_prs": 18004,
+        "merge_rate_pct": 82.59,
+        "self_merged_among_matched_pct": 98.05,
+        "human_reviewed_pct": 5.36,
+        "silent_gate_pct": 94.64,
+        "median_merge_minutes": 0.85,
+        "mean_commits": 1.49
+      },
+      {
+        "agent": "Copilot",
+        "total_prs": 4970,
+        "merged_prs": 2139,
+        "merge_rate_pct": 43.04,
+        "self_merged_among_matched_pct": 0.0,
+        "human_reviewed_pct": 51.17,
+        "silent_gate_pct": 48.83,
+        "median_merge_minutes": 1059.05,
+        "mean_commits": 4.79
+      },
+      {
+        "agent": "Devin",
+        "total_prs": 4827,
+        "merged_prs": 2595,
+        "merge_rate_pct": 53.76,
+        "self_merged_among_matched_pct": 0.13,
+        "human_reviewed_pct": 36.86,
+        "silent_gate_pct": 63.14,
+        "median_merge_minutes": 136.18,
+        "mean_commits": 4.82
+      },
+      {
+        "agent": "Cursor",
+        "total_prs": 1541,
+        "merged_prs": 1005,
+        "merge_rate_pct": 65.22,
+        "self_merged_among_matched_pct": 91.21,
+        "human_reviewed_pct": 25.5,
+        "silent_gate_pct": 74.5,
+        "median_merge_minutes": 38.6,
+        "mean_commits": 4.01
+      },
+      {
+        "agent": "Claude_Code",
+        "total_prs": 459,
+        "merged_prs": 271,
+        "merge_rate_pct": 59.04,
+        "self_merged_among_matched_pct": 83.68,
+        "human_reviewed_pct": 24.62,
+        "silent_gate_pct": 75.38,
+        "median_merge_minutes": 88.42,
+        "mean_commits": 6.06
+      }
+    ],
+    "volume_scaling": {
+      "all_agents": [
+        {
+          "bucket": "1-2 PRs",
+          "n_prs": 2105,
+          "silent_pct": 73.73,
+          "merge_rate_pct": 41.24
+        },
+        {
+          "bucket": "3-10 PRs",
+          "n_prs": 3903,
+          "silent_pct": 69.82,
+          "merge_rate_pct": 57.6
+        },
+        {
+          "bucket": "11-50 PRs",
+          "n_prs": 5994,
+          "silent_pct": 70.64,
+          "merge_rate_pct": 60.16
+        },
+        {
+          "bucket": "51+ PRs",
+          "n_prs": 21594,
+          "silent_pct": 88.39,
+          "merge_rate_pct": 80.08
+        }
+      ],
+      "non_codex_only": [
+        {
+          "bucket": "1-2 PRs",
+          "n_prs": 1258,
+          "silent_pct": 65.98,
+          "merge_rate_pct": 36.01
+        },
+        {
+          "bucket": "3-10 PRs",
+          "n_prs": 2252,
+          "silent_pct": 58.04,
+          "merge_rate_pct": 47.69
+        },
+        {
+          "bucket": "11-50 PRs",
+          "n_prs": 3471,
+          "silent_pct": 58.17,
+          "merge_rate_pct": 50.71
+        },
+        {
+          "bucket": "51+ PRs",
+          "n_prs": 4816,
+          "silent_pct": 58.41,
+          "merge_rate_pct": 56.54
+        }
+      ]
+    },
+    "paired_task_type_penalties": [
+      {
+        "task_type": "feat",
+        "human_n": 1928,
+        "human_merged": 1417,
+        "human_merge_rate_pct": 73.5,
+        "agent_n": 3151,
+        "agent_merged": 1546,
+        "agent_merge_rate_pct": 49.06,
+        "penalty_pp": -24.44
+      },
+      {
+        "task_type": "fix",
+        "human_n": 1764,
+        "human_merged": 1454,
+        "human_merge_rate_pct": 82.43,
+        "agent_n": 3181,
+        "agent_merged": 1637,
+        "agent_merge_rate_pct": 51.46,
+        "penalty_pp": -30.97
+      },
+      {
+        "task_type": "docs",
+        "human_n": 515,
+        "human_merged": 395,
+        "human_merge_rate_pct": 76.7,
+        "agent_n": 1227,
+        "agent_merged": 945,
+        "agent_merge_rate_pct": 77.02,
+        "penalty_pp": 0.32
+      },
+      {
+        "task_type": "chore",
+        "human_n": 840,
+        "human_merged": 663,
+        "human_merge_rate_pct": 78.93,
+        "agent_n": 438,
+        "agent_merged": 271,
+        "agent_merge_rate_pct": 61.87,
+        "penalty_pp": -17.06
+      },
+      {
+        "task_type": "refactor",
+        "human_n": 369,
+        "human_merged": 289,
+        "human_merge_rate_pct": 78.32,
+        "agent_n": 814,
+        "agent_merged": 472,
+        "agent_merge_rate_pct": 57.99,
+        "penalty_pp": -20.33
+      },
+      {
+        "task_type": "build",
+        "human_n": 612,
+        "human_merged": 449,
+        "human_merge_rate_pct": 73.37,
+        "agent_n": 181,
+        "agent_merged": 97,
+        "agent_merge_rate_pct": 53.59,
+        "penalty_pp": -19.78
+      },
+      {
+        "task_type": "test",
+        "human_n": 181,
+        "human_merged": 125,
+        "human_merge_rate_pct": 69.06,
+        "agent_n": 484,
+        "agent_merged": 258,
+        "agent_merge_rate_pct": 53.31,
+        "penalty_pp": -15.75
+      },
+      {
+        "task_type": "ci",
+        "human_n": 99,
+        "human_merged": 81,
+        "human_merge_rate_pct": 81.82,
+        "agent_n": 103,
+        "agent_merged": 70,
+        "agent_merge_rate_pct": 67.96,
+        "penalty_pp": -13.86
+      },
+      {
+        "task_type": "perf",
+        "human_n": 87,
+        "human_merged": 56,
+        "human_merge_rate_pct": 64.37,
+        "agent_n": 104,
+        "agent_merged": 37,
+        "agent_merge_rate_pct": 35.58,
+        "penalty_pp": -28.79
+      },
+      {
+        "task_type": "style",
+        "human_n": 59,
+        "human_merged": 53,
+        "human_merge_rate_pct": 89.83,
+        "agent_n": 47,
+        "agent_merged": 29,
+        "agent_merge_rate_pct": 61.7,
+        "penalty_pp": -28.13
+      }
+    ],
+    "paired_language_penalties": [
+      {
+        "language": "TypeScript",
+        "human_n": 2408,
+        "human_merge_rate_pct": 79.15,
+        "agent_n": 3388,
+        "agent_merge_rate_pct": 53.63,
+        "penalty_pp": -25.52
+      },
+      {
+        "language": "Python",
+        "human_n": 1402,
+        "human_merge_rate_pct": 74.32,
+        "agent_n": 1959,
+        "agent_merge_rate_pct": 48.19,
+        "penalty_pp": -26.13
+      },
+      {
+        "language": "C#",
+        "human_n": 553,
+        "human_merge_rate_pct": 83.36,
+        "agent_n": 912,
+        "agent_merge_rate_pct": 55.26,
+        "penalty_pp": -28.1
+      },
+      {
+        "language": "Rust",
+        "human_n": 439,
+        "human_merge_rate_pct": 78.36,
+        "agent_n": 663,
+        "agent_merge_rate_pct": 66.97,
+        "penalty_pp": -11.39
+      },
+      {
+        "language": "Go",
+        "human_n": 345,
+        "human_merge_rate_pct": 70.14,
+        "agent_n": 551,
+        "agent_merge_rate_pct": 55.9,
+        "penalty_pp": -14.24
+      },
+      {
+        "language": "Ruby",
+        "human_n": 264,
+        "human_merge_rate_pct": 75.76,
+        "agent_n": 381,
+        "agent_merge_rate_pct": 78.22,
+        "penalty_pp": 2.46
+      },
+      {
+        "language": "Java",
+        "human_n": 169,
+        "human_merge_rate_pct": 72.19,
+        "agent_n": 435,
+        "agent_merge_rate_pct": 72.64,
+        "penalty_pp": 0.45
+      },
+      {
+        "language": "JavaScript",
+        "human_n": 230,
+        "human_merge_rate_pct": 74.78,
+        "agent_n": 288,
+        "agent_merge_rate_pct": 45.49,
+        "penalty_pp": -29.29
+      },
+      {
+        "language": "C++",
+        "human_n": 124,
+        "human_merge_rate_pct": 73.39,
+        "agent_n": 168,
+        "agent_merge_rate_pct": 36.31,
+        "penalty_pp": -37.08
+      },
+      {
+        "language": "C",
+        "human_n": 90,
+        "human_merge_rate_pct": 77.78,
+        "agent_n": 157,
+        "agent_merge_rate_pct": 49.68,
+        "penalty_pp": -28.1
+      },
+      {
+        "language": "Zig",
+        "human_n": 116,
+        "human_merge_rate_pct": 63.79,
+        "agent_n": 131,
+        "agent_merge_rate_pct": 28.24,
+        "penalty_pp": -35.55
+      }
+    ],
+    "commit_distribution": [
+      {
+        "review_gate": "Reviewed",
+        "outcome": "Merged",
+        "n_prs": 4569,
+        "mean_commits": 5.4,
+        "median_commits": 3.0,
+        "p90_commits": 12.0
+      },
+      {
+        "review_gate": "Reviewed",
+        "outcome": "Unmerged",
+        "n_prs": 1428,
+        "mean_commits": 6.89,
+        "median_commits": 5.0,
+        "p90_commits": 14.3
+      },
+      {
+        "review_gate": "Silent",
+        "outcome": "Merged",
+        "n_prs": 19445,
+        "mean_commits": 1.57,
+        "median_commits": 1.0,
+        "p90_commits": 2.0
+      },
+      {
+        "review_gate": "Silent",
+        "outcome": "Unmerged",
+        "n_prs": 8154,
+        "mean_commits": 2.89,
+        "median_commits": 1.0,
+        "p90_commits": 6.0
+      }
+    ]
+  }
+}

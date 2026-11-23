@@ -1,0 +1,11 @@
+vector_id,vector_name,lit_uniqueness_0_2,empirical_signal_0_2,power_hygiene_0_2,durability_gate_0_2,thematic_cohesion_0_2,portfolio_non_overlap_0_2,total_score_12,convergence_decision
+RV-01,2x6 Author x Reviewer Topology -> Post-Release Defect Escape,2,2,2,2,2,2,12,INCLUDE_PRIMARY (RQ1 Core Anchor)
+RV-02,Within-191-Repo Rubber-Stamping vs. Defect-Substitution Mediation,2,2,2,2,2,2,12,INCLUDE_PRIMARY (RQ2 Core Mechanism)
+RV-04,Actionable Precision vs. Verbosity & The 24.0% Factual Plausibility Trap,2,2,2,2,2,2,12,INCLUDE_PRIMARY (RQ2 Cognitive Mechanism)
+RV-06,Deterministic Architectural & SAST Constraints vs. Prose Bots (1.67x-2.46x Defect Reduction),2,2,2,2,2,2,12,INCLUDE_PRIMARY (RQ4 Architectural Remediation)
+RV-05,Calibrated Decision-Model Tollgates (Jev 4.2x-10.09x Compression vs. Advisory-Gate Override),2,2,2,2,2,2,12,INCLUDE_PRIMARY (RQ3 Decision-Model Intervention)
+RV-10,Same-Vendor vs. Cross-Vendor Author x Reviewer Monoculture (Inductive Governance Paradox),2,2,2,2,2,1,11,INCLUDE_PRIMARY (RQ1/RQ2 Sub-Analysis)
+RV-07,Mode I Operator Self-Merge (82.28% Separation-of-Duty Bypass vs. Mode II 1.69x Speedup),2,2,2,2,2,1,11,INCLUDE_PRIMARY (RQ1 Execution Mode Partition)
+RV-03,Acute Queue Load & Single-Gatekeeper Concentration vs. Chronic Habituation,1,1,2,2,1,1,8,DEMOTE_TO_COVARIATE
+RV-09,Test Adaptedness (44.36%) & 6.9x File-Spread Rejection Cliff,1,2,2,2,1,1,9,RETAIN_AS_CONTROL_COVARIATE (Diff-size & test-presence control in RQ1)
+RV-08,Pillar III Super-Linear ODE Blowup (alpha > 1) vs. Sublinear Blast Radius (beta = 0.450),1,0,2,1,0,1,5,RETIRE_FROM_MANUSCRIPT (Falsified beta=0.450 < 1; prune ODE blowup)

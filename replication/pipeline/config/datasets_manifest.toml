@@ -1,0 +1,285 @@
+# Declarative Multi-Corpus & Tier-1 SZZ Git-Clone Manifest for pr-analysis
+# Parseable via Python 3.11+ stdlib `tomllib`.
+
+version = "2.1-post-hydrogen"
+default_clone_tier = 1
+scratch_root = "scratch"
+
+[[datasets]]
+id = "DS-01_aidev"
+name = "AIDev Corpus (MSR 2026)"
+target_dir = "scratch/aidev"
+fetch_method = "zenodo_or_hf"
+doi = "10.5281/zenodo.16899501"
+zenodo_archive_url = "https://zenodo.org/records/16899501/files/aidev.tar.gz"
+hf_repo_id = "hao-li/AIDev"
+
+[datasets.required_files."pull_request.parquet"]
+expected_rows = 33596
+size_bytes = 16855612
+sha256 = "08f520b5ef36b6281f82090db09ac14aefc3534ee113886e7bc85131fd8d214c"
+
+[datasets.required_files."human_pull_request.parquet"]
+expected_rows = 6618
+size_bytes = 4387171
+sha256 = "910238f8fe5deb544ae82be343232ff6838f271f3de4b4e4787a515336a91248"
+
+[datasets.required_files."pr_reviews.parquet"]
+expected_rows = 28875
+size_bytes = 7517041
+sha256 = "3b7996c6365000e9e7f91bb428ecff78b36290997bee4732e840b0f5cdce70f5"
+
+[datasets.required_files."pr_review_comments_v2.parquet"]
+expected_rows = 26868
+
+[datasets.required_files."pr_review_comments.parquet"]
+expected_rows = 19450
+size_bytes = 14728130
+sha256 = "bf8578c58712939324bd4cac9da43d39f9b144b6690e9efa39bdf5ba4f8c4b27"
+
+[datasets.required_files."pr_comments.parquet"]
+expected_rows = 39122
+size_bytes = 25857243
+sha256 = "b8d16135cdd33de13aae32d50523b2b77b508412b245f80f1e3664c9b8b7dacd"
+
+[datasets.required_files."pr_commits.parquet"]
+expected_rows = 88576
+size_bytes = 8314097
+sha256 = "339228e250d420cd20ffe4b90583d57040263427ea605c1c039631b8ca2bfb4f"
+
+[datasets.required_files."pr_timeline.parquet"]
+expected_rows = 325500
+
+[datasets.required_files."pr_task_type.parquet"]
+expected_rows = 33596
+size_bytes = 2993264
+sha256 = "f32a97a45ac944f4ea473327e62d8f41362502c2b6b3778e76fb64c2b8896476"
+
+[datasets.required_files."human_pr_task_type.parquet"]
+expected_rows = 6618
+
+[datasets.required_files."repository.parquet"]
+expected_rows = 2807
+size_bytes = 167251
+sha256 = "5b76717c39be1cada097d680aa0fcecd03611aa52ae05ef7f1d1e0e1e8b34192"
+
+[datasets.required_files."user.parquet"]
+expected_rows = 1796
+size_bytes = 68935
+sha256 = "1a3198503d7207c32d14f8767886ee56f1b9aecc59dcfc3319edb26123680a83"
+
+[datasets.required_files."issue.parquet"]
+expected_rows = 4614
+
+[datasets.required_files."related_issue.parquet"]
+expected_rows = 4923
+size_bytes = 75579
+sha256 = "34ed28d8294956d68eecc4665acfd4059ce31565c42e8bc1e4950accc81b12c9"
+
+[datasets.optional_extended_files."pr_commit_details.parquet"]
+hf_url = "https://huggingface.co/datasets/hao-li/AIDev/resolve/main/pr_commit_details.parquet"
+purpose = "File-level patch diffs per commit for hunk-level comment uptake (RV-04) and SZZ pre-filtering"
+
+[[datasets]]
+id = "DS-02_agenticflict"
+name = "AgenticFlict (Ogenrwot & Businge 2025)"
+target_dir = "scratch/agenticflict"
+fetch_method = "zenodo"
+doi = "10.5281/zenodo.15783294"
+zenodo_record_api = "https://zenodo.org/api/records/15783294"
+
+[datasets.required_files."data/clean/agenticflict_pr_clean.csv"]
+expected_rows = 142652
+
+[[datasets]]
+id = "DS-03_devgpt"
+name = "DevGPT (Xiao & Treude MSR 2024)"
+target_dir = "scratch/devgpt"
+fetch_method = "zenodo"
+doi = "10.5281/zenodo.8381898"
+zenodo_record_api = "https://zenodo.org/api/records/8381898"
+
+[datasets.required_files."devgpt.sqlite"]
+min_size_mb = 100.0
+
+[[datasets]]
+id = "DS-04_coderabbit"
+name = "CodeRabbit OSS Activities (Nascimento et al. 2025)"
+target_dir = "scratch/coderabbit"
+fetch_method = "zenodo"
+doi = "10.5281/zenodo.21878471"
+zenodo_record_api = "https://zenodo.org/api/records/21878471"
+
+[datasets.required_files."pull_requests.parquet"]
+expected_rows = 99454
+
+[datasets.required_files."repositories.parquet"]
+expected_rows = 481
+
+[[datasets]]
+id = "DS-05_codage"
+name = "CodAGE Multi-Agent Stream (Ghaleb et al. 2026)"
+target_dir = "scratch/codage"
+fetch_method = "huggingface"
+hf_repo_id = "taher-ghaleb/CodAGE"
+
+[datasets.required_files."codage_pr_sample.parquet"]
+expected_rows = 10000
+
+[[datasets]]
+id = "DS-06_agentic_prs"
+name = "GitHub-Agentic-PR-Dataset (Abujadallah et al. 2026)"
+target_dir = "scratch/agentic_prs"
+fetch_method = "huggingface"
+hf_repo_id = "mabujadallah/GitHub-Agentic-PR-Dataset"
+
+[datasets.required_files."pr_review_comments.parquet"]
+expected_rows = 334039
+
+[datasets.required_files."pr_test_quality.parquet"]
+expected_rows = 49042
+
+[[datasets]]
+id = "DS-07_code_review_bench"
+name = "CodeReviewBench (15 Prose Review Bots)"
+target_dir = "scratch/code_review_bench"
+fetch_method = "direct_urls"
+
+[datasets.files]
+"online_sample.parquet" = "https://huggingface.co/datasets/code-review-bench/code-review-bench/resolve/main/online_sample.parquet"
+"offline_golden_issues.parquet" = "https://huggingface.co/datasets/code-review-bench/code-review-bench/resolve/main/offline_golden_issues.parquet"
+"human_annotations_task1.parquet" = "https://huggingface.co/datasets/code-review-bench/code-review-bench/resolve/main/human_annotations_task1.parquet"
+"human_annotations_task2.parquet" = "https://huggingface.co/datasets/code-review-bench/code-review-bench/resolve/main/human_annotations_task2.parquet"
+
+[[datasets]]
+id = "DS-08_qodo_pr_review_bench"
+name = "Qodo PR-Review-Bench"
+target_dir = "scratch/qodo_pr_review_bench"
+fetch_method = "direct_urls"
+
+[datasets.files]
+"git_code_review_bench_100_w_open_prs.jsonl" = "https://huggingface.co/datasets/Qodo/PR-Review-Bench/resolve/main/git_code_review_bench_100_w_open_prs.jsonl"
+"rules_for_repo.jsonl" = "https://huggingface.co/datasets/Qodo/PR-Review-Bench/resolve/main/rules_for_repo.jsonl"
+
+[[datasets]]
+id = "DS-09_gharchive_streams"
+name = "GHArchive Hourly, 3-Day & 3-Month Snapshots"
+target_dir = "scratch/gharchive"
+fetch_method = "gharchive"
+
+[[datasets.snapshots]]
+target = "scratch/gharchive/gharchive_2025-07-15-15.json.gz"
+url = "https://data.gharchive.org/2025-07-15-15.json.gz"
+
+[[datasets.snapshots]]
+target = "scratch/gharchive_3days/gharchive_2026-11-01-12.json.gz"
+url = "https://data.gharchive.org/2026-11-01-12.json.gz"
+
+[[datasets.snapshots]]
+target = "scratch/gharchive_3days/gharchive_2026-11-02-12.json.gz"
+url = "https://data.gharchive.org/2026-11-02-12.json.gz"
+
+[[datasets.snapshots]]
+target = "scratch/gharchive_3days/gharchive_2026-11-03-12.json.gz"
+url = "https://data.gharchive.org/2026-11-03-12.json.gz"
+
+[[datasets]]
+id = "DS-10_jev_pr_reviews"
+name = "TypeSafe Jev Decision-Model PR Reviews & Paired Controls"
+target_dir = "scratch/jev_pr_reviews"
+fetch_method = "local_archive_or_git"
+
+[datasets.required_files."jev_pull_requests.parquet"]
+expected_rows = 6055
+
+[datasets.required_files."jev_bot_signals_and_comments.parquet"]
+expected_rows = 13891
+
+[datasets.required_files."jev_formal_reviews.parquet"]
+expected_rows = 912
+
+[datasets.required_files."jev_git_commits.parquet"]
+expected_rows = 1914
+
+[[datasets]]
+id = "DS-11_tier1_git_clones"
+name = "Tier-1 Bare Git Clones for SZZ Defect Attribution & Architectural Constraints"
+target_dir = "scratch/git_clones"
+fetch_method = "git_bare_clone"
+
+[datasets.tier_1_spec]
+description = "281 multi-regime shared AIDev repositories (hosting both reviewed and silent merged PRs) + active Jev adopter repositories"
+clone_flags = ["--bare", "--filter=blob:none"]
+jev_core_repos = [
+  "getsentry/sentry",
+  "craftmilldev/sesh",
+  "craftmilldev/loopway",
+  "mirrorstack-ai/mirrorstack-cli",
+  "fabiankaegy/pr-risk",
+  "BerriAI/litellm",
+]
+fallback_csv = "results/data_tables/analyzed_repositories_log.csv"
+
+[datasets.tier_2_spec]
+description = "All 810 shared AIDev repositories (hosting both agent and human PRs) + active Jev adopter repositories"
+
+[clones.jev_adopters]
+description = "Active TypeSafe Jev decision-model adopter repositories (8 already-cloned Jev signal repos + 18 additional adopter repos)"
+cloned_core = [
+  "getsentry/sentry",
+  "marufeuille/xteink-read-later",
+  "craftmilldev/loopway",
+  "craftmilldev/sesh",
+  "Tgenz1213/ArchGuard",
+  "mirrorstack-ai/mirrorstack-cli",
+  "craftmilldev/sfml",
+  "getsentry/sentry-php",
+]
+additional_repos = [
+  "optomachina/Overdrafter",
+  "lolotam/PayPos.systems",
+  "lolotam/POSTORA",
+  "jaubut/claude-companion",
+  "grixu/cc-toolkit",
+  "OpenHands/OpenHands",
+  "OpenHands/software-agent-sdk",
+  "lolotam/eyadex",
+  "lolotam/MergePilot",
+  "PostHog/posthog",
+  "Advanced-Digital-Marketing-LTDA/island-life-custom-pools",
+  "verJSON/.github",
+  "zeroasterisk/aaif-wiki",
+  "Jev-Engineering/jraphyte",
+  "career-ops-hq/career-ops",
+  "markjspivey-xwisee/interego",
+  "jeff-kunkun/multica",
+  "sazlin/loadout",
+]
+repos = [
+  "getsentry/sentry",
+  "marufeuille/xteink-read-later",
+  "craftmilldev/loopway",
+  "craftmilldev/sesh",
+  "Tgenz1213/ArchGuard",
+  "mirrorstack-ai/mirrorstack-cli",
+  "craftmilldev/sfml",
+  "getsentry/sentry-php",
+  "optomachina/Overdrafter",
+  "lolotam/PayPos.systems",
+  "lolotam/POSTORA",
+  "jaubut/claude-companion",
+  "grixu/cc-toolkit",
+  "OpenHands/OpenHands",
+  "OpenHands/software-agent-sdk",
+  "lolotam/eyadex",
+  "lolotam/MergePilot",
+  "PostHog/posthog",
+  "Advanced-Digital-Marketing-LTDA/island-life-custom-pools",
+  "verJSON/.github",
+  "zeroasterisk/aaif-wiki",
+  "Jev-Engineering/jraphyte",
+  "career-ops-hq/career-ops",
+  "markjspivey-xwisee/interego",
+  "jeff-kunkun/multica",
+  "sazlin/loadout",
+]

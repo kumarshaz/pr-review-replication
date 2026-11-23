@@ -1,0 +1,38 @@
+panel,dimension,stratum,n,szz_14d_pct,szz_30d_pct,szz_30d_ci95_low,szz_30d_ci95_high,file_survival_30d_pct,cold_file_szz_30d_pct
+AgenticPRs_x_SZZ_u30,adapted,adapted=false,121,39.67,52.07,43.24,60.77,61.38,35.71
+AgenticPRs_x_SZZ_u30,adapted,adapted=true,68,44.12,48.53,37.05,60.17,72.3,15.15
+AgenticPRs_x_SZZ_u30,trivial,trivial=false,152,38.82,50.66,42.79,58.49,64.46,31.03
+AgenticPRs_x_SZZ_u30,trivial,trivial=true,37,51.35,51.35,35.89,66.55,68.8,18.75
+AgenticPRs_x_SZZ_u30,specific,specific=false,72,29.17,40.28,29.72,51.82,72.33,22.0
+AgenticPRs_x_SZZ_u30,specific,specific=true,117,48.72,57.26,48.21,65.86,60.99,35.85
+AgenticPRs_x_SZZ_u30,relevant,relevant=false,31,16.13,16.13,7.09,32.63,89.29,7.69
+AgenticPRs_x_SZZ_u30,relevant,relevant=true,158,46.2,57.59,49.8,65.03,60.6,36.36
+AgenticPRs_x_SZZ_u30,assertion_count_tier,0_assertions,37,51.35,51.35,35.89,66.55,68.8,18.75
+AgenticPRs_x_SZZ_u30,assertion_count_tier,1-5_assertions,74,33.78,44.59,33.82,55.91,67.06,31.48
+AgenticPRs_x_SZZ_u30,assertion_count_tier,6+_assertions,78,43.59,56.41,45.36,66.86,61.99,30.3
+AgenticPRs_x_SZZ_u30::Agent,adapted,adapted=false,70,35.71,52.86,41.32,64.1,56.84,39.53
+AgenticPRs_x_SZZ_u30::Agent,adapted,adapted=true,27,29.63,37.04,21.53,55.77,77.5,6.67
+AgenticPRs_x_SZZ_u30::Agent,trivial,trivial=false,81,30.86,48.15,37.6,58.86,60.11,33.33
+AgenticPRs_x_SZZ_u30::Agent,trivial,trivial=true,16,50.0,50.0,28.0,72.0,75.16,14.29
+AgenticPRs_x_SZZ_u30::Agent,specific,specific=false,36,25.0,44.44,29.54,60.42,68.64,18.18
+AgenticPRs_x_SZZ_u30::Agent,specific,specific=true,61,39.34,50.82,38.6,62.94,59.02,38.89
+AgenticPRs_x_SZZ_u30::Agent,relevant,relevant=false,14,14.29,14.29,4.01,39.94,91.6,0.0
+AgenticPRs_x_SZZ_u30::Agent,relevant,relevant=true,83,37.35,54.22,43.55,64.51,57.7,38.3
+AgenticPRs_x_SZZ_u30::Agent,assertion_count_tier,0_assertions,16,50.0,50.0,28.0,72.0,75.16,14.29
+AgenticPRs_x_SZZ_u30::Agent,assertion_count_tier,1-5_assertions,36,25.0,41.67,27.14,57.8,64.81,32.26
+AgenticPRs_x_SZZ_u30::Agent,assertion_count_tier,6+_assertions,45,35.56,53.33,39.08,67.06,56.34,35.0
+AgenticPRs_x_SZZ_u30::Human,adapted,adapted=false,44,45.45,52.27,37.94,66.25,68.14,31.82
+AgenticPRs_x_SZZ_u30::Human,adapted,adapted=true,33,54.55,57.58,40.81,72.76,69.89,28.57
+AgenticPRs_x_SZZ_u30::Human,trivial,trivial=false,61,49.18,55.74,43.3,67.49,69.33,31.03
+AgenticPRs_x_SZZ_u30::Human,trivial,trivial=true,16,50.0,50.0,28.0,72.0,67.21,28.57
+AgenticPRs_x_SZZ_u30::Human,specific,specific=false,29,34.48,37.93,22.69,56.0,74.79,27.27
+AgenticPRs_x_SZZ_u30::Human,specific,specific=true,48,58.33,64.58,50.44,76.57,65.33,35.71
+AgenticPRs_x_SZZ_u30::Human,relevant,relevant=false,14,21.43,21.43,7.57,47.59,84.69,16.67
+AgenticPRs_x_SZZ_u30::Human,relevant,relevant=true,63,55.56,61.9,49.56,72.88,65.38,37.5
+AgenticPRs_x_SZZ_u30::Human,assertion_count_tier,0_assertions,16,50.0,50.0,28.0,72.0,67.21,28.57
+AgenticPRs_x_SZZ_u30::Human,assertion_count_tier,1-5_assertions,31,45.16,51.61,34.84,68.03,67.08,38.89
+AgenticPRs_x_SZZ_u30::Human,assertion_count_tier,6+_assertions,30,53.33,60.0,42.32,75.41,71.67,18.18
+Full_SZZ_u30::AIDev,test_files_count,Has_Tests (>0),1036,41.89,49.71,46.67,52.75,69.38,22.63
+Full_SZZ_u30::AIDev,test_files_count,No_Tests (0),3002,32.08,40.01,38.27,41.77,75.14,28.09
+Full_SZZ_u30::AIDev_HumanBaseline,test_files_count,Has_Tests (>0),495,42.22,50.71,46.31,55.09,76.35,23.93
+Full_SZZ_u30::AIDev_HumanBaseline,test_files_count,No_Tests (0),1406,31.44,40.68,38.14,43.27,76.2,25.0

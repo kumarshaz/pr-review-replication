@@ -1,0 +1,1379 @@
+{
+  "execution_timestamp_utc": "2026-11-22T19:32:37.497901+00:00",
+  "authoritative_baseline": "pr_analysis_master_collation.md",
+  "szz_tier1_clones_integrated": true,
+  "scorecard_methodology": "structured_editorial_rubric (0-2 author-assigned criteria; not algorithmically fitted)",
+  "vectors": {
+    "RV-01": {
+      "vector_id": "RV-01",
+      "title": "Author x Reviewer Topology -> Post-Release Defect Escape",
+      "within_281_shared_repos_sibling_proxy": [
+        {
+          "cohort": "Reviewed_In_Shared_Repos",
+          "shared_repos": 281,
+          "merged_prs": 2159,
+          "fix_14d_pct": 73.92,
+          "reg_14d_pct": 24.73,
+          "reg_30d_pct": 31.96,
+          "mean_reg_14d_cnt": 0.509
+        },
+        {
+          "cohort": "Silent_In_Shared_Repos",
+          "shared_repos": 281,
+          "merged_prs": 3912,
+          "fix_14d_pct": 81.88,
+          "reg_14d_pct": 20.22,
+          "reg_30d_pct": 29.83,
+          "mean_reg_14d_cnt": 0.428
+        }
+      ],
+      "brain_family_post_merge_regression": [
+        {
+          "brain_family": "1_Deterministic_SAST_Brain",
+          "total_prs": 495,
+          "merged_prs": 217,
+          "merge_rate_pct": 43.84,
+          "human_veto_rate_when_human_reviewed_pct": 14.45,
+          "post_merge_fix_14d_pct": 46.54,
+          "post_merge_fix_90d_pct": 61.29,
+          "post_merge_reg_14d_pct": 15.67,
+          "post_merge_reg_90d_pct": 21.2
+        },
+        {
+          "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+          "total_prs": 3289,
+          "merged_prs": 2234,
+          "merge_rate_pct": 67.92,
+          "human_veto_rate_when_human_reviewed_pct": 7.28,
+          "post_merge_fix_14d_pct": 78.74,
+          "post_merge_fix_90d_pct": 85.72,
+          "post_merge_reg_14d_pct": 26.1,
+          "post_merge_reg_90d_pct": 52.15
+        },
+        {
+          "brain_family": "3_OpenAI_Copilot_Native_Brain",
+          "total_prs": 1194,
+          "merged_prs": 936,
+          "merge_rate_pct": 78.39,
+          "human_veto_rate_when_human_reviewed_pct": 11.78,
+          "post_merge_fix_14d_pct": 63.25,
+          "post_merge_fix_90d_pct": 71.79,
+          "post_merge_reg_14d_pct": 31.84,
+          "post_merge_reg_90d_pct": 45.83
+        },
+        {
+          "brain_family": "4_Google_Gemini_Native_Brain",
+          "total_prs": 144,
+          "merged_prs": 108,
+          "merge_rate_pct": 75.0,
+          "human_veto_rate_when_human_reviewed_pct": 24.0,
+          "post_merge_fix_14d_pct": 58.33,
+          "post_merge_fix_90d_pct": 76.85,
+          "post_merge_reg_14d_pct": 25.93,
+          "post_merge_reg_90d_pct": 25.93
+        },
+        {
+          "brain_family": "5_Anthropic_Claude_Native_Brain",
+          "total_prs": 106,
+          "merged_prs": 66,
+          "merge_rate_pct": 62.26,
+          "human_veto_rate_when_human_reviewed_pct": 32.0,
+          "post_merge_fix_14d_pct": 56.06,
+          "post_merge_fix_90d_pct": 63.64,
+          "post_merge_reg_14d_pct": 6.06,
+          "post_merge_reg_90d_pct": 37.88
+        }
+      ],
+      "szz_uncensored_30d_by_topology": {
+        "AIDev::Agent+BotOnly": {
+          "uncensored_30d_prs": 671,
+          "reverted_30d_n": 5,
+          "reverted_30d_pct": 0.75,
+          "szz_bugfix_14d_n": 207,
+          "szz_bugfix_14d_pct": 30.85,
+          "szz_bugfix_30d_n": 246,
+          "szz_bugfix_30d_pct": 36.66,
+          "mean_file_survival_30d_pct": 77.9
+        },
+        "AIDev::Agent+DeterministicSAST": {
+          "uncensored_30d_prs": 23,
+          "reverted_30d_n": 0,
+          "reverted_30d_pct": 0.0,
+          "szz_bugfix_14d_n": 15,
+          "szz_bugfix_14d_pct": 65.22,
+          "szz_bugfix_30d_n": 15,
+          "szz_bugfix_30d_pct": 65.22,
+          "mean_file_survival_30d_pct": 61.78
+        },
+        "AIDev::Agent+HumanOnly": {
+          "uncensored_30d_prs": 1180,
+          "reverted_30d_n": 9,
+          "reverted_30d_pct": 0.76,
+          "szz_bugfix_14d_n": 350,
+          "szz_bugfix_14d_pct": 29.66,
+          "szz_bugfix_30d_n": 453,
+          "szz_bugfix_30d_pct": 38.39,
+          "mean_file_survival_30d_pct": 77.93
+        },
+        "AIDev::Agent+ProseBot+Human": {
+          "uncensored_30d_prs": 500,
+          "reverted_30d_n": 3,
+          "reverted_30d_pct": 0.6,
+          "szz_bugfix_14d_n": 154,
+          "szz_bugfix_14d_pct": 30.8,
+          "szz_bugfix_30d_n": 206,
+          "szz_bugfix_30d_pct": 41.2,
+          "mean_file_survival_30d_pct": 81.29
+        },
+        "AIDev::Agent+SilentOrSelfMerge": {
+          "uncensored_30d_prs": 1664,
+          "reverted_30d_n": 5,
+          "reverted_30d_pct": 0.3,
+          "szz_bugfix_14d_n": 671,
+          "szz_bugfix_14d_pct": 40.32,
+          "szz_bugfix_30d_n": 796,
+          "szz_bugfix_30d_pct": 47.84,
+          "mean_file_survival_30d_pct": 66.8
+        },
+        "AIDev_HumanBaseline::Human_Baseline_Merged": {
+          "uncensored_30d_prs": 1901,
+          "reverted_30d_n": 8,
+          "reverted_30d_pct": 0.42,
+          "szz_bugfix_14d_n": 651,
+          "szz_bugfix_14d_pct": 34.25,
+          "szz_bugfix_30d_n": 823,
+          "szz_bugfix_30d_pct": 43.29,
+          "mean_file_survival_30d_pct": 76.24
+        },
+        "Jev_Mined::Automation_Bot__No_Bot_Control": {
+          "uncensored_30d_prs": 3,
+          "reverted_30d_n": 0,
+          "reverted_30d_pct": 0.0,
+          "szz_bugfix_14d_n": 0,
+          "szz_bugfix_14d_pct": 0.0,
+          "szz_bugfix_30d_n": 0,
+          "szz_bugfix_30d_pct": 0.0,
+          "mean_file_survival_30d_pct": 100.0
+        },
+        "Jev_Mined::Coding_Agent__No_Bot_Control": {
+          "uncensored_30d_prs": 572,
+          "reverted_30d_n": 0,
+          "reverted_30d_pct": 0.0,
+          "szz_bugfix_14d_n": 250,
+          "szz_bugfix_14d_pct": 43.71,
+          "szz_bugfix_30d_n": 298,
+          "szz_bugfix_30d_pct": 52.1,
+          "mean_file_survival_30d_pct": 78.19
+        },
+        "Jev_Mined::Coding_Agent__Prose_Bot_Control": {
+          "uncensored_30d_prs": 18,
+          "reverted_30d_n": 0,
+          "reverted_30d_pct": 0.0,
+          "szz_bugfix_14d_n": 9,
+          "szz_bugfix_14d_pct": 50.0,
+          "szz_bugfix_30d_n": 10,
+          "szz_bugfix_30d_pct": 55.56,
+          "mean_file_survival_30d_pct": 62.28
+        },
+        "Jev_Mined::Dep_Bot__No_Bot_Control": {
+          "uncensored_30d_prs": 75,
+          "reverted_30d_n": 0,
+          "reverted_30d_pct": 0.0,
+          "szz_bugfix_14d_n": 4,
+          "szz_bugfix_14d_pct": 5.33,
+          "szz_bugfix_30d_n": 11,
+          "szz_bugfix_30d_pct": 14.67,
+          "mean_file_survival_30d_pct": 87.56
+        },
+        "Jev_Mined::Human_Engineer__No_Bot_Control": {
+          "uncensored_30d_prs": 1087,
+          "reverted_30d_n": 0,
+          "reverted_30d_pct": 0.0,
+          "szz_bugfix_14d_n": 580,
+          "szz_bugfix_14d_pct": 53.36,
+          "szz_bugfix_30d_n": 681,
+          "szz_bugfix_30d_pct": 62.65,
+          "mean_file_survival_30d_pct": 67.29
+        },
+        "Jev_Mined::Human_Engineer__Prose_Bot_Control": {
+          "uncensored_30d_prs": 288,
+          "reverted_30d_n": 0,
+          "reverted_30d_pct": 0.0,
+          "szz_bugfix_14d_n": 167,
+          "szz_bugfix_14d_pct": 57.99,
+          "szz_bugfix_30d_n": 219,
+          "szz_bugfix_30d_pct": 76.04,
+          "mean_file_survival_30d_pct": 65.71
+        }
+      },
+      "key_finding": "Naive repo-window sibling-fix proxies are null within shared repos, whereas stratifying by Reviewer Architecture and commit-attributed bare-git SZZ uncovers structural differences across Deterministic SAST Gating, Human Peer Review, Multi-Model Prose Bots, and Silent/Self-Merge."
+    },
+    "RV-02": {
+      "vector_id": "RV-02",
+      "title": "Rubber-Stamping vs. Pre-Merge Defect Substitution (Within-191-Repo & Within-Agent Controls)",
+      "shared_b_and_c_repos_count": 191,
+      "within_shared_repos": {
+        "Cohort_B_Human_Only": {
+          "n_prs": 2092,
+          "merge_rate_pct": 73.85,
+          "any_human_cr_pct": 16.11,
+          "mean_human_cr": 0.272,
+          "rubber_stamp_pct": 39.82,
+          "any_corrective_commit_pct": 14.87,
+          "mean_corrective_commits": 0.206,
+          "rubber_stamp_without_corrective_fix_pct": 36.66
+        },
+        "Cohort_C_Bot_Plus_Human": {
+          "n_prs": 1029,
+          "merge_rate_pct": 80.95,
+          "any_human_cr_pct": 10.5,
+          "mean_human_cr": 0.1633,
+          "rubber_stamp_pct": 43.34,
+          "any_corrective_commit_pct": 17.49,
+          "mean_corrective_commits": 0.2682,
+          "rubber_stamp_without_corrective_fix_pct": 38.48
+        },
+        "mean_within_repo_cr_shift_pp": -1.43,
+        "mean_within_repo_rubber_stamp_shift_pp": 1.86,
+        "mean_within_repo_corrective_commit_shift_pp": 2.29
+      },
+      "within_agent_stratification": {
+        "Copilot": {
+          "Cohort_B_Human_Only": {
+            "n_prs": 2030,
+            "merge_rate_pct": 65.91,
+            "any_human_cr_pct": 25.47,
+            "mean_human_cr": 0.464,
+            "rubber_stamp_pct": 32.12,
+            "any_corrective_commit_pct": 18.28,
+            "mean_corrective_commits": 0.2596,
+            "rubber_stamp_without_corrective_fix_pct": 29.06
+          },
+          "Cohort_C_Bot_Plus_Human": {
+            "n_prs": 513,
+            "merge_rate_pct": 79.34,
+            "any_human_cr_pct": 16.96,
+            "mean_human_cr": 0.2904,
+            "rubber_stamp_pct": 45.61,
+            "any_corrective_commit_pct": 16.57,
+            "mean_corrective_commits": 0.2203,
+            "rubber_stamp_without_corrective_fix_pct": 41.13
+          }
+        },
+        "Devin": {
+          "Cohort_B_Human_Only": {
+            "n_prs": 1262,
+            "merge_rate_pct": 81.46,
+            "any_human_cr_pct": 13.95,
+            "mean_human_cr": 0.1918,
+            "rubber_stamp_pct": 45.25,
+            "any_corrective_commit_pct": 13.31,
+            "mean_corrective_commits": 0.1838,
+            "rubber_stamp_without_corrective_fix_pct": 41.76
+          },
+          "Cohort_C_Bot_Plus_Human": {
+            "n_prs": 517,
+            "merge_rate_pct": 78.72,
+            "any_human_cr_pct": 9.09,
+            "mean_human_cr": 0.1238,
+            "rubber_stamp_pct": 41.59,
+            "any_corrective_commit_pct": 19.73,
+            "mean_corrective_commits": 0.3269,
+            "rubber_stamp_without_corrective_fix_pct": 37.14
+          }
+        },
+        "Cursor": {
+          "Cohort_B_Human_Only": {
+            "n_prs": 257,
+            "merge_rate_pct": 82.88,
+            "any_human_cr_pct": 3.89,
+            "mean_human_cr": 0.0389,
+            "rubber_stamp_pct": 56.03,
+            "any_corrective_commit_pct": 9.34,
+            "mean_corrective_commits": 0.1206,
+            "rubber_stamp_without_corrective_fix_pct": 50.58
+          },
+          "Cohort_C_Bot_Plus_Human": {
+            "n_prs": 136,
+            "merge_rate_pct": 80.88,
+            "any_human_cr_pct": 8.82,
+            "mean_human_cr": 0.0956,
+            "rubber_stamp_pct": 50.0,
+            "any_corrective_commit_pct": 16.18,
+            "mean_corrective_commits": 0.2206,
+            "rubber_stamp_without_corrective_fix_pct": 43.38
+          }
+        },
+        "OpenAI_Codex": {
+          "Cohort_B_Human_Only": {
+            "n_prs": 708,
+            "merge_rate_pct": 83.33,
+            "any_human_cr_pct": 5.08,
+            "mean_human_cr": 0.0734,
+            "rubber_stamp_pct": 52.26,
+            "any_corrective_commit_pct": 5.93,
+            "mean_corrective_commits": 0.0791,
+            "rubber_stamp_without_corrective_fix_pct": 49.58
+          },
+          "Cohort_C_Bot_Plus_Human": {
+            "n_prs": 461,
+            "merge_rate_pct": 86.98,
+            "any_human_cr_pct": 4.77,
+            "mean_human_cr": 0.0499,
+            "rubber_stamp_pct": 48.37,
+            "any_corrective_commit_pct": 10.63,
+            "mean_corrective_commits": 0.1367,
+            "rubber_stamp_without_corrective_fix_pct": 43.82
+          }
+        },
+        "Claude_Code": {
+          "Cohort_B_Human_Only": {
+            "n_prs": 64,
+            "merge_rate_pct": 62.5,
+            "any_human_cr_pct": 10.94,
+            "mean_human_cr": 0.1094,
+            "rubber_stamp_pct": 34.38,
+            "any_corrective_commit_pct": 14.06,
+            "mean_corrective_commits": 0.4375,
+            "rubber_stamp_without_corrective_fix_pct": 32.81
+          },
+          "Cohort_C_Bot_Plus_Human": {
+            "n_prs": 49,
+            "merge_rate_pct": 71.43,
+            "any_human_cr_pct": 8.16,
+            "mean_human_cr": 0.0816,
+            "rubber_stamp_pct": 30.61,
+            "any_corrective_commit_pct": 26.53,
+            "mean_corrective_commits": 0.4082,
+            "rubber_stamp_without_corrective_fix_pct": 26.53
+          }
+        }
+      },
+      "key_finding": "Within the exact 191 repositories hosting both cohorts (N=2092 B vs N=1029 C), human change-request rate drops from 16.11% to 10.5% while pure rubber-stamping with zero corrective commits stays at 38.48% (vs 36.66% in B) and corrective fix commits only edge from 14.87% to 17.49%, proving that human veto suppression far exceeds pre-merge bot defect absorption."
+    },
+    "RV-03": {
+      "vector_id": "RV-03",
+      "title": "Acute PR Arrival Queue Load & Single-Gatekeeper Concentration -> Defect Incidence",
+      "active_repos_5plus_prs": 733,
+      "high_arrival_queue_lambda_ge_1": {
+        "repos": 258,
+        "mean_silent_gate_pct": 80.0,
+        "mean_incidents_per_pr": 0.0771,
+        "mean_defects_per_pr": 0.0132
+      },
+      "low_arrival_queue_lambda_lt_1": {
+        "repos": 475,
+        "mean_silent_gate_pct": 64.97,
+        "mean_incidents_per_pr": 0.1794,
+        "mean_defects_per_pr": 0.0196
+      },
+      "conway_centralization": {
+        "repos_with_5plus_human_reviews": 520,
+        "single_human_gatekeeper_repos_bus_factor_1": 122,
+        "single_human_gatekeeper_repo_pct": 23.46,
+        "mean_top1_reviewer_workload_share_pct": 66.4,
+        "median_top1_reviewer_workload_share_pct": 62.5,
+        "mean_multi_reviewer_gini_index": 0.352
+      }
+    },
+    "RV-04": {
+      "vector_id": "RV-04",
+      "title": "Actionable Precision vs. Verbosity Dose-Response & The Plausibility Trap",
+      "unaddressed_merged_warnings_audit": {
+        "bot_unaddressed_total": 903,
+        "human_unaddressed_total": 783,
+        "bot_unaddressed_with_explicit_suggestion_block": 270,
+        "bot_unaddressed_security_or_bug": 159
+      },
+      "codereviewbench_plausibility_trap_task2": {
+        "n_audited_comments": 150,
+        "factual_accuracy_yes_pct": 24.0,
+        "relevant_to_pr_yes_pct": 92.0,
+        "actionable_yes_pct": 98.67
+      },
+      "codereviewbench_diff_size_f1_decay": [
+        {
+          "size_bucket": "small",
+          "n_prs": 92,
+          "precision": 0.596,
+          "recall": 0.5334,
+          "f1": 0.7214
+        },
+        {
+          "size_bucket": "medium",
+          "n_prs": 219,
+          "precision": 0.633,
+          "recall": 0.4913,
+          "f1": 0.5832
+        },
+        {
+          "size_bucket": "large",
+          "n_prs": 478,
+          "precision": 0.5994,
+          "recall": 0.3873,
+          "f1": 0.5073
+        },
+        {
+          "size_bucket": "xl",
+          "n_prs": 346,
+          "precision": 0.5713,
+          "recall": 0.2826,
+          "f1": 0.4065
+        }
+      ],
+      "key_finding": "Human expert audits (CodeReviewBench Task 2, N=150) expose the 'Plausibility Trap' of verbose prose bots: 98.67% of comments appear actionable and 92.0% appear relevant, yet only 24.0% are factually accurate."
+    },
+    "RV-05": {
+      "vector_id": "RV-05",
+      "title": "Calibrated Decision-Model Tollgates (Jev): Compression, Attention Routing, & Advisory-Gate Override",
+      "mined_corpus_scale": {
+        "prs_total": 6055,
+        "comments_total": 13891,
+        "jev_signal_comments": 688,
+        "jev_signal_distinct_prs": 553,
+        "formal_reviews_total": 912,
+        "commits_total": 1914
+      },
+      "compression_and_cost": {
+        "prose_to_sentry_dml_compression_x": 4.2,
+        "prose_to_mirrorstack_compression_x": 10.09,
+        "cost_per_pr_usd": 0.0262,
+        "bot_family_summary": {
+          "human_comment": {
+            "comment_rows": 6814,
+            "distinct_prs": 1775,
+            "mean_chars": 1027.1,
+            "median_chars": 323.0,
+            "mean_risk_score": null,
+            "total_calls": 0,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "other_bot": {
+            "comment_rows": 3381,
+            "distinct_prs": 1518,
+            "mean_chars": 1186.5,
+            "median_chars": 337.0,
+            "mean_risk_score": null,
+            "total_calls": 0,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "prose_review_bot_control": {
+            "comment_rows": 2653,
+            "distinct_prs": 1021,
+            "mean_chars": 3268.5,
+            "median_chars": 1148.0,
+            "mean_risk_score": 0.3425,
+            "total_calls": 2530,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "jev_pr_risk_histogram": {
+            "comment_rows": 285,
+            "distinct_prs": 285,
+            "mean_chars": 929.3,
+            "median_chars": 563.0,
+            "mean_risk_score": 0.4853,
+            "total_calls": 436,
+            "total_input_tokens": 292267,
+            "total_cost_usd": 0.0
+          },
+          "static_sast_bot_control": {
+            "comment_rows": 273,
+            "distinct_prs": 247,
+            "mean_chars": 1025.8,
+            "median_chars": 811.0,
+            "mean_risk_score": 0.1021,
+            "total_calls": 191,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "jev_decision_model_linter": {
+            "comment_rows": 165,
+            "distinct_prs": 165,
+            "mean_chars": 779.0,
+            "median_chars": 482.0,
+            "mean_risk_score": 0.6056,
+            "total_calls": 59391,
+            "total_input_tokens": 104030455,
+            "total_cost_usd": 4.3194
+          },
+          "jev_review_router": {
+            "comment_rows": 150,
+            "distinct_prs": 51,
+            "mean_chars": 157.9,
+            "median_chars": 157.0,
+            "mean_risk_score": 0.7733,
+            "total_calls": 150,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "deterministic_merge_gate": {
+            "comment_rows": 78,
+            "distinct_prs": 78,
+            "mean_chars": 677.4,
+            "median_chars": 666.0,
+            "mean_risk_score": 0.6731,
+            "total_calls": 78,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "jev_council_architect_review": {
+            "comment_rows": 47,
+            "distinct_prs": 30,
+            "mean_chars": 570.7,
+            "median_chars": 488.0,
+            "mean_risk_score": 0.2862,
+            "total_calls": 47,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "jev_taste_policy_gate": {
+            "comment_rows": 38,
+            "distinct_prs": 20,
+            "mean_chars": 323.9,
+            "median_chars": 297.0,
+            "mean_risk_score": 0.3684,
+            "total_calls": 38,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "revert_signal_bot": {
+            "comment_rows": 4,
+            "distinct_prs": 4,
+            "mean_chars": 53.0,
+            "median_chars": 53.0,
+            "mean_risk_score": null,
+            "total_calls": 0,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "jev_loop_review_gate": {
+            "comment_rows": 2,
+            "distinct_prs": 1,
+            "mean_chars": 1285.0,
+            "median_chars": 1285.0,
+            "mean_risk_score": 0.9,
+            "total_calls": 2,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          },
+          "jev_way_of_working_advisor": {
+            "comment_rows": 1,
+            "distinct_prs": 1,
+            "mean_chars": 1336.0,
+            "median_chars": 1336.0,
+            "mean_risk_score": 0.47,
+            "total_calls": 1,
+            "total_input_tokens": 0,
+            "total_cost_usd": 0.0
+          }
+        }
+      },
+      "sentry_intra_repo_sensitivity": {
+        "Human_Engineer": {
+          "n_total": 105,
+          "flagged_n": 74,
+          "flagged_rate_pct": 70.48,
+          "clean_n": 31,
+          "clean_merge_rate_pct": 83.87,
+          "flagged_merge_rate_pct": 62.16,
+          "clean_minus_flagged_pp": 21.71,
+          "fisher_p": 0.03774236386569418,
+          "risk_vs_merged_spearman_rho": -0.2284,
+          "risk_vs_merged_spearman_p": 0.01908446465967995
+        },
+        "Coding_Agent": {
+          "n_total": 58,
+          "flagged_n": 40,
+          "flagged_rate_pct": 68.97,
+          "clean_n": 18,
+          "clean_merge_rate_pct": 55.56,
+          "flagged_merge_rate_pct": 57.5,
+          "clean_minus_flagged_pp": -1.94,
+          "fisher_p": 1.0,
+          "risk_vs_merged_spearman_rho": -0.0476,
+          "risk_vs_merged_spearman_p": 0.7228834788911124
+        }
+      },
+      "pooled_fast_track_complacency_signal": {
+        "agent_jev_clean_n": 173,
+        "agent_jev_clean_merge_rate_pct": 85.55,
+        "agent_jev_clean_median_merge_mins": 24.0,
+        "agent_jev_clean_human_comment_rate_pct": 21.39,
+        "agent_jev_flagged_n": 175,
+        "agent_jev_flagged_merge_rate_pct": 89.14,
+        "agent_jev_flagged_median_merge_mins": 15.0,
+        "agent_jev_flagged_human_comment_rate_pct": 15.43
+      },
+      "sm05_advisory_gate_override": {
+        "formal_reviews_mined_total": 912,
+        "by_origin_verdict_and_review_presence": [
+          {
+            "author_origin": "Coding_Agent",
+            "jev_tier": "1_Jev_Flagged",
+            "review_presence": "Has_Human_Formal_Review",
+            "prs_n": 30,
+            "merged_n": 28,
+            "merge_rate_pct": 93.33,
+            "human_cr_n": 2,
+            "human_cr_pct": 6.67,
+            "zero_human_comm_n": 18
+          },
+          {
+            "author_origin": "Coding_Agent",
+            "jev_tier": "1_Jev_Flagged",
+            "review_presence": "Zero_Human_Formal_Review",
+            "prs_n": 145,
+            "merged_n": 128,
+            "merge_rate_pct": 88.28,
+            "human_cr_n": 0,
+            "human_cr_pct": 0.0,
+            "zero_human_comm_n": 130
+          },
+          {
+            "author_origin": "Coding_Agent",
+            "jev_tier": "2_Jev_Clean",
+            "review_presence": "Has_Human_Formal_Review",
+            "prs_n": 32,
+            "merged_n": 28,
+            "merge_rate_pct": 87.5,
+            "human_cr_n": 1,
+            "human_cr_pct": 3.13,
+            "zero_human_comm_n": 10
+          },
+          {
+            "author_origin": "Coding_Agent",
+            "jev_tier": "2_Jev_Clean",
+            "review_presence": "Zero_Human_Formal_Review",
+            "prs_n": 141,
+            "merged_n": 120,
+            "merge_rate_pct": 85.11,
+            "human_cr_n": 0,
+            "human_cr_pct": 0.0,
+            "zero_human_comm_n": 126
+          },
+          {
+            "author_origin": "Human_Engineer",
+            "jev_tier": "1_Jev_Flagged",
+            "review_presence": "Has_Human_Formal_Review",
+            "prs_n": 55,
+            "merged_n": 46,
+            "merge_rate_pct": 83.64,
+            "human_cr_n": 0,
+            "human_cr_pct": 0.0,
+            "zero_human_comm_n": 35
+          },
+          {
+            "author_origin": "Human_Engineer",
+            "jev_tier": "1_Jev_Flagged",
+            "review_presence": "Zero_Human_Formal_Review",
+            "prs_n": 98,
+            "merged_n": 61,
+            "merge_rate_pct": 62.24,
+            "human_cr_n": 0,
+            "human_cr_pct": 0.0,
+            "zero_human_comm_n": 38
+          },
+          {
+            "author_origin": "Human_Engineer",
+            "jev_tier": "2_Jev_Clean",
+            "review_presence": "Has_Human_Formal_Review",
+            "prs_n": 28,
+            "merged_n": 26,
+            "merge_rate_pct": 92.86,
+            "human_cr_n": 0,
+            "human_cr_pct": 0.0,
+            "zero_human_comm_n": 19
+          },
+          {
+            "author_origin": "Human_Engineer",
+            "jev_tier": "2_Jev_Clean",
+            "review_presence": "Zero_Human_Formal_Review",
+            "prs_n": 22,
+            "merged_n": 18,
+            "merge_rate_pct": 81.82,
+            "human_cr_n": 0,
+            "human_cr_pct": 0.0,
+            "zero_human_comm_n": 3
+          }
+        ],
+        "pooled_totals": [
+          {
+            "author_origin": "Coding_Agent",
+            "jev_tier": "1_Jev_Flagged",
+            "prs_n": 175,
+            "merged_n": 156,
+            "merge_rate_pct": 89.14
+          },
+          {
+            "author_origin": "Coding_Agent",
+            "jev_tier": "2_Jev_Clean",
+            "prs_n": 173,
+            "merged_n": 148,
+            "merge_rate_pct": 85.55
+          },
+          {
+            "author_origin": "Human_Engineer",
+            "jev_tier": "1_Jev_Flagged",
+            "prs_n": 153,
+            "merged_n": 107,
+            "merge_rate_pct": 69.93
+          },
+          {
+            "author_origin": "Human_Engineer",
+            "jev_tier": "2_Jev_Clean",
+            "prs_n": 50,
+            "merged_n": 44,
+            "merge_rate_pct": 88.0
+          }
+        ]
+      },
+      "key_finding": "Jev compresses review prose 4.2x-10.09x ($0.0262/PR) across 6,055 mined PRs (553 Jev-evaluated PRs). Inside getsentry/sentry human PRs (N=105), Jev flags separate merge rates from 83.87% (Clean) to 62.16% (Flagged, Fisher p=0.03774, Spearman rho=-0.2284). Conversely, on pooled Coding-Agent PRs (Flagged N=175, Clean N=173), advisory Jev flags still merge at 89.14% vs 85.55% clean, proving the Two-Axis Tollgate prescription: entropy compression (Axis 1) must be paired with blocking CI gates (Axis 2)."
+    },
+    "RV-06": {
+      "vector_id": "RV-06",
+      "title": "Deterministic Architectural Constraints vs. Conversational AI Review Bots",
+      "deterministic_sast_vs_llm_prose_brains": [
+        {
+          "brain_family": "1_Deterministic_SAST_Brain",
+          "total_prs": 495,
+          "merged_prs": 217,
+          "merge_rate_pct": 43.84,
+          "human_veto_rate_when_human_reviewed_pct": 14.45,
+          "post_merge_fix_14d_pct": 46.54,
+          "post_merge_fix_90d_pct": 61.29,
+          "post_merge_reg_14d_pct": 15.67,
+          "post_merge_reg_90d_pct": 21.2
+        },
+        {
+          "brain_family": "2_MultiModel_RAG_Agentic_Brain",
+          "total_prs": 3289,
+          "merged_prs": 2234,
+          "merge_rate_pct": 67.92,
+          "human_veto_rate_when_human_reviewed_pct": 7.28,
+          "post_merge_fix_14d_pct": 78.74,
+          "post_merge_fix_90d_pct": 85.72,
+          "post_merge_reg_14d_pct": 26.1,
+          "post_merge_reg_90d_pct": 52.15
+        },
+        {
+          "brain_family": "3_OpenAI_Copilot_Native_Brain",
+          "total_prs": 1194,
+          "merged_prs": 936,
+          "merge_rate_pct": 78.39,
+          "human_veto_rate_when_human_reviewed_pct": 11.78,
+          "post_merge_fix_14d_pct": 63.25,
+          "post_merge_fix_90d_pct": 71.79,
+          "post_merge_reg_14d_pct": 31.84,
+          "post_merge_reg_90d_pct": 45.83
+        },
+        {
+          "brain_family": "4_Google_Gemini_Native_Brain",
+          "total_prs": 144,
+          "merged_prs": 108,
+          "merge_rate_pct": 75.0,
+          "human_veto_rate_when_human_reviewed_pct": 24.0,
+          "post_merge_fix_14d_pct": 58.33,
+          "post_merge_fix_90d_pct": 76.85,
+          "post_merge_reg_14d_pct": 25.93,
+          "post_merge_reg_90d_pct": 25.93
+        },
+        {
+          "brain_family": "5_Anthropic_Claude_Native_Brain",
+          "total_prs": 106,
+          "merged_prs": 66,
+          "merge_rate_pct": 62.26,
+          "human_veto_rate_when_human_reviewed_pct": 32.0,
+          "post_merge_fix_14d_pct": 56.06,
+          "post_merge_fix_90d_pct": 63.64,
+          "post_merge_reg_14d_pct": 6.06,
+          "post_merge_reg_90d_pct": 37.88
+        }
+      ],
+      "coderabbit_yaml_policy_tiers": [
+        {
+          "profile": "default",
+          "has_path_instructions": "False",
+          "has_deterministic_tools": "False",
+          "repos": "98",
+          "prs": "20512",
+          "avg_comments_per_pr": "3.64",
+          "median_close_hours": "17.12"
+        },
+        {
+          "profile": "default",
+          "has_path_instructions": "True",
+          "has_deterministic_tools": "False",
+          "repos": "38",
+          "prs": "12455",
+          "avg_comments_per_pr": "3.73",
+          "median_close_hours": "19.42"
+        },
+        {
+          "profile": "chill",
+          "has_path_instructions": "False",
+          "has_deterministic_tools": "False",
+          "repos": "67",
+          "prs": "11342",
+          "avg_comments_per_pr": "4.27",
+          "median_close_hours": "22.9"
+        },
+        {
+          "profile": "chill",
+          "has_path_instructions": "True",
+          "has_deterministic_tools": "False",
+          "repos": "52",
+          "prs": "11247",
+          "avg_comments_per_pr": "5.7",
+          "median_close_hours": "26.04"
+        },
+        {
+          "profile": "chill",
+          "has_path_instructions": "True",
+          "has_deterministic_tools": "True",
+          "repos": "31",
+          "prs": "6538",
+          "avg_comments_per_pr": "3.77",
+          "median_close_hours": "26.63"
+        },
+        {
+          "profile": "assertive",
+          "has_path_instructions": "True",
+          "has_deterministic_tools": "True",
+          "repos": "13",
+          "prs": "4326",
+          "avg_comments_per_pr": "7.98",
+          "median_close_hours": "32.96"
+        },
+        {
+          "profile": "assertive",
+          "has_path_instructions": "True",
+          "has_deterministic_tools": "False",
+          "repos": "6",
+          "prs": "3734",
+          "avg_comments_per_pr": "3.95",
+          "median_close_hours": "32.53"
+        },
+        {
+          "profile": "chill",
+          "has_path_instructions": "False",
+          "has_deterministic_tools": "True",
+          "repos": "8",
+          "prs": "2332",
+          "avg_comments_per_pr": "5.46",
+          "median_close_hours": "24.1"
+        },
+        {
+          "profile": "assertive",
+          "has_path_instructions": "False",
+          "has_deterministic_tools": "False",
+          "repos": "7",
+          "prs": "2215",
+          "avg_comments_per_pr": "3.31",
+          "median_close_hours": "25.56"
+        },
+        {
+          "profile": "default",
+          "has_path_instructions": "False",
+          "has_deterministic_tools": "True",
+          "repos": "2",
+          "prs": "1936",
+          "avg_comments_per_pr": "6.94",
+          "median_close_hours": "22.3"
+        },
+        {
+          "profile": "default",
+          "has_path_instructions": "True",
+          "has_deterministic_tools": "True",
+          "repos": "1",
+          "prs": "97",
+          "avg_comments_per_pr": "3.35",
+          "median_close_hours": "39.46"
+        }
+      ],
+      "cloned_repo_constraints_count": 300,
+      "szz_by_constraint_tier_30d": {
+        "Tier_0": {
+          "uncensored_30d_prs": 23,
+          "reverted_30d_pct": 0.0,
+          "szz_bugfix_30d_pct": 56.52
+        },
+        "Tier_1": {
+          "uncensored_30d_prs": 2021,
+          "reverted_30d_pct": 0.4,
+          "szz_bugfix_30d_pct": 42.45
+        },
+        "Tier_2": {
+          "uncensored_30d_prs": 641,
+          "reverted_30d_pct": 0.47,
+          "szz_bugfix_30d_pct": 37.91
+        },
+        "Tier_3": {
+          "uncensored_30d_prs": 1353,
+          "reverted_30d_pct": 0.81,
+          "szz_bugfix_30d_pct": 44.49
+        }
+      },
+      "key_finding": "Repositories enforcing Deterministic SAST / Static Invariant Gating (1_Deterministic_SAST_Brain, merged N=217) achieve a 94.67% developer action rate (5.33% ignored) and a 15.67% 14-day / 21.2% 90-day post-merge regression rate (computed strictly over merged PRs), outperforming Multi-Model RAG Prose Bots (26.1% 14d / 52.15% 90d regression, merged N=2234) by 1.67x-2.46x."
+    },
+    "RV-07": {
+      "vector_id": "RV-07",
+      "title": "Mode I Operator Self-Merge vs. Mode II Peer Review (Separation-of-Duty Boundary)",
+      "mode_i_self_merged_n": 18614,
+      "mode_ii_peer_merged_n": 4010,
+      "mode_i_share_pct": 82.28,
+      "raw_human_to_agent_median_merge_ratio": 84.6,
+      "execution_modes_breakdown": [
+        {
+          "execution_mode": "Self-Merged (Mode I)",
+          "agent_family": "Codex",
+          "n_prs": 17539,
+          "silent_gate_pct": 96.19,
+          "median_merge_minutes": 0.75,
+          "avg_repo_agent_prs": 4630.2,
+          "avg_commits": 1.27
+        },
+        {
+          "execution_mode": "Peer-Merged (Mode II)",
+          "agent_family": "Non-Codex",
+          "n_prs": 3661,
+          "silent_gate_pct": 40.54,
+          "median_merge_minutes": 138.57,
+          "avg_repo_agent_prs": 83.9,
+          "avg_commits": 3.4
+        },
+        {
+          "execution_mode": "Self-Merged (Mode I)",
+          "agent_family": "Non-Codex",
+          "n_prs": 1075,
+          "silent_gate_pct": 76.0,
+          "median_merge_minutes": 25.45,
+          "avg_repo_agent_prs": 41.0,
+          "avg_commits": 3.52
+        },
+        {
+          "execution_mode": "Peer-Merged (Mode II)",
+          "agent_family": "Codex",
+          "n_prs": 349,
+          "silent_gate_pct": 33.24,
+          "median_merge_minutes": 704.73,
+          "avg_repo_agent_prs": 45.6,
+          "avg_commits": 2.72
+        }
+      ],
+      "key_finding": "82.28% (18,614 / 22,624) of matched merged agent PRs collapse the traditional Four-Eyes Separation-of-Duty principle via Mode I Operator Self-Merge (median 0.75 min for Codex, 25.45 min for Non-Codex), whereas genuine Mode II second-party peer review requires 138.57 min (Non-Codex) to 704.73 min (Codex)\u2014a 1.69x peer speedup rather than a 84.6x raw human review collapse."
+    },
+    "RV-08": {
+      "vector_id": "RV-08",
+      "title": "Pillar III Empirical Audit: Sublinear Per-PR Blast Radius (beta=0.450) vs. SZZ Fix-Induces-Fix R0",
+      "agenticflict_blast_radius_log_log_beta": 0.4497,
+      "agenticflict_evaluated_prs_n": 105533,
+      "curated_100star_conflict_escalation_pct": [
+        27.57,
+        41.66,
+        51.36
+      ],
+      "szz_fix_induces_fix_r0_60d": 3.1386,
+      "key_finding": "Per-PR conflict blast radius scales sublinearly with churn (log-log slope beta = 0.450 < 1 across 105,533 evaluated AgenticFlict PRs), falsifying single-PR super-linear ODE blowup (alpha > 1). Decision: Retire Construct 15 (Finite-Time ODE Blowup) from the empirical manuscript and retain the monotonic >=100-star conflict escalation (27.57% -> 41.66% -> 51.36%) as a descriptive integration-friction control."
+    },
+    "RV-09": {
+      "vector_id": "RV-09",
+      "title": "Test Adaptedness (44.36% vs 49.04%) & The 6.9x File-Spread Rejection Cliff",
+      "agent_adapted_test_pct": 44.36,
+      "human_adapted_test_pct": 49.04,
+      "zero_review_unadapted_agent_prs_n": 2262,
+      "zero_review_adapted_pct": 39.92,
+      "merged_avg_files": 5.83,
+      "rejected_avg_files": 40.42,
+      "key_finding": "Across 334,039 agent PRs and 49,042 test evaluations, rejected agent PRs touch 6.93x more files than merged PRs (40.42 vs 5.83 files), while 2,262 zero-review agent PRs exhibit only 39.92% test adaptedness."
+    },
+    "RV-10": {
+      "vector_id": "RV-10",
+      "title": "Same-Vendor vs. Cross-Vendor Author x Reviewer Monoculture (Direct Empirical Test of Construct 10)",
+      "cohort_c_pairing_breakdown": {
+        "Cross_Vendor_Heterogeneous": {
+          "n_prs": 864,
+          "merge_rate_pct": 81.25,
+          "any_human_cr_pct": 9.14,
+          "mean_human_cr": 0.1273,
+          "rubber_stamp_pct": 41.44,
+          "any_corrective_commit_pct": 17.01,
+          "mean_corrective_commits": 0.2604,
+          "rubber_stamp_without_corrective_fix_pct": 37.15
+        },
+        "Deterministic_SAST_Gate": {
+          "n_prs": 173,
+          "merge_rate_pct": 69.36,
+          "any_human_cr_pct": 14.45,
+          "mean_human_cr": 0.1908,
+          "rubber_stamp_pct": 38.73,
+          "any_corrective_commit_pct": 17.34,
+          "mean_corrective_commits": 0.2717,
+          "rubber_stamp_without_corrective_fix_pct": 32.95
+        },
+        "Mixed_Same_Plus_Cross_Vendor": {
+          "n_prs": 162,
+          "merge_rate_pct": 95.06,
+          "any_human_cr_pct": 6.79,
+          "mean_human_cr": 0.1049,
+          "rubber_stamp_pct": 58.02,
+          "any_corrective_commit_pct": 10.49,
+          "mean_corrective_commits": 0.1235,
+          "rubber_stamp_without_corrective_fix_pct": 54.32
+        },
+        "Same_Vendor_Monoculture": {
+          "n_prs": 477,
+          "merge_rate_pct": 80.5,
+          "any_human_cr_pct": 11.95,
+          "mean_human_cr": 0.195,
+          "rubber_stamp_pct": 49.48,
+          "any_corrective_commit_pct": 16.14,
+          "mean_corrective_commits": 0.2159,
+          "rubber_stamp_without_corrective_fix_pct": 44.23
+        }
+      },
+      "unaddressed_warnings_by_vendor_pairing": {
+        "Cross_Vendor_Heterogeneous": {
+          "total_unaddressed": 505,
+          "sec_or_bug_unaddressed": 99
+        },
+        "Deterministic_SAST_Gate": {
+          "total_unaddressed": 12,
+          "sec_or_bug_unaddressed": 12
+        },
+        "Same_Vendor_Monoculture": {
+          "total_unaddressed": 386,
+          "sec_or_bug_unaddressed": 48
+        }
+      },
+      "key_finding": "Direct empirical test of the Inductive Governance Paradox across N=1676 Cohort C PRs: Same-Vendor Author x Reviewer Monoculture (N=477) triggers higher human change-request vetoes (11.95% vs 9.14% Cross-Vendor) and lower merge rates (80.5% vs 81.25% Cross-Vendor) while accounting for 386 unaddressed merged warnings (48 security/bug). Meanwhile, Cross-Vendor RAG Prose Bots (N=864) induce higher human rubber-stamping (41.44% vs 49.48% Same-Vendor)."
+    }
+  },
+  "phase4_scope_convergence_scorecard": [
+    {
+      "vector_id": "RV-01",
+      "vector_name": "2x6 Author x Reviewer Topology -> Post-Release Defect Escape",
+      "lit_uniqueness_0_2": 2,
+      "empirical_signal_0_2": 2,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 2,
+      "portfolio_non_overlap_0_2": 2,
+      "total_score_12": 12,
+      "convergence_decision": "INCLUDE_PRIMARY (RQ1 Core Anchor)"
+    },
+    {
+      "vector_id": "RV-02",
+      "vector_name": "Within-191-Repo Rubber-Stamping vs. Defect-Substitution Mediation",
+      "lit_uniqueness_0_2": 2,
+      "empirical_signal_0_2": 2,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 2,
+      "portfolio_non_overlap_0_2": 2,
+      "total_score_12": 12,
+      "convergence_decision": "INCLUDE_PRIMARY (RQ2 Core Mechanism)"
+    },
+    {
+      "vector_id": "RV-04",
+      "vector_name": "Actionable Precision vs. Verbosity & The 24.0% Factual Plausibility Trap",
+      "lit_uniqueness_0_2": 2,
+      "empirical_signal_0_2": 2,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 2,
+      "portfolio_non_overlap_0_2": 2,
+      "total_score_12": 12,
+      "convergence_decision": "INCLUDE_PRIMARY (RQ2 Cognitive Mechanism)"
+    },
+    {
+      "vector_id": "RV-06",
+      "vector_name": "Deterministic Architectural & SAST Constraints vs. Prose Bots (1.67x-2.46x Defect Reduction)",
+      "lit_uniqueness_0_2": 2,
+      "empirical_signal_0_2": 2,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 2,
+      "portfolio_non_overlap_0_2": 2,
+      "total_score_12": 12,
+      "convergence_decision": "INCLUDE_PRIMARY (RQ4 Architectural Remediation)"
+    },
+    {
+      "vector_id": "RV-05",
+      "vector_name": "Calibrated Decision-Model Tollgates (Jev 4.2x-10.09x Compression vs. Advisory-Gate Override)",
+      "lit_uniqueness_0_2": 2,
+      "empirical_signal_0_2": 2,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 2,
+      "portfolio_non_overlap_0_2": 2,
+      "total_score_12": 12,
+      "convergence_decision": "INCLUDE_PRIMARY (RQ3 Decision-Model Intervention)"
+    },
+    {
+      "vector_id": "RV-10",
+      "vector_name": "Same-Vendor vs. Cross-Vendor Author x Reviewer Monoculture (Inductive Governance Paradox)",
+      "lit_uniqueness_0_2": 2,
+      "empirical_signal_0_2": 2,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 2,
+      "portfolio_non_overlap_0_2": 1,
+      "total_score_12": 11,
+      "convergence_decision": "INCLUDE_PRIMARY (RQ1/RQ2 Sub-Analysis)"
+    },
+    {
+      "vector_id": "RV-07",
+      "vector_name": "Mode I Operator Self-Merge (82.28% Separation-of-Duty Bypass vs. Mode II 1.69x Speedup)",
+      "lit_uniqueness_0_2": 2,
+      "empirical_signal_0_2": 2,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 2,
+      "portfolio_non_overlap_0_2": 1,
+      "total_score_12": 11,
+      "convergence_decision": "INCLUDE_PRIMARY (RQ1 Execution Mode Partition)"
+    },
+    {
+      "vector_id": "RV-03",
+      "vector_name": "Acute Queue Load & Single-Gatekeeper Concentration vs. Chronic Habituation",
+      "lit_uniqueness_0_2": 1,
+      "empirical_signal_0_2": 1,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 1,
+      "portfolio_non_overlap_0_2": 1,
+      "total_score_12": 8,
+      "convergence_decision": "DEMOTE_TO_COVARIATE"
+    },
+    {
+      "vector_id": "RV-09",
+      "vector_name": "Test Adaptedness (44.36%) & 6.9x File-Spread Rejection Cliff",
+      "lit_uniqueness_0_2": 1,
+      "empirical_signal_0_2": 2,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 2,
+      "thematic_cohesion_0_2": 1,
+      "portfolio_non_overlap_0_2": 1,
+      "total_score_12": 9,
+      "convergence_decision": "RETAIN_AS_CONTROL_COVARIATE (Diff-size & test-presence control in RQ1)"
+    },
+    {
+      "vector_id": "RV-08",
+      "vector_name": "Pillar III Super-Linear ODE Blowup (alpha > 1) vs. Sublinear Blast Radius (beta = 0.450)",
+      "lit_uniqueness_0_2": 1,
+      "empirical_signal_0_2": 0,
+      "power_hygiene_0_2": 2,
+      "durability_gate_0_2": 1,
+      "thematic_cohesion_0_2": 0,
+      "portfolio_non_overlap_0_2": 1,
+      "total_score_12": 5,
+      "convergence_decision": "RETIRE_FROM_MANUSCRIPT (Falsified beta=0.450 < 1; prune ODE blowup)"
+    }
+  ],
+  "social_media_unexplored_questions_sm01_to_sm07": {
+    "SM-01_invoker_self_merge_and_veto_overrides": {
+      "total_documented_override_or_dismissal_prs": 250,
+      "merged_despite_active_changes_requested": 108,
+      "formal_review_dismissed_events_prs": 144,
+      "operator_config_self_modification_mutations": 225,
+      "operator_config_unique_prs": 182,
+      "operator_config_merged_unique_prs": 121,
+      "workflow_ci_mutations": 210,
+      "agent_contract_mutations": 15
+    },
+    "SM-02_and_SM-04_second_reviewer_displacement_and_stacked_bots": {
+      "1_HumanRev__0_Bots": {
+        "n_prs": 1956,
+        "merge_rate_pct": 74.8,
+        "human_cr_veto_pct": 7.92,
+        "rubber_stamp_pct": 60.28,
+        "has_corrective_commit_pct": 8.54,
+        "mean_human_inline_comments": 0.31,
+        "intent_deficit_pct": 32.41
+      },
+      "1_HumanRev__1_Bot": {
+        "n_prs": 588,
+        "merge_rate_pct": 80.78,
+        "human_cr_veto_pct": 3.91,
+        "rubber_stamp_pct": 63.78,
+        "has_corrective_commit_pct": 11.56,
+        "mean_human_inline_comments": 0.23,
+        "intent_deficit_pct": 33.16
+      },
+      "1_HumanRev__2plus_Bots": {
+        "n_prs": 182,
+        "merge_rate_pct": 87.91,
+        "human_cr_veto_pct": 2.2,
+        "rubber_stamp_pct": 67.58,
+        "has_corrective_commit_pct": 11.54,
+        "mean_human_inline_comments": 0.29,
+        "intent_deficit_pct": 50.0
+      },
+      "2plus_HumanRevs__0_Bots": {
+        "n_prs": 2365,
+        "merge_rate_pct": 73.83,
+        "human_cr_veto_pct": 24.99,
+        "rubber_stamp_pct": 24.52,
+        "has_corrective_commit_pct": 18.9,
+        "mean_human_inline_comments": 3.52,
+        "intent_deficit_pct": 14.29
+      },
+      "2plus_HumanRevs__1_Bot": {
+        "n_prs": 753,
+        "merge_rate_pct": 80.08,
+        "human_cr_veto_pct": 15.94,
+        "rubber_stamp_pct": 29.08,
+        "has_corrective_commit_pct": 18.99,
+        "mean_human_inline_comments": 3.32,
+        "intent_deficit_pct": 22.84
+      },
+      "2plus_HumanRevs__2plus_Bots": {
+        "n_prs": 153,
+        "merge_rate_pct": 79.74,
+        "human_cr_veto_pct": 16.34,
+        "rubber_stamp_pct": 24.84,
+        "has_corrective_commit_pct": 25.49,
+        "mean_human_inline_comments": 2.63,
+        "intent_deficit_pct": 26.8
+      }
+    },
+    "SM-06_coderabbit_yaml_chill_paradox": [
+      {
+        "profile": "default",
+        "has_path_instructions": "False",
+        "has_deterministic_tools": "False",
+        "repos": "98",
+        "prs": "20512",
+        "avg_comments_per_pr": "3.64",
+        "median_close_hours": "17.12"
+      },
+      {
+        "profile": "default",
+        "has_path_instructions": "True",
+        "has_deterministic_tools": "False",
+        "repos": "38",
+        "prs": "12455",
+        "avg_comments_per_pr": "3.73",
+        "median_close_hours": "19.42"
+      },
+      {
+        "profile": "chill",
+        "has_path_instructions": "False",
+        "has_deterministic_tools": "False",
+        "repos": "67",
+        "prs": "11342",
+        "avg_comments_per_pr": "4.27",
+        "median_close_hours": "22.9"
+      },
+      {
+        "profile": "chill",
+        "has_path_instructions": "True",
+        "has_deterministic_tools": "False",
+        "repos": "52",
+        "prs": "11247",
+        "avg_comments_per_pr": "5.7",
+        "median_close_hours": "26.04"
+      },
+      {
+        "profile": "chill",
+        "has_path_instructions": "True",
+        "has_deterministic_tools": "True",
+        "repos": "31",
+        "prs": "6538",
+        "avg_comments_per_pr": "3.77",
+        "median_close_hours": "26.63"
+      },
+      {
+        "profile": "assertive",
+        "has_path_instructions": "True",
+        "has_deterministic_tools": "True",
+        "repos": "13",
+        "prs": "4326",
+        "avg_comments_per_pr": "7.98",
+        "median_close_hours": "32.96"
+      },
+      {
+        "profile": "assertive",
+        "has_path_instructions": "True",
+        "has_deterministic_tools": "False",
+        "repos": "6",
+        "prs": "3734",
+        "avg_comments_per_pr": "3.95",
+        "median_close_hours": "32.53"
+      },
+      {
+        "profile": "chill",
+        "has_path_instructions": "False",
+        "has_deterministic_tools": "True",
+        "repos": "8",
+        "prs": "2332",
+        "avg_comments_per_pr": "5.46",
+        "median_close_hours": "24.1"
+      },
+      {
+        "profile": "assertive",
+        "has_path_instructions": "False",
+        "has_deterministic_tools": "False",
+        "repos": "7",
+        "prs": "2215",
+        "avg_comments_per_pr": "3.31",
+        "median_close_hours": "25.56"
+      },
+      {
+        "profile": "default",
+        "has_path_instructions": "False",
+        "has_deterministic_tools": "True",
+        "repos": "2",
+        "prs": "1936",
+        "avg_comments_per_pr": "6.94",
+        "median_close_hours": "22.3"
+      },
+      {
+        "profile": "default",
+        "has_path_instructions": "True",
+        "has_deterministic_tools": "True",
+        "repos": "1",
+        "prs": "97",
+        "avg_comments_per_pr": "3.35",
+        "median_close_hours": "39.46"
+      }
+    ],
+    "SM-07_intent_oracle_paradox": {
+      "Cohort_B_Human_Only__0_Anchored_To_Issue": {
+        "n_prs": 3349,
+        "merge_rate_pct": 72.29,
+        "human_cr_veto_pct": 19.95,
+        "rubber_stamp_pct": 37.65,
+        "has_corrective_commit_pct": 16.15,
+        "mean_human_inline_comments": 2.37
+      },
+      "Cohort_B_Human_Only__1_Intent_Deficit_No_Issue": {
+        "n_prs": 972,
+        "merge_rate_pct": 81.07,
+        "human_cr_veto_pct": 8.02,
+        "rubber_stamp_pct": 51.23,
+        "has_corrective_commit_pct": 7.51,
+        "mean_human_inline_comments": 1.01
+      },
+      "Cohort_C_Tier1_Bot_Plus_Human__0_Anchored_To_Issue": {
+        "n_prs": 1177,
+        "merge_rate_pct": 79.78,
+        "human_cr_veto_pct": 12.57,
+        "rubber_stamp_pct": 42.31,
+        "has_corrective_commit_pct": 18.18,
+        "mean_human_inline_comments": 2.19
+      },
+      "Cohort_C_Tier1_Bot_Plus_Human__1_Intent_Deficit_No_Issue": {
+        "n_prs": 499,
+        "merge_rate_pct": 84.37,
+        "human_cr_veto_pct": 4.81,
+        "rubber_stamp_pct": 51.5,
+        "has_corrective_commit_pct": 11.42,
+        "mean_human_inline_comments": 1.03
+      }
+    }
+  }
+}

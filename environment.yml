@@ -1,0 +1,12 @@
+name: pr-review-replication
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - duckdb>=1.1.0
+  - pyarrow>=17.0.0
+  - pandas>=2.2.0
+  - scipy>=1.14.0
+  - numpy>=1.26.0
+  - pip

@@ -1,0 +1,28 @@
+dataset_name,file_name,row_count,file_format,file_size_mb,entity_description
+AIDev,pull_request.parquet,33596,Parquet,16.07,Agent pull requests
+AIDev,human_pull_request.parquet,6618,Parquet,4.18,Human baseline pull requests
+AIDev,pr_reviews.parquet,28875,Parquet,7.17,Formal PR review records
+AIDev,pr_review_comments_v2.parquet,26868,Parquet,20.15,Line-level inline comments with diffs
+AIDev,pr_comments.parquet,39122,Parquet,24.66,Discussion comments
+AIDev,pr_commits.parquet,88576,Parquet,7.93,Commit SHAs and authors
+AIDev,pr_timeline.parquet,325500,Parquet,32.53,Full PR event timeline
+AIDev,repository.parquet,2807,Parquet,0.16,Repository metadata (stars >= 100)
+SWE-Polybench,swe_polybench.parquet,2110,Parquet,24.92,Multilingual AST benchmark tasks
+SWE-bench,swebench_verified.parquet,500,Parquet,2.0,Verified Python resolution instances
+AgenticFlict,agenticflict_pr_clean.csv,142652,CSV,35.84,Simulated agent pull requests
+AgenticFlict,agenticflict_regions_clean.csv,336380,CSV,100.02,Merge conflict line regions
+CodeReviewer,github_codereview_test.parquet,11013,Parquet,18.53,Code review test instances
+DevGPT,devgpt.sqlite,40866,SQLite,152.11,Developer-ChatGPT conversation turns
+CodeRabbit,pull_requests.parquet,99454,Parquet,7.68,CodeRabbit OSS pull requests
+CodeRabbit,repositories.parquet,481,Parquet,0.07,Repositories utilizing CodeRabbit
+CodAGE,codage_pr_sample.parquet,10000,Parquet,0.17,CodAGE multi-agent PR event sample
+GHArchive-3D,gharchive_2026-11-01-12.json.gz,4720,JSONL.GZ,5.58,"GHArchive PR event stream (Nov 1-3, 2026)"
+Live-PR-Cohort,live_agent_prs_sample.json,30,JSON,0.02,Real-time mined GitHub agent PR cohort
+GHArchive-Hourly,gharchive_2025-07-15-15.json.gz,164140,JSONL.GZ,86.54,GHArchive hourly event stream snapshot
+GHArchive-3M,2026-08-01-12.json.gz,169487,JSONL.GZ,19.53,GHArchive 3-month longitudinal snapshot (Aug-Nov 2026)
+Agentic-PRs,pr_review_comments.parquet,334039,Parquet,6.16,Agentic PRs with review comments and churn
+Agentic-PRs,pr_test_quality.parquet,49042,Parquet,0.57,Agentic PR test suite quality and coverage evaluations
+CodeChat,codechat_conversations.jsonl,351,JSONL,1.57,Multi-turn agent code dialogue trajectories
+GitInject,scenarios,19,Python Code,0.0,Adversarial CI/CD and review agent injection scenarios
+Jev-PR-Reviews,jev_pull_requests.parquet,6055,Parquet,5.34,Mined TypeSafe Jev & paired control pull requests
+CodeReviewBench,online_sample.parquet,1135,Parquet,26.51,CodeReviewBench 15-tool bot PR evaluations

@@ -1,0 +1,22 @@
+table_type,stratum_a,stratum_b,count_prs_or_rows,metric_1,metric_2,metric_3,notes
+bot_family_summary,human_comment,distinct_prs=1775,6814,1027.1,,0.0,calls=0; tokens=0
+bot_family_summary,other_bot,distinct_prs=1518,3381,1186.5,,0.0,calls=0; tokens=0
+bot_family_summary,prose_review_bot_control,distinct_prs=1021,2653,3268.5,0.343,0.0,calls=2530; tokens=0
+bot_family_summary,jev_pr_risk_histogram,distinct_prs=285,285,929.3,0.485,0.0,calls=436; tokens=292267
+bot_family_summary,static_sast_bot_control,distinct_prs=247,273,1025.8,0.102,0.0,calls=191; tokens=0
+bot_family_summary,jev_decision_model_linter,distinct_prs=165,165,779.0,0.606,4.3194,calls=59391; tokens=104030455
+bot_family_summary,jev_review_router,distinct_prs=51,150,157.9,0.773,0.0,calls=150; tokens=0
+bot_family_summary,deterministic_merge_gate,distinct_prs=78,78,677.4,0.673,0.0,calls=78; tokens=0
+bot_family_summary,jev_council_architect_review,distinct_prs=30,47,570.7,0.286,0.0,calls=47; tokens=0
+bot_family_summary,jev_taste_policy_gate,distinct_prs=20,38,323.9,0.368,0.0,calls=38; tokens=0
+bot_family_summary,revert_signal_bot,distinct_prs=4,4,53.0,,0.0,calls=0; tokens=0
+bot_family_summary,jev_loop_review_gate,distinct_prs=1,2,1285.0,0.9,0.0,calls=2; tokens=0
+bot_family_summary,jev_way_of_working_advisor,distinct_prs=1,1,1336.0,0.47,0.0,calls=1; tokens=0
+sentry_2x2_regime,Coding_Agent,1_Jev_DML_Flagged,40,57.5,22.5,0.53,merged=23; avg_alerts=2.42
+sentry_2x2_regime,Coding_Agent,2_Jev_DML_Clean,18,55.56,27.78,0.5,merged=10; avg_alerts=0.0
+sentry_2x2_regime,Coding_Agent,3_Prose_Bot_Only,19,78.95,42.11,1.0,merged=15; avg_alerts=0.0
+sentry_2x2_regime,Coding_Agent,4_No_Bot_Control,528,44.7,6.82,0.12,merged=236; avg_alerts=0.0
+sentry_2x2_regime,Human_Engineer,1_Jev_DML_Flagged,74,62.16,32.43,0.51,merged=46; avg_alerts=1.69
+sentry_2x2_regime,Human_Engineer,2_Jev_DML_Clean,31,83.87,29.03,1.29,merged=26; avg_alerts=0.0
+sentry_2x2_regime,Human_Engineer,3_Prose_Bot_Only,32,62.5,75.0,1.97,merged=20; avg_alerts=0.0
+sentry_2x2_regime,Human_Engineer,4_No_Bot_Control,606,62.54,14.52,0.3,merged=379; avg_alerts=0.0

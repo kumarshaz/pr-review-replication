@@ -1,0 +1,30 @@
+# Python environments & caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE & OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Archive folder for historical exploratory workspaces and non-replication files
+archive/
+
+# Execution logs
+*.log
+replication/logs/
+**/logs/
+
+# Raw large datasets (>100MB exceeds GitHub limits, available via Zenodo)
+scratch/
+data/raw/
+

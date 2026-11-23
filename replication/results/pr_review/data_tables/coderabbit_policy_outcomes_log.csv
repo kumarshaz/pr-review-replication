@@ -1,0 +1,12 @@
+profile,has_path_instructions,has_deterministic_tools,repos,prs,avg_comments_per_pr,median_close_hours
+default,False,False,98,20512,3.64,17.12
+default,True,False,38,12455,3.73,19.42
+chill,False,False,67,11342,4.27,22.9
+chill,True,False,52,11247,5.7,26.04
+chill,True,True,31,6538,3.77,26.63
+assertive,True,True,13,4326,7.98,32.96
+assertive,True,False,6,3734,3.95,32.53
+chill,False,True,8,2332,5.46,24.1
+assertive,False,False,7,2215,3.31,25.56
+default,False,True,2,1936,6.94,22.3
+default,True,True,1,97,3.35,39.46
