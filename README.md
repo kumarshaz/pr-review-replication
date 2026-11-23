@@ -8,6 +8,8 @@ last_updated: "2026-11-22"
 
 # Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests
 
+**Author:** Shashi Nath Kumar · **ORCID:** [`0009-0001-2864-4241`](https://orcid.org/0009-0001-2864-4241) · **License:** [Apache-2.0](LICENSE)
+
 This repository provides the practitioner manuscript ([`paper/draft_v1_ieee_software.md`](paper/draft_v1_ieee_software.md), targeting *IEEE Software*) and the complete open-science replication package (`36` SHA-256 verified JSON/MD/CSV evidence artifacts + standalone analysis pipeline scripts) backing both the paper and the companion **3-part blog series** on [`kumarshaz.github.io`](https://kumarshaz.github.io):
 
 - **Part 1 (Flagship Essay):** *Five Viral AI Code-Review Myths—Tested Against 130,000+ Production Pull Requests*
@@ -57,6 +59,8 @@ python3 replication/run_replication.py --recompute
 .
 ├── README.md                                          # Overview, evidence map & 1-command verification guide
 ├── LICENSE                                            # Apache License 2.0
+├── CITATION.cff                                       # Machine-readable citation metadata (ORCID-linked)
+├── .zenodo.json                                       # Zenodo Dataset release metadata
 ├── requirements.txt                                   # Pinned Python dependencies
 ├── environment.yml                                    # Conda environment specification
 ├── paper/

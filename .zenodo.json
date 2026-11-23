@@ -1,0 +1,32 @@
+{
+  "title": "Replication Package and Empirical Dataset: Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests",
+  "upload_type": "dataset",
+  "version": "1.0.0",
+  "publication_date": "2026-11-22",
+  "license": "apache-2.0",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Kumar, Shashi Nath",
+      "orcid": "0009-0001-2864-4241"
+    }
+  ],
+  "description": "<p>Open-science replication package and empirical dataset accompanying the practitioner study <em>Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests</em>.</p><p><strong>Empirical Scope (Zero Synthetic Data):</strong> 99,454 longitudinal CodeRabbit OSS pull requests (457 tenure repos; 87,899 fixed-cohort PRs across 362 repos active &ge;61 days), 33,596 autonomous coding-agent PRs and 6,618 human baseline PRs across 2,807 active repositories (&ge;100 stars), 6,004 formal human reviews across 2,491 distinct reviewers (purified 38-bot catalog), 553 TypeSafe Jev decision-model PRs (N=312 hydrated), 150 human-audited CodeReviewBench prose-bot critiques, and 10,410 merged pull requests attributed to post-merge bugfix commits and reverts across 300 bare-git SZZ clones.</p><p><strong>Contents:</strong> 36 SHA-256 verified JSON, Markdown, and CSV audit artifacts (including the 10,410-PR SZZ traceability ledger), standalone DuckDB/SciPy analysis pipeline scripts, zero-API dataset fetcher, and a one-command 81-check verification harness (<code>python3 replication/run_replication.py</code>) verified in both offline and full raw-recomputation modes.</p>",
+  "keywords": [
+    "AI code review",
+    "code review fatigue",
+    "automation bias",
+    "bot anchoring",
+    "empirical software engineering",
+    "SZZ defect attribution",
+    "reviewer workload inequality",
+    "replication package"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/kumarshaz/pr-review-replication",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    }
+  ]
+}

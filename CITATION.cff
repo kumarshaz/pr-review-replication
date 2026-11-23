@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "Replication Package and Empirical Dataset: Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests"
+message: "If you use this empirical dataset, SZZ defect traceability ledger, or verification pipeline, please cite this replication package and its accompanying manuscript."
+type: dataset
+version: "1.0.0"
+date-released: "2026-11-22"
+license: Apache-2.0
+repository-code: "https://github.com/kumarshaz/pr-review-replication"
+authors:
+  - family-names: "Kumar"
+    given-names: "Shashi Nath"
+    orcid: "https://orcid.org/0009-0001-2864-4241"
+keywords:
+  - "AI code review"
+  - "pull request review fatigue"
+  - "automation bias"
+  - "bot anchoring"
+  - "empirical software engineering"
+  - "SZZ algorithm"
+  - "reviewer workload Gini"
+  - "open science replication package"
+abstract: >-
+  Complete open-science replication package and empirical dataset testing five
+  popular AI code-review assumptions across 130,000+ real GitHub pull requests
+  (99,454 CodeRabbit PRs, 33,596 autonomous coding-agent PRs, 6,618 human
+  baselines, 6,004 human reviews across 2,491 maintainers, 553 TypeSafe Jev
+  decision-model PRs, and 10,410 merged PRs linked through 300 bare-git SZZ
+  commit histories). Contains 36 SHA-256 checksummed JSON, Markdown, and CSV
+  evidence artifacts, standalone DuckDB/SciPy analysis scripts, and an 81-check
+  one-command verification harness with zero synthetic data.

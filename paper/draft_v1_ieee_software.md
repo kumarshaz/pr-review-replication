@@ -12,7 +12,7 @@ last_updated: "2026-11-22"
 
 # Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests
 
-**Author:** Shashi Nath Kumar  
+**Author:** Shashi Nath Kumar (ORCID: [`0009-0001-2864-4241`](https://orcid.org/0009-0001-2864-4241))  
 **Target Venue:** *IEEE Software* — Feature Article (Practitioner Experience & Empirical Insights, $\le 4{,}200$ words)  
 **Open-Science Replication Artifact:** `pr-review-replication` (1-command verification suite, SHA-256 checksummed JSON/CSV ledgers, zero synthetic data)
 

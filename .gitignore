@@ -28,3 +28,8 @@ replication/logs/
 scratch/
 data/raw/
 
+# Built distribution archives (uploaded to Zenodo)
+dist/
+*.zip
+
+
