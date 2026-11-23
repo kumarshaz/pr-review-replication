@@ -1,6 +1,6 @@
 {
   "scope": "track3",
-  "source_hub": "research-workspace/research-data-processing/pr-analysis",
+  "source_hub": "pr-review-replication/replication/pipeline",
   "excluded_non_track1_top_level": [],
   "excluded_non_track1_csvs": [],
   "total_artifacts": 36,
@@ -24,8 +24,8 @@
     {
       "relative_path": "SAMPLE_SIZE_EXPANSION_AND_POWER_REPORT.md",
       "source_name": "SAMPLE_SIZE_EXPANSION_AND_POWER_REPORT.md",
-      "size_bytes": 14470,
-      "sha256": "412fd43bd9e0999e7d790864f9c2c591ba8554afacc4a5d8f6efa8e3303c6729",
+      "size_bytes": 14474,
+      "sha256": "637ad03423cf8c7592932a22596108b08d11bc8997b43f9f84ceaa3beb38909b",
       "target_sha256_before": null,
       "action": "SYNCED"
     },
@@ -48,8 +48,8 @@
     {
       "relative_path": "jev_offline_reparse_audit.json",
       "source_name": "jev_offline_reparse_audit.json",
-      "size_bytes": 6557,
-      "sha256": "fe8d69c8e8db877cbd9598cf2cecf4f5fdafc568c4237880861ae622ab834d60",
+      "size_bytes": 6505,
+      "sha256": "176bfe20580e7b4af94fee10ddee4e2fa9e44395cd3b5768a8aa320f0e81b4ec",
       "target_sha256_before": null,
       "action": "SYNCED"
     },
@@ -72,8 +72,8 @@
     {
       "relative_path": "multi_dataset_triangulation_results.json",
       "source_name": "multi_dataset_triangulation_results.json",
-      "size_bytes": 289135,
-      "sha256": "ad9a20ac24180b79f6dfb898914e148d33df56243ed92c5779d6a54eaaa0ca54",
+      "size_bytes": 289083,
+      "sha256": "07672e37582d97a10638eb5be67ec1b95824ff45ad32456dcb96cd2bb8186ef0",
       "target_sha256_before": null,
       "action": "SYNCED"
     },

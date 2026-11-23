@@ -8,7 +8,7 @@ last_updated: "2026-11-22"
 
 # `pr-review-replication`: Open-Science Verification Runbook (`replication/`)
 
-This directory contains the self-contained verification runner, standalone end-to-end empirical pipeline scripts (`pipeline/`), canonical processed evidence artifacts (`36` SHA-256 verified JSON/MD/CSV files in `results/pr_review/`), and raw public dataset downloader supporting [`../paper/draft_v1_ieee_software.md`](../paper/draft_v1_ieee_software.md) and its companion 3-part blog series.
+This directory contains the self-contained verification runner, standalone end-to-end empirical pipeline scripts (`pipeline/`), canonical processed evidence artifacts (`36` SHA-256 verified JSON/MD/CSV files in `results/pr_review/`), and raw public dataset downloader supporting [`paper/draft_v1_ieee_software.md`](https://github.com/kumarshaz/pr-review-replication/blob/main/paper/draft_v1_ieee_software.md) and its companion 3-part blog series.
 
 ---
 

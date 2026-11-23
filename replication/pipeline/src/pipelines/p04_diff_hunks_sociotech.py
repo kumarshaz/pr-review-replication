@@ -85,7 +85,7 @@ def fetch_live_github_patch_and_postmerge(repo_full_name: str, pr_number: int, m
         "post_merge_repo_bug_issues_sampled": [],
     }
     try:
-        req = urllib.request.Request(patch_url, headers={"User-Agent": "Research-Workspace-MSR"})
+        req = urllib.request.Request(patch_url, headers={"User-Agent": "pr-review-replication/1.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
             raw_bytes = resp.read()
             info["live_patch_reachable"] = True
@@ -100,7 +100,7 @@ def fetch_live_github_patch_and_postmerge(repo_full_name: str, pr_number: int, m
         issues_url = f"https://api.github.com/repos/{repo_full_name}/issues?state=all&since={merged_at}&per_page=10"
         req = urllib.request.Request(
             issues_url,
-            headers={"User-Agent": "Research-Workspace-MSR", "Accept": "application/vnd.github+json"},
+            headers={"User-Agent": "pr-review-replication/1.0", "Accept": "application/vnd.github+json"},
         )
         with urllib.request.urlopen(req, timeout=10) as resp:
             items = json.loads(resp.read().decode("utf-8"))

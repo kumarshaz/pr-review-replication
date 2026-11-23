@@ -2,7 +2,7 @@
 """
 Pipeline p14: Multi-Scale Sample Size Broadening, Persistence & Statistical Power Audit
 =====================================================================================
-Audits how every core MEIGS & Social-Media observation holds across 6 concentric sample-size
+Audits how every core PR-review & social-media observation holds across 6 concentric sample-size
 rings (Ring 1 Jev Adopter Corpus -> Ring 6 Global AIDev Population), computing exact 95%
 Wilson CIs, two-proportion Z-tests, Cohen's h, achieved power, and N_req for 80%/90% power.
 
@@ -515,7 +515,7 @@ def main() -> None:
     r1_total_n = summary_json["concentric_scale_rings"]["Ring_1_Jev_Adopter_Corpus"]["current_n"]
     frontmatter = yaml_frontmatter(
         title="Multi-Scale Sample Size Persistence & Statistical Power Audit Report",
-        intent="Audits how core MEIGS, bare-git SZZ ground-truth, and social-media findings hold across 6 concentric sample-size rings, computes exact 95% Wilson CIs and statistical power, and verifies post-expansion adequacy.",
+        intent="Audits how core PR-review, bare-git SZZ ground-truth, and social-media findings hold across 6 concentric sample-size rings, computes exact 95% Wilson CIs and statistical power, and verifies post-expansion adequacy.",
         doc_type="study-protocol",
         status="active",
         skills=["empirical-methodologist", "skeptic-architect"],

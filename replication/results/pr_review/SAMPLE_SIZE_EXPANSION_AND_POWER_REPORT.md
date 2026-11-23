@@ -1,6 +1,6 @@
 ---
 title: "Multi-Scale Sample Size Persistence & Statistical Power Audit Report"
-intent: "Audits how core MEIGS, bare-git SZZ ground-truth, and social-media findings hold across 6 concentric sample-size rings, computes exact 95% Wilson CIs and statistical power, and verifies post-expansion adequacy."
+intent: "Audits how core PR-review, bare-git SZZ ground-truth, and social-media findings hold across 6 concentric sample-size rings, computes exact 95% Wilson CIs and statistical power, and verifies post-expansion adequacy."
 type: "study-protocol"
 status: "active"
 skills_applied:

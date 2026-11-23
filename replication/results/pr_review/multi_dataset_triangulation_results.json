@@ -9231,7 +9231,7 @@
         }
       ],
       "source_location": "scratch",
-      "source_path": "<home>/learnCoding/localrepo/meigs-theory-replication/scratch/live_pr_sample/live_agent_prs_sample.json",
+      "source_path": "<scratch>/live_pr_sample/live_agent_prs_sample.json",
       "status": "verified_on_disk"
     },
     "dataset_13_gharchive_3month_stream": {

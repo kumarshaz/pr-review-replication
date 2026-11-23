@@ -8,7 +8,7 @@ last_updated: "2026-11-22"
 
 # Dataset Inventory, Provenance & Schema Specifications (`pr-review-replication`)
 
-All empirical claims in [`../paper/draft_v1_ieee_software.md`](../paper/draft_v1_ieee_software.md) and its companion 3-part practitioner blog series are grounded in **100% genuine public repository telemetry** across `130,000+` real GitHub pull requests and `300` local `--bare --filter=blob:none` git clones, with zero synthetic data or paid API requirements.
+All empirical claims in [`paper/draft_v1_ieee_software.md`](https://github.com/kumarshaz/pr-review-replication/blob/main/paper/draft_v1_ieee_software.md) and its companion 3-part practitioner blog series are grounded in **100% genuine public repository telemetry** across `130,000+` real GitHub pull requests and `300` local `--bare --filter=blob:none` git clones, with zero synthetic data or paid API requirements.
 
 ---
 

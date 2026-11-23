@@ -121,7 +121,7 @@ def download_file_resumable(url: str, dest_path: str, expected_sha256: Optional[
             log.error("curl failed (exit=%d) for %s", ret.returncode, url)
             return False
     else:
-        req = urllib.request.Request(url, headers={"User-Agent": "meigs-theory-replication/2.1"})
+        req = urllib.request.Request(url, headers={"User-Agent": "pr-review-replication/1.0"})
         try:
             with urllib.request.urlopen(req, timeout=180) as resp, open(dest_path, "wb") as out_f:
                 shutil.copyfileobj(resp, out_f)
@@ -146,7 +146,7 @@ def fetch_zenodo_record_files(record_id: str, target_dir: str) -> bool:
     """Queries Zenodo REST API for a record and downloads/extracts all attached files."""
     api_url = f"https://zenodo.org/api/records/{record_id}"
     log.info("Querying Zenodo record metadata: %s", api_url)
-    req = urllib.request.Request(api_url, headers={"User-Agent": "meigs-theory-replication/2.1"})
+    req = urllib.request.Request(api_url, headers={"User-Agent": "pr-review-replication/1.0"})
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             meta = json.loads(resp.read().decode("utf-8"))
@@ -258,7 +258,7 @@ def fetch_direct_datasets(include_extended: bool = False) -> Dict[str, bool]:
     if not os.path.exists(jev_pq):
         log.info(
             "[INFO] TypeSafe Jev raw parquet cache not present at %s "
-            "(canonical aggregated Jev tables are bundled in replication/results/meigs_theory/).",
+            "(canonical aggregated Jev tables are bundled in replication/results/pr_review/).",
             jev_pq,
         )
         status["DS-10_jev_pr_reviews"] = False
@@ -508,7 +508,7 @@ def execute_bare_clones(tier: int = 1, workers: int = 4, max_repos: Optional[int
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Download/verify MEIGS datasets and clone Tier-1 bare git repositories.")
+    parser = argparse.ArgumentParser(description="Download/verify PR-review empirical datasets and clone Tier-1 bare git repositories.")
     parser.add_argument("--verify-only", action="store_true", help="Only verify existing files and print Tier-1 target summary.")
     parser.add_argument("--all", action="store_true", help="Download all missing datasets and execute Tier-1 bare git clones.")
     parser.add_argument("--only-datasets", action="store_true", help="Download missing datasets in scratch/ without cloning git repos.")
@@ -519,7 +519,7 @@ def main():
     parser.add_argument("--include-extended", action="store_true", help="Also download extended AIDev pr_commit_details.parquet.")
     args = parser.parse_args()
 
-    log.info("MEIGS Dataset & Tier-%d Git Clone Manager started (log=%s)", args.clone_tier, TS_LOG)
+    log.info("PR-Review Dataset & Tier-%d Git Clone Manager started (log=%s)", args.clone_tier, TS_LOG)
 
     if args.verify_only or not (args.all or args.only_datasets or args.only_clones):
         target_repos = resolve_clone_repositories(tier=args.clone_tier, max_repos=args.max_repos)

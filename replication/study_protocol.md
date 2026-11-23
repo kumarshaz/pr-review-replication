@@ -8,7 +8,7 @@ last_updated: "2026-11-22"
 
 # Empirical Study Protocol: Testing Five Viral AI Code-Review Myths Across `130,000+` Production Pull Requests
 
-This document defines the empirical protocol, cohort definitions, statistical tests, and validity guardrails behind [`../paper/draft_v1_ieee_software.md`](../paper/draft_v1_ieee_software.md) and its companion 3-part practitioner blog series.
+This document defines the empirical protocol, cohort definitions, statistical tests, and validity guardrails behind [`paper/draft_v1_ieee_software.md`](https://github.com/kumarshaz/pr-review-replication/blob/main/paper/draft_v1_ieee_software.md) and its companion 3-part practitioner blog series.
 
 ---
 

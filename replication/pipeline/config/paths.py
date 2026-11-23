@@ -41,8 +41,6 @@ def _resolve_scratch_dir(repo_root: Path) -> Path:
     for candidate in (
         repo_root / "scratch",
         repo_root / "data" / "raw",
-        repo_root.parent / "meigs-theory-replication" / "scratch",
-        repo_root.parent / "research-workspace" / "scratch",
     ):
         if candidate.exists() and (
             (candidate / "aidev").exists() or (candidate / "coderabbit").exists()

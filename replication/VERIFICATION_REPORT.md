@@ -28,13 +28,13 @@ last_updated: "2026-11-22"
 | :-: | :--- | ---: | :--- |
 | 1 | `JEV_JUDGMENT_AND_SZZ_REPORT.md` | 6,292 | `e87df5e2bc3c88e56f152c16760c99327f1ff48dbad2c2d0ca4d927b175f7471` |
 | 2 | `OPEN_QUESTIONS_NQ01_NQ08_REPORT.md` | 3,187 | `e82170bdbf98994ad4571f31442aa48a818151dd49a554e88d70d520783ce832` |
-| 3 | `SAMPLE_SIZE_EXPANSION_AND_POWER_REPORT.md` | 14,470 | `412fd43bd9e0999e7d790864f9c2c591ba8554afacc4a5d8f6efa8e3303c6729` |
+| 3 | `SAMPLE_SIZE_EXPANSION_AND_POWER_REPORT.md` | 14,474 | `637ad03423cf8c7592932a22596108b08d11bc8997b43f9f84ceaa3beb38909b` |
 | 4 | `empirical_results_summary.json` | 26,283 | `d9c39bd5c81b87b1cbb980928127e7e825ea92049e65df88c9a335b59b751870` |
 | 5 | `jev_judgment_and_szz_outcomes.json` | 100,196 | `b0548a4d0451ee7422260c8a3352000531e3af39f4d9df85e22a290bd3e87693` |
-| 6 | `jev_offline_reparse_audit.json` | 6,557 | `fe8d69c8e8db877cbd9598cf2cecf4f5fdafc568c4237880861ae622ab834d60` |
+| 6 | `jev_offline_reparse_audit.json` | 6,505 | `176bfe20580e7b4af94fee10ddee4e2fa9e44395cd3b5768a8aa320f0e81b4ec` |
 | 7 | `jev_vs_prose_tollgate_results.json` | 24,367 | `d530736aa370700dc63115a202d796975ca49003ecdaae61fbcd77c49442f3db` |
 | 8 | `msr_aidev_results.json` | 20,169 | `c4b6333ee2f0193e2d9b1164649b6d1403d10143c5d25d5e90a4e73adb09e61d` |
-| 9 | `multi_dataset_triangulation_results.json` | 289,135 | `ad9a20ac24180b79f6dfb898914e148d33df56243ed92c5779d6a54eaaa0ca54` |
+| 9 | `multi_dataset_triangulation_results.json` | 289,083 | `07672e37582d97a10638eb5be67ec1b95824ff45ad32456dcb96cd2bb8186ef0` |
 | 10 | `open_questions_nq01_nq08_results.json` | 204,961 | `10a3b122ae758489eb01c1bb39d88cccb66d0356594cc6e97eea066ac847ae93` |
 | 11 | `open_vectors_rv01_rv10_results.json` | 49,336 | `61f0665f5127e80a0a11d21a7f71410922cdbf4a58fec7608b8813325f4b166d` |
 | 12 | `raw_patch_and_sociotechnical_results.json` | 26,245 | `5c00b5b93e2cbad9a7b18a95f4c6a061bdee4431ab6edd6b77157be7a161a76f` |

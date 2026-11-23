@@ -2,10 +2,10 @@
 """
 Independent Empirical Challenge, SHA-256 & Zero-Leakage Verification Harness
 ============================================================================
-Target Package: pr-review-replication (Track 3 — Five Viral AI Code-Review Myths)
+Target Package: pr-review-replication (Five Viral Myths of AI Code Review Fatigue)
 
 Audits every empirical finding reported in `paper/draft_v1_ieee_software.md` and
-the 3-part practitioner blog series (`BP-25`, `BP-26`, `BP-27`):
+the companion 3-part practitioner blog series:
 
   Part 1: Raw Public Dataset Schema & Row-Count Checks (when scratch/ is present)
   Part 2: Independent DuckDB Raw-Parquet Recomputations (CodeRabbit, AIDev Gini,
@@ -509,12 +509,24 @@ class Track3ReplicationChallenger:
             + list(RESULTS_DIR.rglob("*.json"))
             + list(RESULTS_DIR.rglob("*.md"))
             + list(TABLES_DIR.rglob("*.csv"))
-            + [REPO_ROOT / "README.md", REPLICATION_DIR / "README.md", REPLICATION_DIR / "DATASETS.md", REPLICATION_DIR / "study_protocol.md"]
+            + [
+                REPO_ROOT / "README.md",
+                REPO_ROOT / "CITATION.cff",
+                REPO_ROOT / ".zenodo.json",
+                REPLICATION_DIR / "README.md",
+                REPLICATION_DIR / "DATASETS.md",
+                REPLICATION_DIR / "study_protocol.md",
+            ]
         )
         leak_patterns = [
             re.compile(r"/home/[a-zA-Z0-9_-]+/"),
+            re.compile(r"<home>/"),
+            re.compile(r"learnCoding|localrepo"),
+            re.compile(r"research-workspace"),
+            re.compile(r"meigs-theory-replication"),
             re.compile(r"\.gemini/antigravity/brain"),
             re.compile(r"\bBL-0\d{2}\b"),
+            re.compile(r"\bBP-2[567]\b"),
             re.compile(r"topics/ai-review-fatigue-myths-playbooks/"),
         ]
         leaks = []

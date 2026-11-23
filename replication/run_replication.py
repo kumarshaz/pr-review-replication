@@ -43,7 +43,6 @@ def _ensure_env() -> None:
     except ImportError:
         for candidate in (
             REPO_ROOT / ".venv" / "bin" / "python",
-            REPO_ROOT.parent / "meigs-theory-replication" / ".venv" / "bin" / "python",
         ):
             if candidate.exists() and os.path.abspath(sys.executable) != os.path.abspath(str(candidate)):
                 os.execv(str(candidate), [str(candidate)] + sys.argv)
