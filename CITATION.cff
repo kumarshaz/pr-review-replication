@@ -4,6 +4,7 @@ message: "If you use this empirical dataset, SZZ defect traceability ledger, or 
 type: dataset
 version: "1.0.0"
 date-released: "2026-11-22"
+doi: "10.5281/zenodo.24452362"
 license: Apache-2.0
 repository-code: "https://github.com/kumarshaz/pr-review-replication"
 authors:

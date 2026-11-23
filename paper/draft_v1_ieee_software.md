@@ -14,7 +14,7 @@ last_updated: "2026-11-22"
 
 **Author:** Shashi Nath Kumar (ORCID: [`0009-0001-2864-4241`](https://orcid.org/0009-0001-2864-4241))  
 **Target Venue:** *IEEE Software* — Feature Article (Practitioner Experience & Empirical Insights, $\le 4{,}200$ words)  
-**Open-Science Replication Artifact:** `pr-review-replication` (1-command verification suite, SHA-256 checksummed JSON/CSV ledgers, zero synthetic data)
+**Open-Science Replication Artifact:** `pr-review-replication` — Zenodo Dataset DOI [`10.5281/zenodo.24452362`](https://doi.org/10.5281/zenodo.24452362) · GitHub [`github.com/kumarshaz/pr-review-replication`](https://github.com/kumarshaz/pr-review-replication) (1-command verification suite, SHA-256 checksummed JSON/CSV ledgers, zero synthetic data)
 
 ---
 
@@ -194,7 +194,7 @@ flowchart LR
 - **Construct Validity:** Tracking post-merge bugfix touches at the file boundary via first-parent commit history is coarser than hunk-level blame analysis and can inflate bug counts on heavily edited monorepo modules. We addressed this confounding directly by isolating zero-prior-fix cold modules (`pre_pr_30d_hotspot_fixes == 0`), enforcing zero `k60d` 61–90-day boundary leaks, and corroborating outcomes against explicit production reverts. For the Zenodo CodeRabbit dataset (`99,454` PRs), every record carries `state='closed'` without a separate merge boolean; we therefore restrict CodeRabbit claims strictly to observed comment density, silence rates, close times, and bug labels.
 - **Internal Validity:** Cross-repository heterogeneity is controlled via `191`-repo shared-repository bot controls (`N = 3,121`), `362`-repo fixed-cohort CodeRabbit survivorship controls (`N = 87,899`), within-repository Mantel–Haenszel cold-file stratification (`NQ-02`), and a purified `38`-bot catalog excluding coding-agent self-replies (`copilot-swe-agent[bot]`) and merge-queue banners (`graphite-app[bot]` in issue comments).
 - **External Validity:** Public open-source repositories exhibit higher self-merge rates and looser branch protection than regulated enterprises; however, our intra-repository and human-reviewed controls isolate behavioral anchoring and reviewer centralization mechanisms that directly affect enterprise GitHub/GitLab pipelines.
-- **Conclusion Validity & Open-Science Replication:** All headline claims survive Benjamini–Hochberg FDR correction ($q < 0.05$) with `80%`–`100%` statistical power and zero synthetic data. Every figure, table, CSV ledger, and SHA-256 checksum is publicly verifiable in one command (`python3 replication/run_replication.py`) via the companion **`pr-review-replication`** repository.
+- **Conclusion Validity & Open-Science Replication:** All headline claims survive Benjamini–Hochberg FDR correction ($q < 0.05$) with `80%`–`100%` statistical power and zero synthetic data. Every figure, table, CSV ledger, and SHA-256 checksum is archived permanently on Zenodo (DOI: [`10.5281/zenodo.24452362`](https://doi.org/10.5281/zenodo.24452362)) and publicly verifiable in one command (`python3 replication/run_replication.py`) via [`github.com/kumarshaz/pr-review-replication`](https://github.com/kumarshaz/pr-review-replication).
 
 ---
 
