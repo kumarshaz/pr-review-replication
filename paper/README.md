@@ -8,7 +8,7 @@ last_updated: "2026-11-22"
 
 # Five Viral Myths of AI Code Review Fatigue: Publication Manuscript
 
-- **[`Five_Viral_Myths_AI_Code_Review_Fatigue_SSRN_Preprint.pdf`](Five_Viral_Myths_AI_Code_Review_Fatigue_SSRN_Preprint.pdf)** *(SSRN-Ready Preprint PDF — US Letter, 4 Mermaid ELK vector figures, 3 empirical tables, clickable ORCID & Zenodo Dataset DOI `10.5281/zenodo.24452362`)*
+- **[`Five_Viral_Myths_AI_Code_Review_Fatigue_SSRN_Preprint.pdf`](Five_Viral_Myths_AI_Code_Review_Fatigue_SSRN_Preprint.pdf)** *(SSRN Preprint — [SSRN Abstract ID `7742641`](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7742641) · US Letter, 4 Mermaid ELK vector figures, 3 empirical tables, clickable ORCID & Zenodo Dataset DOI `10.5281/zenodo.24452362`)*
 - **[`draft_v1_ieee_software.md`](draft_v1_ieee_software.md)** *(Primary Markdown Source — IEEE Software Feature Style)*:  
   *Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests.*
 

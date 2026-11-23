@@ -8,9 +8,9 @@ last_updated: "2026-11-22"
 
 # Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests
 
-**Author:** Shashi Nath Kumar · **ORCID:** [`0009-0001-2864-4241`](https://orcid.org/0009-0001-2864-4241) · **Zenodo Dataset DOI:** [`10.5281/zenodo.24452362`](https://doi.org/10.5281/zenodo.24452362) · **License:** [Apache-2.0](LICENSE)
+**Author:** Shashi Nath Kumar · **ORCID:** [`0009-0001-2864-4241`](https://orcid.org/0009-0001-2864-4241) · **SSRN Preprint:** [`7742641`](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7742641) · **Zenodo Dataset DOI:** [`10.5281/zenodo.24452362`](https://doi.org/10.5281/zenodo.24452362) · **License:** [Apache-2.0](LICENSE)
 
-This repository provides the practitioner manuscript ([`paper/draft_v1_ieee_software.md`](https://github.com/kumarshaz/pr-review-replication/blob/main/paper/draft_v1_ieee_software.md), published separately as an SSRN preprint and targeting *IEEE Software*) and the complete open-science replication package (`36` SHA-256 verified JSON/MD/CSV evidence artifacts + standalone analysis pipeline scripts) backing both the paper and the companion **3-part blog series** on [`kumarshaz.github.io`](https://kumarshaz.github.io):
+This repository provides the practitioner manuscript ([`paper/Five_Viral_Myths_AI_Code_Review_Fatigue_SSRN_Preprint.pdf`](paper/Five_Viral_Myths_AI_Code_Review_Fatigue_SSRN_Preprint.pdf) · [SSRN Abstract `7742641`](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7742641) · Markdown source [`paper/draft_v1_ieee_software.md`](https://github.com/kumarshaz/pr-review-replication/blob/main/paper/draft_v1_ieee_software.md)) and the complete open-science replication package (`36` SHA-256 verified JSON/MD/CSV evidence artifacts archived at [Zenodo `10.5281/zenodo.24452362`](https://doi.org/10.5281/zenodo.24452362) + standalone analysis pipeline scripts) backing both the paper and the companion **3-part blog series** on [`kumarshaz.github.io`](https://kumarshaz.github.io):
 
 - **Part 1 (Flagship Essay):** *Five Viral AI Code-Review Myths—Tested Against 130,000+ Production Pull Requests*
 - **Part 2 (Practitioner Note):** *Human-First Blind Review: Why Letting an AI Bot Speak First Collapses Human Vetoes 7.1x*

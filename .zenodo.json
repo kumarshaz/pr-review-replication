@@ -24,6 +24,11 @@
   ],
   "related_identifiers": [
     {
+      "identifier": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7742641",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-preprint"
+    },
+    {
       "identifier": "https://github.com/kumarshaz/pr-review-replication",
       "relation": "isSupplementedBy",
       "resource_type": "software"

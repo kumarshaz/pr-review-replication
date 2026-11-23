@@ -7,6 +7,18 @@ date-released: "2026-11-22"
 doi: "10.5281/zenodo.24452362"
 license: Apache-2.0
 repository-code: "https://github.com/kumarshaz/pr-review-replication"
+url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7742641"
+preferred-citation:
+  type: article
+  title: "Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests"
+  authors:
+    - family-names: "Kumar"
+      given-names: "Shashi Nath"
+      orcid: "https://orcid.org/0009-0001-2864-4241"
+  year: 2026
+  journal: "SSRN Electronic Journal"
+  url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7742641"
+  notes: "SSRN Abstract ID 7742641; Replication Dataset DOI: 10.5281/zenodo.24452362"
 authors:
   - family-names: "Kumar"
     given-names: "Shashi Nath"
