@@ -13,8 +13,9 @@ last_updated: "2026-11-22"
 # Five Viral Myths of AI Code Review Fatigue—Tested Against 130,000+ Production Pull Requests
 
 **Author:** Shashi Nath Kumar (ORCID: [`0009-0001-2864-4241`](https://orcid.org/0009-0001-2864-4241))  
-**Target Venue:** *IEEE Software* — Feature Article (Practitioner Experience & Empirical Insights, $\le 4{,}200$ words)  
-**Open-Science Replication Artifact:** `pr-review-replication` — Zenodo Dataset DOI [`10.5281/zenodo.24452362`](https://doi.org/10.5281/zenodo.24452362) · GitHub [`github.com/kumarshaz/pr-review-replication`](https://github.com/kumarshaz/pr-review-replication) (1-command verification suite, SHA-256 checksummed JSON/CSV ledgers, zero synthetic data)
+**Document Type:** Empirical Software Engineering Preprint (SSRN Working Paper · Formatted for *IEEE Software* Feature Style)  
+**Published Replication Dataset:** Zenodo DOI [`10.5281/zenodo.24452362`](https://doi.org/10.5281/zenodo.24452362) ([`zenodo.org/records/24452362`](https://zenodo.org/records/24452362)) · GitHub [`github.com/kumarshaz/pr-review-replication`](https://github.com/kumarshaz/pr-review-replication)  
+**Keywords:** AI code review, pull request review fatigue, automation bias, bot anchoring, empirical software engineering, SZZ defect attribution, reviewer workload Gini, open-science replication
 
 ---
 
@@ -36,6 +37,78 @@ To separate folklore from operational reality, we built a reproducible, zero-fab
 - **Agentic & Human Baseline PRs:** `33,596` autonomous coding-agent PRs and `6,618` human baseline PRs across `2,807` active repositories ($\ge 100$ stars), covering `6,004` formal human reviews (`5,997` under a purified `38`-bot catalog excluding coding-agent self-replies and merge-queue banners) across `2,491` distinct reviewers [1], [8].
 - **Low-Entropy Decision Checkers & Plausibility Benchmarks:** `6,055` mined PRs across `26` `TypeSafe Jev` adopter repositories (`553` Jev-evaluated PRs, `N = 312` formally hydrated across `getsentry/sentry`, `craftmilldev/loopway`, and `craftmilldev/sesh`), triangulated against `150` human-audited `CodeReviewBench` prose-bot critiques, pre-LLM `CodeReviewer` baselines (`11,013` reviews) [7], and `GHArchive` event firehoses.
 - **Bare-Git Commit-Attributed SZZ Ground Truth:** `300` local `--bare --filter=blob:none` git clones linking `10,410` merged pull requests (`8,936` uncensored at 14 days; `7,982` uncensored at 30 days) directly to post-merge bugfix commits and hard reverts via SZZ attribution [3].
+
+```mermaid
+---
+config:
+  layout: elk
+  theme: base
+  flowchart:
+    diagramPadding: 16
+    padding: 14
+    nodeSpacing: 22
+    rankSpacing: 38
+    wrappingWidth: 220
+    subGraphTitleMargin:
+      top: 12
+      bottom: 18
+  themeVariables:
+    background: '#F8FAFC'
+    primaryColor: '#E0F2FE'
+    primaryTextColor: '#0F172A'
+    primaryBorderColor: '#0284C7'
+    lineColor: '#475569'
+    edgeLabelBackground: '#FFFFFF'
+    clusterBkg: '#F1F5F9'
+    clusterBorder: '#94A3B8'
+---
+flowchart TB
+    accTitle: Zero-Fabrication Multi-Corpus Telemetry and Bare-Git SZZ Pipeline
+    accDescr: Four public open-source corpora flow through purified 38-bot attribution, offline decision-model reparsing, and 300 bare-git SZZ clones with cold-file hotspot filtering into BH-FDR statistical testing and an 81-check Zenodo replication package.
+
+    subgraph S1["Stage 1: Public Zero-API Corpora (130,000+ PRs)"]
+        direction LR
+        C1["CodeRabbit OSS<br/>99,454 PRs · 481 Repos<br/>345 YAML Configs"]
+        C2["AIDev Benchmark<br/>33,596 Agent + 6,618 Human<br/>2,807 Active Repos"]
+        C3["TypeSafe Jev<br/>6,055 Mined PRs<br/>312 Hydrated · 26 Repos"]
+        C4["Triangulation Baselines<br/>CodeReviewBench (150)<br/>CodeReviewer (11k) · GHArchive"]
+        %% Layout only: horizontal row within corpus stage.
+        C1 ~~~ C2 ~~~ C3 ~~~ C4
+    end
+
+    subgraph S2["Stage 2: Attribution & Bare-Git Ground Truth"]
+        direction LR
+        P1["Purified 38-Bot Catalog<br/>& Offline Jev Reparser<br/>Excludes Agent Self-Replies"]
+        P2["300 Bare-Git SZZ Clones<br/>10,410 Merged PRs Linked<br/>Cold-File Hotspot Filter (0 Fixes)"]
+        %% Layout only: pair attribution and bare-git SZZ side by side.
+        P1 ~~~ P2
+    end
+
+    subgraph S3["Stage 3: Statistical Rigor & Open-Science Certification"]
+        direction LR
+        V1["Inference & Confounding Controls<br/>BH-FDR q < 0.05 · Wilson 95% CIs<br/>CMH OR_MH · 14d Symmetric DiD"]
+        V2["Zenodo Dataset Archive<br/>DOI: 10.5281/zenodo.24452362<br/>36 SHA-256 Artifacts · 81/81 Pass"]
+        V1 -->|"Certify & archive"| V2
+    end
+
+    S1 -->|"Zero-API ingestion & cloning"| S2
+    S2 -->|"Stratified cohorts & SZZ ledgers"| S3
+
+    classDef external fill:#E0E7FF,stroke:#4F46E5,color:#1E1B4B,stroke-width:1.5px
+    classDef core fill:#FEF3C7,stroke:#D97706,color:#78350F,stroke-width:2px
+    classDef output fill:#CCFBF1,stroke:#0F766E,color:#134E4A,stroke-width:1.5px
+    classDef destination fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:1.5px
+
+    class C1,C2,C3,C4 external
+    class P1,P2 core
+    class V1 output
+    class V2 destination
+    style S1 fill:#F8FAFC,stroke:#94A3B8,stroke-width:1.5px
+    style S2 fill:#FFFBEB,stroke:#D97706,stroke-width:1.5px
+    style S3 fill:#F0FDFA,stroke:#0F766E,stroke-width:1.5px
+```
+
+*Figure 1. Zero-Fabrication Multi-Corpus Telemetry and Bare-Git SZZ Pipeline: four public corpora feed purified 38-bot attribution, offline decision-signal reparsing, and 300 bare-git SZZ histories with pre-PR cold-file controls, verified end-to-end via Zenodo DOI `10.5281/zenodo.24452362`.*
 
 ### The Diagnostic Guardrail: Why Pooled Defect Dashboards Lie
 
@@ -67,6 +140,34 @@ One methodological discipline underpins every result below: **controlling for pr
 To rule out late-joining repository survivorship bias, we re-ran the curve on a **strict fixed cohort of `87,899` PRs across `362` repositories active for at least `61` days**. The exact same plateau persists (`4.84 -> 3.90 -> 4.04 -> 4.34 -> 4.21` comments/PR; `zero_comment_pct <= 0.19%`). Yet over that identical lifecycle, the share of **bug-labeled PRs nearly doubles from `3.13%` (`Days 0–15`) to `5.86%` (`Days 61–180`; `5.19%` at `181+` days)**, scaling highest under louder `.coderabbit.yaml` configurations (`default 2.01%`, `chill 7.78%`, **`assertive 8.90%`**). *(Methodological disclosure: The public Zenodo schema marks all `99,454` records `state='closed'` without a separate merged flag; accordingly, we report observed comment volume, silence rate, close latency, and bug labels rather than estimating unobserved merge rates.)*
 
 **The Real Operational Risk:** Clean abandonment would at least recover licensing spend. Instead, teams normalize noisy review bots into **permanent ambient static**—scrolling past `4.2` boilerplate comments per PR for months while keeping subscriptions active and absorbing rising defect pressure [11], [12].
+
+```mermaid
+---
+config:
+  theme: base
+  themeVariables:
+    xyChart:
+      backgroundColor: '#F8FAFC'
+      titleColor: '#0F172A'
+      xAxisTitleColor: '#334155'
+      xAxisLabelColor: '#334155'
+      xAxisTickColor: '#94A3B8'
+      xAxisLineColor: '#94A3B8'
+      yAxisTitleColor: '#334155'
+      yAxisLabelColor: '#334155'
+      yAxisTickColor: '#94A3B8'
+      yAxisLineColor: '#94A3B8'
+      plotColorPalette: '#0F766E, #D97706'
+---
+xychart-beta
+    title "CodeRabbit Tenure (N=99,454): Comments/PR vs. Bug-Labeled %"
+    x-axis ["Days 0-15", "Days 16-30", "Days 31-60", "Days 61-180", "Days 181+"]
+    y-axis "Bug-Labeled PR % (Bars) / Comments per PR (Line)" 0 --> 7
+    bar [3.13, 4.65, 5.30, 5.86, 5.19]
+    line [4.92, 4.08, 4.12, 4.34, 4.20]
+```
+
+*Figure 2. CodeRabbit Longitudinal Tenure (`N = 99,454` PRs across `457` repositories; `NQ-08`): automated comment density (amber line) dips modestly from `4.92` to `4.08` by Day 30 and then flatlines indefinitely at `4.20–4.34` comments/PR past Day 181 (`zero_comment_pct < 0.20%`), while bug-labeled PR share (teal bars) nearly doubles from `3.13%` to `5.86%` (`5.19%` at `181+` days).*
 
 ---
 
@@ -107,18 +208,64 @@ Within a strict intra-repository control across `191` shared repositories (`N = 
 Consistent with classic automation bias research [4], [5], this anchoring collapse occurs because fluent LLM reviewers project unearned credibility: across `150` human-audited `CodeReviewBench` critiques, commercial prose bots score `98.67%` "actionable" and `92.00%` "relevant" yet only **`24.00%` factually accurate**, while `GHArchive` bot-only reviews approve over reject at a **`97.2%` (`34.2:1`) skew**. Just as aviation Crew Resource Management instructs captains to let the first officer speak before anchoring the cockpit, critical pull requests require **Human-First Blind Review**.
 
 ```mermaid
-flowchart LR
-    subgraph Ch1["Author Context Channel (NQ-03)"]
-        A1["Terse PR Body (<100 chars)\n60.76% Rubber-Stamp | 7.17% CR"] --> A2["Structured PR Body (3,000+ chars)\n32.78% Stamp | 22.02% CR (3.07x)"]
+---
+config:
+  layout: elk
+  theme: base
+  flowchart:
+    diagramPadding: 20
+    padding: 16
+    nodeSpacing: 28
+    rankSpacing: 46
+    wrappingWidth: 270
+    subGraphTitleMargin:
+      top: 14
+      bottom: 20
+  themeVariables:
+    background: '#F8FAFC'
+    primaryColor: '#E0F2FE'
+    primaryTextColor: '#0F172A'
+    primaryBorderColor: '#0284C7'
+    lineColor: '#475569'
+    edgeLabelBackground: '#FFFFFF'
+    clusterBkg: '#F1F5F9'
+    clusterBorder: '#94A3B8'
+---
+flowchart TB
+    accTitle: Two-Channel Signal and Review Arrival-Order Asymmetry
+    accDescr: Structured author PR descriptions triple human CHANGES_REQUESTED vetoes from 7.17% to 22.02%, whereas letting an AI review bot speak before a human collapses vetoes 7.1x from 26.74% to 3.76% and stacking two or more bots drives vetoes down to 2.20%.
+
+    subgraph Ch1["Channel 1: Author Intent Context (NQ-03, N = 5,997 Human-Reviewed PRs)"]
+        direction LR
+        A1["Terse PR Body (<100 chars, N=237)<br/>60.76% Stamp · 7.17% CR Veto"]
+        A2["Structured Body (3,000+ chars, N=1,022)<br/>32.78% Stamp (-46.1%) · 22.02% CR (3.07x)"]
+        A1 -->|"Add explicit invariants & scope"| A2
     end
 
-    subgraph Ch2["Review Arrival-Order Channel (NQ-05 & SM-04)"]
-        B1["Human Speaks First (N=86)\n26.74% CR Veto | 160.3m Merge"] --> B2["Bot Speaks First (N=426)\n3.76% CR Veto (7.1x Drop) | 38.2m"]
-        B2 --> B3["2+ Stacked Bots + 1 Human (N=182)\n2.20% CR Veto | Bystander Collapse"]
+    subgraph Ch2["Channel 2: Review Arrival-Order & Bot Stacking (NQ-05 & SM-04)"]
+        direction LR
+        B1["Human Speaks First (N=86)<br/>26.74% CR Veto · 160.3m Merge"]
+        B2["Bot Speaks First (N=426)<br/>3.76% CR (7.1x Drop) · 38.2m Merge"]
+        B3["2+ Stacked Bots + 1 Human (N=182)<br/>2.20% CR Veto · Bystander Collapse"]
+        B1 -->|"Bot posts first (-22.99 pp)"| B2
+        B2 -->|"Add 2nd+ prose bot"| B3
     end
+
+    %% Layout only: stack independent channels cleanly for print width.
+    Ch1 ~~~ Ch2
+
+    classDef risk fill:#FEE2E2,stroke:#DC2626,color:#7F1D1D,stroke-width:2px
+    classDef core fill:#FEF3C7,stroke:#D97706,color:#78350F,stroke-width:2px
+    classDef destination fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class A1,B3 risk
+    class B2 core
+    class A2,B1 destination
+    style Ch1 fill:#F0FDFA,stroke:#0F766E,stroke-width:1.5px
+    style Ch2 fill:#FFFBEB,stroke:#D97706,stroke-width:1.5px
 ```
 
-*Figure 1. Two-Channel & Arrival-Order Asymmetry: structured author intent triples human scrutiny (`3.07x`), whereas letting verbose AI review bots speak first collapses human `CHANGES_REQUESTED` vetoes `7.1x` (`26.74% -> 3.76%`) and stacked bots drive vetoes to `2.20%`.*
+*Figure 3. Two-Channel & Arrival-Order Asymmetry: structured author intent triples human scrutiny (`3.07x`, `q = 1e-6`), whereas letting verbose AI review bots speak first collapses human `CHANGES_REQUESTED` vetoes `7.1x` (`26.74% -> 3.76%`, `p = 2.29e-13`) and stacked bots drive vetoes to `2.20%`.*
 
 ---
 
@@ -141,13 +288,15 @@ flowchart LR
 
 ### Table 1. Five Viral AI Code-Review Myths vs. Verified Empirical Ground Truth (`130,000+` PRs)
 
-| # | Viral Practitioner Claim | Verdict | Sample (`N`) | Verified Empirical Shift | Statistical Rigor | Replication Artifact (`replication/results/pr_review/`) |
+| # | Viral Practitioner Claim | Verdict | Sample (`N`) | Verified Empirical Shift | Statistical Rigor | Replication Artifact |
 | :-: | :--- | :---: | :---: | :--- | :--- | :--- |
-| **1** | Long AI PR bodies cause rubber-stamping (`NQ-03`) | **REVERSED** | `5,997` (`237` vs `1,022`) | **`3.07x`** CR veto (`7.17% -> 22.02%`); **`-46.1%`** stamping (`60.76% -> 32.78%`); walkthrough SZZ `37.58%` vs `43.36%` | $p = 1.74 \times 10^{-7}$, $q = 10^{-6}$, Power `100%` | `data_tables/nq03_pr_description_bloat_log.csv` |
-| **2** | Teams abandon AI review bots after 60 days (`NQ-08`) | **REFUTED** | `99,454` (`87,899` fixed cohort) | Flat **`4.20–4.34`** comm/PR past Day 181 (`<0.20%` silent); bugs **`3.13% -> 5.86%`** (`assertive 8.90%`) | `362`-repo fixed-cohort survivorship verified | `data_tables/nq08_queue_burst_and_fatigue_log.csv` |
-| **3** | High-burst reviewers (`5+`/24h) rubber-stamp (`NQ-08`) | **REFUTED & REFRAMED** | `16,886` reviews; `2,491` reviewers | Burst cuts stamping **`-21.12 pp`** (`44.05% -> 22.93%`); **`Gini = 0.6747`**, `91.8%` on `6y+` (`6.39%` CR vs `2–6y` `13.64%`) | $p < 10^{-15}$, Power `100%` | `data_tables/nq08_queue_burst_and_fatigue_log.csv` |
-| **4** | Bot-first & multi-bot review adds free safety (`NQ-05`, `SM-04`) | **REFUTED** | `426` vs `86` (`SM-04`: `182`) | **`7.1x`** CR collapse (`26.74% -> 3.76%`); **`+22.34 pp`** stamping; `4.20x` faster merge (`38.2m`); `2+` bots = **`2.20%`** CR | $p = 2.29 \times 10^{-13}$, $q < 10^{-6}$, Power `100%` | `data_tables/nq05_review_speed_bimodality_log.csv` |
+| **1** | Long AI PR bodies cause rubber-stamping (`NQ-03`) | **REVERSED** | `5,997` (`237` vs `1,022`) | **`3.07x`** CR veto (`7.17% -> 22.02%`); **`-46.1%`** stamping (`60.76% -> 32.78%`); walkthrough SZZ `37.58%` vs `43.36%` | $p = 1.74 \times 10^{-7}$, $q = 10^{-6}$, Power `100%` | `nq03_pr_description_bloat_log.csv` |
+| **2** | Teams abandon AI review bots after 60 days (`NQ-08`) | **REFUTED** | `99,454` (`87,899` fixed cohort) | Flat **`4.20–4.34`** comm/PR past Day 181 (`<0.20%` silent); bugs **`3.13% -> 5.86%`** (`assertive 8.90%`) | `362`-repo fixed-cohort survivorship verified | `nq08_queue_burst_and_fatigue_log.csv` |
+| **3** | High-burst reviewers (`5+`/24h) rubber-stamp (`NQ-08`) | **REFUTED & REFRAMED** | `16,886` reviews; `2,491` reviewers | Burst cuts stamping **`-21.12 pp`** (`44.05% -> 22.93%`); **`Gini = 0.6747`**, `91.8%` on `6y+` (`6.39%` CR vs `2–6y` `13.64%`) | $p < 10^{-15}$, Power `100%` | `nq08_queue_burst_and_fatigue_log.csv` |
+| **4** | Bot-first & multi-bot review adds free safety (`NQ-05`, `SM-04`) | **REFUTED** | `426` vs `86` (`SM-04`: `182`) | **`7.1x`** CR collapse (`26.74% -> 3.76%`); **`+22.34 pp`** stamping; `4.20x` faster merge (`38.2m`); `2+` bots = **`2.20%`** CR | $p = 2.29 \times 10^{-13}$, $q < 10^{-6}$, Power `100%` | `nq05_review_speed_bimodality_log.csv` |
 | **5** | Compact checkers eliminate merged bugs (`NQ-01/02/04/06`) | **NUANCED** | `312` Jev; `2,520` cold-file; `514` force-push | Pre-merge **`-24.14 pp`** (`5.04x` self-close); cold-file `OR_MH = 0.95`; `Jev_Clean` DiD `+0.4205`; cold tests **`-5.47 pp`**; force-push **`+21.01 pp`** | Jev Power `99.97%`; force-push $q = 0.0157$ | `jev_judgment_and_szz_outcomes.json`, `nq04` & `nq06` CSVs |
+
+*Source: `replication/results/pr_review/` (and `data_tables/`), archived at Zenodo DOI `10.5281/zenodo.24452362`.*
 
 ---
 
@@ -158,14 +307,66 @@ Translating these measurements into production delivery requires inverting two d
 ### A. The Inverted Four-Stage Pull-Request Pipeline
 
 ```mermaid
+---
+config:
+  layout: elk
+  theme: base
+  flowchart:
+    diagramPadding: 16
+    padding: 14
+    nodeSpacing: 24
+    rankSpacing: 40
+    wrappingWidth: 250
+    subGraphTitleMargin:
+      top: 12
+      bottom: 18
+  themeVariables:
+    background: '#F8FAFC'
+    primaryColor: '#E0F2FE'
+    primaryTextColor: '#0F172A'
+    primaryBorderColor: '#0284C7'
+    lineColor: '#475569'
+    edgeLabelBackground: '#FFFFFF'
+    clusterBkg: '#F1F5F9'
+    clusterBorder: '#94A3B8'
+---
 flowchart LR
-    S1["Stage 1: Private Pre-Flight CI\nTerse Blocking Checks (<500 chars)\nSilent Pass (No All-Clear Prose)"] --> S2["Stage 2: Cold-File Test Gate\nRequire Paired Tests When Agents\nTouch Cold Files (-5.47 pp SZZ)"]
-    S2 --> S3["Stage 3: Human-First Blind Review\nSuppress Auto Prose Bots on Tier-1\nPreserve 26.74% CR Veto Rate"]
-    S3 --> S4["Stage 4: History Immutability\nBan Post-Review Force-Pushes\nDismiss Stale Reviews (+21.0 pp Guard)"]
-    S4 -.->|"Optional After Human Verdict"| S5["Deferred /review\nOn-Demand Bot Sanity Sweep"]
+    accTitle: The Inverted Four-Stage AI Pull-Request Pipeline
+    accDescr: Pull requests pass through private blocking pre-flight CI and a cold-file test gate before entering Human-First Blind Review, followed by post-review git history immutability and an optional deferred bot sweep only after the human verdict.
+
+    subgraph Pre["Automated Pre-Flight (Author-Private CI)"]
+        direction TB
+        S1["Stage 1: Private Pre-Flight CI<br/>Terse Blocking Checks (<500 chars)<br/>Silent Pass · No All-Clear Prose"]
+        S2["Stage 2: Cold-File Test Gate<br/>Mandate Paired Tests on Agent<br/>Cold-File Edits (-5.47 pp 30d SZZ)"]
+        S1 -->|"Checks pass"| S2
+    end
+
+    subgraph Gate["Human Judgment & Merge Integrity"]
+        direction TB
+        S3["Stage 3: Human-First Blind Review<br/>auto_review: false on Tier-1 Paths<br/>Preserves 26.74% CR Veto Rate"]
+        S4["Stage 4: History Immutability<br/>Ban Post-Review Force-Pushes<br/>Closes +21.01 pp SZZ Escape"]
+        S3 -->|"Human verdict"| S4
+    end
+
+    S5["Optional Deferred /review<br/>On-Demand Bot Sweep<br/>Post-Verdict Only"]
+
+    Pre -->|"Ready for blind review"| Gate
+    Gate -.->|"Optional"| S5
+
+    classDef external fill:#E0E7FF,stroke:#4F46E5,color:#1E1B4B,stroke-width:1.5px
+    classDef core fill:#FEF3C7,stroke:#D97706,color:#78350F,stroke-width:2px
+    classDef destination fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+    classDef output fill:#CCFBF1,stroke:#0F766E,color:#134E4A,stroke-width:1.5px
+
+    class S1 external
+    class S2 core
+    class S3 destination
+    class S4,S5 output
+    style Pre fill:#F8FAFC,stroke:#4F46E5,stroke-width:1.5px
+    style Gate fill:#F0FDFA,stroke:#0F766E,stroke-width:1.5px
 ```
 
-*Figure 2. The Inverted Four-Stage AI Pull-Request Pipeline: isolate terse deterministic/decision checks in private blocking pre-flight, mandate cold-file tests on agent edits, enforce Human-First Blind Review on critical services, and lock git history against post-review force-pushes.*
+*Figure 4. The Inverted Four-Stage AI Pull-Request Pipeline: isolate terse deterministic/decision checks in private blocking pre-flight, mandate cold-file tests on agent edits, enforce Human-First Blind Review on critical services, and lock git history against post-review force-pushes.*
 
 1. **Rule 1 — Wire Terse Checks into Blocking Pre-Flight CI and Hide "All Clear" Badges:** Run compact decision models (`<500` chars) and static architectural gates (`SAST`, `Semgrep`, `ArchUnit`/`NetArchTest`) as **blocking required status checks** targeted privately at the author or coding agent. Emit silent green checks on pass—never celebratory "Clean" prose that triggers `+0.4205` complacency.
 2. **Rule 2 — Mandate Co-Authored Tests on Cold-File Agent Edits:** Check 30-day git bugfix history on modified production files in CI (`git log --since="30 days ago"`). Whenever an agent modifies a cold file (`pre_pr_30d_hotspot_fixes == 0`), require a paired test diff (`-5.47 pp` 30d SZZ reduction).
@@ -173,7 +374,18 @@ flowchart LR
 4. **Rule 4 — Require Structured Author Intent & Ban Post-Review Force-Pushes:** Keep detailed PR templates that state modified invariants and blast radius (`3.07x` CR lift), and enforce GitHub repository rulesets with `non_fast_forward`, `dismiss_stale_reviews_on_push: true`, and `require_last_push_approval: true` to shut the `+21.01 pp` force-push defect leak.
 5. **Rule 5 — Decentralize Senior Review Load & Stratify Dashboards by Language Tier:** Actively track **Reviewer Workload Gini** (target `< 0.45`) and pair `2–6y` mid-tenure reviewers (`13.64%` CR) with `6y+` veterans (`91.8%` load). Equally critical, **stop reporting blended org-wide defect averages**: our polyglot bare-git SZZ audit (`NQ-07`) reveals near agent-human parity in `Compiled_Systems` (Rust/C++: `33.19%` vs. `32.41%` 30d SZZ; cold-file `22.93%` vs. `20.57%`) and `Dynamic_Gradual` (Python/JS/TS: `42.23%` vs. `46.03%`), but a stark **`56.16%` vs. `25.00%` 30d SZZ gap** (`42.24%` vs. `10.23%` bugfix file churn; `35.71%` cold-file SZZ) in **`Managed_OO` (`Java`, `C#`)**—the exact stack powering core enterprise estates.
 
-### Table 2. Board-Level Engineering KPI Scorecard (Retire Vanity Velocity Metrics)
+### Table 2. Polyglot Bare-Git 30-Day SZZ Stratification by Language Tier (`NQ-07`)
+
+| Language Regime | Coding-Agent `N` (u30d) | Agent 30d SZZ (`95% CI`) | Agent Cold-File 30d SZZ | Agent 30d Bugfix Churn | Human Baseline `N` (u30d) | Human 30d SZZ (`95% CI`) | Human Cold-File 30d SZZ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **`Compiled_Systems`** (`Rust`, `C++`, `Go`, `Zig`) | `452` | `33.19%` `[29.0%, 37.7%]` | `22.93%` | `18.11%` | `216` | `32.41%` `[26.5%, 38.9%]` | `20.57%` |
+| **`Dynamic_Gradual`** (`TypeScript`, `Python`, `JS`, `Ruby`) | `2,543` | `42.23%` `[40.3%, 44.2%]` | `26.93%` | `25.29%` | `1,460` | `46.03%` `[43.5%, 48.6%]` | `27.13%` |
+| **`Managed_OO`** (`Java`, `C#`) | `536` | **`56.16%`** `[51.9%, 60.3%]` | **`35.71%`** | **`42.24%`** | `56` | `25.00%` `[15.5%, 37.7%]` | `8.82%` |
+| **`Other`** (`HTML`, Docs, Config) | `507` | `37.67%` `[33.6%, 42.0%]` | `21.95%` | `22.10%` | `169` | `39.64%` `[32.6%, 47.2%]` | `17.82%` |
+
+*Source: `replication/results/pr_review/data_tables/nq07_language_turnover_szz_log.csv` (Zenodo DOI `10.5281/zenodo.24452362`).*
+
+### Table 3. Board-Level Engineering KPI Scorecard (Retire Vanity Velocity Metrics)
 
 | Legacy Vanity QBR Metric | Verified Board-Level Replacement KPI | Target Threshold | Empirical Failure Mode Eliminated |
 | :--- | :--- | :--- | :--- |
